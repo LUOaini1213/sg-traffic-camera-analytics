@@ -44,7 +44,8 @@ def load_log(path: Path) -> dict[str, dict]:
     for line in path.read_text().splitlines():
         if line.strip():
             e = json.loads(line)
-            out[e["frame_id"]] = e
+            if "counts" in e:  # skip 'skipped_bad_frame' records
+                out[e["frame_id"]] = e
     return out
 
 

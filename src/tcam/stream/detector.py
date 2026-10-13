@@ -64,7 +64,7 @@ def main(argv=None) -> None:
     prod = Producer({"bootstrap.servers": a.bootstrap, "linger.ms": 5})
     a.log.parent.mkdir(parents=True, exist_ok=True)
     last = time.time()
-    n = 0
+    n = bad = 0
     with a.log.open("a") as log:
         while True:
             msgs = [m for m in cons.consume(num_messages=a.batch, timeout=1.0) if m.error() is None]
@@ -76,8 +76,15 @@ def main(argv=None) -> None:
             imgs, meta = [], []
             for m in msgs:
                 h = {k: v.decode() for k, v in (m.headers() or [])}
-                imgs.append(Image.open(io.BytesIO(m.value())).convert("RGB"))
+                try:
+                    imgs.append(Image.open(io.BytesIO(m.value())).convert("RGB"))
+                except OSError:  # truncated / corrupt JPEG from the feed: skip it, keep serving
+                    bad += 1
+                    log.write(json.dumps({"skipped_bad_frame": h.get("frame_id"), "camera": h.get("camera")}) + "\n")
+                    continue
                 meta.append(h)
+            if not imgs:
+                continue
             t0 = time.perf_counter()
             dets = det.infer(imgs)
             model_ms = (time.perf_counter() - t0) * 1000
@@ -97,7 +104,7 @@ def main(argv=None) -> None:
             last = time.time()
     prod.flush(10)
     cons.close()
-    print(f"processed {n} frames", flush=True)
+    print(f"processed {n} frames, skipped {bad} unreadable", flush=True)
 
 
 if __name__ == "__main__":

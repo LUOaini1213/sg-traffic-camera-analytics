@@ -19,12 +19,14 @@ import numpy as np
 
 
 def summarise(path: Path) -> dict:
-    ev = [json.loads(l) for l in path.read_text().splitlines() if l.strip()]
+    rows = [json.loads(l) for l in path.read_text().splitlines() if l.strip()]
+    ev = [e for e in rows if "skipped_bad_frame" not in e]
+    skipped = len(rows) - len(ev)
     pub = [e["emitted"] - e["e2e_ms"] / 1000 for e in ev]
     wall = max(e["emitted"] for e in ev) - min(pub)
     e2e = np.array([e["e2e_ms"] for e in ev])
     per = np.array([e["model_ms_batch"] / e["batch"] for e in ev])
-    out = {"frames": len(ev), "wall_s": wall, "throughput_fps": len(ev) / wall,
+    out = {"frames": len(ev), "skipped_unreadable": skipped, "wall_s": wall, "throughput_fps": len(ev) / wall,
            "model_ms_per_frame_p50": float(np.median(per)),
            "e2e_ms_p50": float(np.percentile(e2e, 50)), "e2e_ms_p95": float(np.percentile(e2e, 95)),
            "queue_ms_p50": float(np.median([e["queue_ms"] for e in ev])),

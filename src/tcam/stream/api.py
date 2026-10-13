@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import json
 import threading
+import uuid
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, HTTPException
@@ -17,7 +18,9 @@ LATEST: dict[str, dict] = {}
 
 def _consume(bootstrap: str = BOOTSTRAP) -> None:
     from confluent_kafka import Consumer
-    c = Consumer({"bootstrap.servers": bootstrap, "group.id": "tcam-api", "auto.offset.reset": "earliest"})
+    # a fresh group each start: the API rebuilds its view from the start of the state topic
+    c = Consumer({"bootstrap.servers": bootstrap, "group.id": f"tcam-api-{uuid.uuid4().hex[:8]}",
+                  "auto.offset.reset": "earliest", "enable.auto.commit": False})
     c.subscribe([STATE])
     while True:
         m = c.poll(1.0)

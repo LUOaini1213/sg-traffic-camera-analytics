@@ -9,6 +9,7 @@ from __future__ import annotations
 import argparse
 import csv
 import hashlib
+import io
 import time
 from pathlib import Path
 
@@ -20,6 +21,16 @@ from . import BOOTSTRAP, FRAMES
 def _headers(cam: str, capture: str, frame_id: str) -> list[tuple[str, bytes]]:
     return [("camera", cam.encode()), ("capture", capture.encode()), ("frame_id", frame_id.encode()),
             ("published_ns", str(time.time_ns()).encode())]
+
+
+def jpeg_ok(b: bytes) -> bool:
+    """True if the bytes decode fully as an image."""
+    from PIL import Image
+    try:
+        Image.open(io.BytesIO(b)).load()
+        return True
+    except OSError:
+        return False
 
 
 def make_producer(bootstrap: str = BOOTSTRAP) -> Producer:
@@ -43,6 +54,9 @@ def live(p: Producer, every: int, until: str, scope) -> int:
                 b = datamall.download(v["ImageLink"])
                 md5 = hashlib.md5(b).hexdigest()
                 if seen.get(cam) == md5:
+                    continue
+                if not jpeg_ok(b):  # the feed occasionally serves a truncated JPEG; try again next poll
+                    print("skip truncated frame", cam, flush=True)
                     continue
                 seen[cam] = md5
                 cap = capture_time(v["ImageLink"]) or ""
