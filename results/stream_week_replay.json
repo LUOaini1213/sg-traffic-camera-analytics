@@ -1,0 +1,18 @@
+{
+ "frames": 1024,
+ "wall_s": 69.08961200714111,
+ "throughput_fps": 14.821330881032582,
+ "model_ms_per_frame_p50": 56.31193750014063,
+ "e2e_ms_p50": 25952.86845,
+ "e2e_ms_p95": 49399.203664999986,
+ "queue_ms_p50": 25688.4464,
+ "mean_batch": 4.0,
+ "cameras": [
+  "2701",
+  "2702",
+  "2704",
+  "4798",
+  "4799"
+ ],
+ "note": "archive week replayed through Redpanda at full speed; GPU shared with another process's LLM server during the run"
+}

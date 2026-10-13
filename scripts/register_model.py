@@ -29,6 +29,11 @@ def main() -> None:
     from mlflow.tracking import MlflowClient
     client = MlflowClient()
     ev = json.loads((ROOT / "results" / "detection_eval.json").read_text())
+    # runs abandoned on the shared GPU stay RUNNING in the store; close them with a reason
+    for r in mlflow.search_runs(output_format="list"):
+        if r.info.status == "RUNNING":
+            client.set_tag(r.info.run_id, "stopped_reason", "stopped by hand when the shared GPU was over-committed")
+            client.set_terminated(r.info.run_id, "KILLED")
     out = {"experiment": EXPERIMENT, "model": MODEL_NAME, "versions": []}
     try:
         client.create_registered_model(MODEL_NAME, description="YOLO11n fine-tuned on reviewed LTA camera frames")

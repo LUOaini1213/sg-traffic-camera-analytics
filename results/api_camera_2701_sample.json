@@ -1,0 +1,1 @@
+{"camera":"2701","counts":{"car":24,"bus":2,"truck":1,"motorcycle":0,"total":27},"median":27.0,"threshold":70.95,"congested":false,"frame_id":"2701_566ee3f1","capture":"2026-10-14T05:34","batch":1,"queue_ms":188.2671,"model_ms_batch":78.26529999874765,"e2e_ms":302.8592,"emitted":1791927413.8429933}

@@ -1,0 +1,557 @@
+[
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_1280_e40_s1|mAP50",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_1280_e40_s1|AP50|car",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_1280_e40_s1|AP50|bus",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_1280_e40_s1|AP50|truck",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_1280_e40_s1|AP50|motorcycle",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_1280_e40_s1|AP50_class_agnostic",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_1280_e40_s1|count_mae",
+  "fmt": ".2f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "bootstrap|ft-yolo11n_1280_e40_s1|mAP50_ci95|0",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "bootstrap|ft-yolo11n_1280_e40_s1|mAP50_ci95|1",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|coco-yolo11n@1280|mAP50",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|coco-yolo11n@1280|AP50|car",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|coco-yolo11n@1280|AP50|bus",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|coco-yolo11n@1280|AP50|truck",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|coco-yolo11n@1280|AP50|motorcycle",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|coco-yolo11n@1280|AP50_class_agnostic",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|coco-yolo11n@1280|count_mae",
+  "fmt": ".2f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "bootstrap|coco-yolo11n@1280|mAP50_ci95|0",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "bootstrap|coco-yolo11n@1280|mAP50_ci95|1",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|pre-annotation (YOLO11x tiled)|mAP50",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|pre-annotation (YOLO11x tiled)|AP50|car",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|pre-annotation (YOLO11x tiled)|AP50|bus",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|pre-annotation (YOLO11x tiled)|AP50|truck",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|pre-annotation (YOLO11x tiled)|AP50|motorcycle",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|pre-annotation (YOLO11x tiled)|AP50_class_agnostic",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|pre-annotation (YOLO11x tiled)|count_mae",
+  "fmt": ".2f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "bootstrap|pre-annotation (YOLO11x tiled)|mAP50_ci95|0",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "bootstrap|pre-annotation (YOLO11x tiled)|mAP50_ci95|1",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_1280_e40_s0|mAP50",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_1280_e40_s0|AP50|car",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_1280_e40_s0|AP50|bus",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_1280_e40_s0|AP50|truck",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_1280_e40_s0|AP50|motorcycle",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_1280_e40_s0|AP50_class_agnostic",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_1280_e40_s0|count_mae",
+  "fmt": ".2f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "bootstrap|ft-yolo11n_1280_e40_s0|mAP50_ci95|0",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "bootstrap|ft-yolo11n_1280_e40_s0|mAP50_ci95|1",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_coco4_1280_e40_s0|mAP50",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_coco4_1280_e40_s0|AP50|car",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_coco4_1280_e40_s0|AP50|bus",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_coco4_1280_e40_s0|AP50|truck",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_coco4_1280_e40_s0|AP50|motorcycle",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_coco4_1280_e40_s0|AP50_class_agnostic",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_coco4_1280_e40_s0|count_mae",
+  "fmt": ".2f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "bootstrap|ft-yolo11n_coco4_1280_e40_s0|mAP50_ci95|0",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "bootstrap|ft-yolo11n_coco4_1280_e40_s0|mAP50_ci95|1",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|coco-yolo11n@640|mAP50",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|coco-yolo11n@640|AP50|car",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|coco-yolo11n@640|AP50|bus",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|coco-yolo11n@640|AP50|truck",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|coco-yolo11n@640|AP50|motorcycle",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|coco-yolo11n@640|AP50_class_agnostic",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|coco-yolo11n@640|count_mae",
+  "fmt": ".2f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "bootstrap|coco-yolo11n@640|mAP50_ci95|0",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "bootstrap|coco-yolo11n@640|mAP50_ci95|1",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|pre-annotation (YOLO11x tiled)|mAP50_95",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|coco-yolo11n@1280|recall@0.25",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|coco-yolo11n@1280|mAP50_day",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|coco-yolo11n@1280|mAP50_night",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_1280_e40_s1|recall@0.25",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_1280_e40_s1|mAP50_day",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_1280_e40_s1|mAP50_night",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "bootstrap|ft-yolo11n_1280_e40_s1|delta_vs_coco-yolo11n@1280|ci95|0",
+  "fmt": "+.3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "bootstrap|ft-yolo11n_1280_e40_s1|delta_vs_coco-yolo11n@1280|ci95|1",
+  "fmt": "+.3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "bootstrap|ft-yolo11n_1280_e40_s1|AP50_class_agnostic_delta_vs_coco-yolo11n@1280|ci95|0",
+  "fmt": "+.3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "bootstrap|ft-yolo11n_1280_e40_s1|AP50_class_agnostic_delta_vs_coco-yolo11n@1280|ci95|1",
+  "fmt": "+.3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "bootstrap|ft-yolo11n_1280_e40_s1|count_mae_delta_vs_coco-yolo11n@1280|ci95|0",
+  "fmt": ".2f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "bootstrap|ft-yolo11n_1280_e40_s1|count_mae_delta_vs_coco-yolo11n@1280|ci95|1",
+  "fmt": ".2f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "bootstrap|ft-yolo11n_1280_e40_s0|delta_vs_coco-yolo11n@1280|ci95|0",
+  "fmt": "+.3f"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "bootstrap|ft-yolo11n_1280_e40_s0|delta_vs_coco-yolo11n@1280|ci95|1",
+  "fmt": "+.3f"
+ },
+ {
+  "file": "detection_eval_val.json",
+  "path": "models|ft-yolo11n_1280_e40_s0|mAP50",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval_val.json",
+  "path": "models|ft-yolo11n_1280_e40_s1|mAP50",
+  "fmt": ".3f"
+ },
+ {
+  "file": "detection_eval_val.json",
+  "path": "models|ft-yolo11n_coco4_1280_e40_s0|mAP50",
+  "fmt": ".3f"
+ },
+ {
+  "file": "stream_week_replay.json",
+  "path": "throughput_fps",
+  "fmt": ".1f"
+ },
+ {
+  "file": "stream_week_replay.json",
+  "path": "model_ms_per_frame_p50",
+  "fmt": ".0f"
+ },
+ {
+  "file": "stream_week_replay.json",
+  "path": "wall_s",
+  "fmt": ".1f"
+ },
+ {
+  "file": "validation_week.json",
+  "path": "pooled_flag_vs_slow|kappa",
+  "fmt": ".2f"
+ },
+ {
+  "file": "validation_week.json",
+  "path": "pooled_flag_vs_slow|precision",
+  "fmt": ".2f"
+ },
+ {
+  "file": "validation_week.json",
+  "path": "pooled_flag_vs_slow|recall",
+  "fmt": ".2f"
+ },
+ {
+  "file": "validation_week.json",
+  "path": "cameras|2701|spearman_count_vs_speedband_all",
+  "fmt": ".2f"
+ },
+ {
+  "file": "validation_week.json",
+  "path": "cameras|2701|frames_scored",
+  "fmt": "d"
+ },
+ {
+  "file": "validation_week.json",
+  "path": "cameras|2701|flag_rate",
+  "fmt": "pct0"
+ },
+ {
+  "file": "validation_week.json",
+  "path": "cameras|2701|slow_rate",
+  "fmt": "pct0"
+ },
+ {
+  "file": "validation_week.json",
+  "path": "cameras|2702|spearman_count_vs_speedband_all",
+  "fmt": ".2f"
+ },
+ {
+  "file": "validation_week.json",
+  "path": "cameras|2702|frames_scored",
+  "fmt": "d"
+ },
+ {
+  "file": "validation_week.json",
+  "path": "cameras|2702|flag_rate",
+  "fmt": "pct0"
+ },
+ {
+  "file": "validation_week.json",
+  "path": "cameras|2702|slow_rate",
+  "fmt": "pct0"
+ },
+ {
+  "file": "validation_week.json",
+  "path": "cameras|2704|spearman_count_vs_speedband_all",
+  "fmt": ".2f"
+ },
+ {
+  "file": "validation_week.json",
+  "path": "cameras|2704|frames_scored",
+  "fmt": "d"
+ },
+ {
+  "file": "validation_week.json",
+  "path": "cameras|2704|flag_rate",
+  "fmt": "pct0"
+ },
+ {
+  "file": "validation_week.json",
+  "path": "cameras|2704|slow_rate",
+  "fmt": "pct0"
+ },
+ {
+  "file": "validation_week.json",
+  "path": "cameras|4798|spearman_count_vs_speedband_all",
+  "fmt": ".2f"
+ },
+ {
+  "file": "validation_week.json",
+  "path": "cameras|4798|frames_scored",
+  "fmt": "d"
+ },
+ {
+  "file": "validation_week.json",
+  "path": "cameras|4798|flag_rate",
+  "fmt": "pct0"
+ },
+ {
+  "file": "validation_week.json",
+  "path": "cameras|4798|slow_rate",
+  "fmt": "pct0"
+ },
+ {
+  "file": "validation_week.json",
+  "path": "cameras|4799|spearman_count_vs_speedband_all",
+  "fmt": ".2f"
+ },
+ {
+  "file": "validation_week.json",
+  "path": "cameras|4799|frames_scored",
+  "fmt": "d"
+ },
+ {
+  "file": "validation_week.json",
+  "path": "cameras|4799|flag_rate",
+  "fmt": "pct0"
+ },
+ {
+  "file": "validation_week.json",
+  "path": "cameras|4799|slow_rate",
+  "fmt": "pct0"
+ },
+ {
+  "file": "vlm_eval.json",
+  "path": "fields|time_of_day|accuracy",
+  "fmt": "pct1"
+ },
+ {
+  "file": "vlm_eval.json",
+  "path": "fields|time_of_day|majority_baseline",
+  "fmt": "pct1"
+ },
+ {
+  "file": "vlm_eval.json",
+  "path": "fields|rain|accuracy",
+  "fmt": "pct1"
+ },
+ {
+  "file": "vlm_eval.json",
+  "path": "fields|rain|majority_baseline",
+  "fmt": "pct1"
+ },
+ {
+  "file": "vlm_eval.json",
+  "path": "fields|traffic|accuracy",
+  "fmt": "pct1"
+ },
+ {
+  "file": "vlm_eval.json",
+  "path": "fields|traffic|majority_baseline",
+  "fmt": "pct1"
+ },
+ {
+  "file": "label_stats.json",
+  "path": "edits|removed",
+  "fmt": "d"
+ },
+ {
+  "file": "label_stats.json",
+  "path": "edits|relabelled",
+  "fmt": "d"
+ },
+ {
+  "file": "label_stats.json",
+  "path": "edits|adjusted",
+  "fmt": "d"
+ },
+ {
+  "file": "label_stats.json",
+  "path": "edits|added",
+  "fmt": "d"
+ },
+ {
+  "file": "label_stats.json",
+  "path": "frames|train",
+  "fmt": "d"
+ },
+ {
+  "file": "label_stats.json",
+  "path": "frames|val",
+  "fmt": "d"
+ },
+ {
+  "file": "label_stats.json",
+  "path": "frames|test",
+  "fmt": "d"
+ }
+]

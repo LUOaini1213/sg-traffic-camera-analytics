@@ -1,0 +1,182 @@
+[
+ {
+  "run_id": "db858a6db47640939907ce4279842f5a",
+  "run_name": "yolo11n_coco4_1280_e40_s0",
+  "status": "FINISHED",
+  "params": {
+   "batch": "1",
+   "epochs": "40",
+   "gpu": "NVIDIA GeForce GTX 1650",
+   "imgsz": "1280",
+   "model": "yolo11n_coco4.pt",
+   "seed": "0"
+  },
+  "tags": {},
+  "metrics": {
+   "metrics_mAP50": 0.6327,
+   "metrics_mAP50-95": 0.4487,
+   "test_AP50_bus": 0.0214,
+   "test_AP50_car": 0.8138,
+   "test_AP50_motorcycle": 0.4975,
+   "test_AP50_truck": 0.5131,
+   "test_count_mae": 2.7385,
+   "test_mAP50": 0.4614,
+   "test_mAP50_95": 0.2925,
+   "train_seconds": 7232.7067
+  }
+ },
+ {
+  "run_id": "50fec94660204e4ba6986baa86152860",
+  "run_name": "yolo11s_1280_e40_s0",
+  "status": "KILLED",
+  "params": {
+   "batch": "1",
+   "epochs": "40",
+   "gpu": "NVIDIA GeForce GTX 1650",
+   "imgsz": "1280",
+   "model": "yolo11s.pt",
+   "seed": "0"
+  },
+  "tags": {
+   "stopped_reason": "stopped by hand when the shared GPU was over-committed"
+  },
+  "metrics": {}
+ },
+ {
+  "run_id": "f9189b8938b24ac3b6a4a25b792482f4",
+  "run_name": "yolo11n_1280_e40_s1",
+  "status": "FINISHED",
+  "params": {
+   "batch": "1",
+   "epochs": "40",
+   "gpu": "NVIDIA GeForce GTX 1650",
+   "imgsz": "1280",
+   "model": "yolo11n.pt",
+   "seed": "1"
+  },
+  "tags": {},
+  "metrics": {
+   "metrics_mAP50": 0.5956,
+   "metrics_mAP50-95": 0.3855,
+   "test_AP50_bus": 0.2786,
+   "test_AP50_car": 0.8177,
+   "test_AP50_motorcycle": 0.541,
+   "test_AP50_truck": 0.5199,
+   "test_count_mae": 2.3692,
+   "test_mAP50": 0.5393,
+   "test_mAP50_95": 0.3555,
+   "train_seconds": 2792.9258
+  }
+ },
+ {
+  "run_id": "d86fd99bab53422bae0213220a910f02",
+  "run_name": "yolo11n_1280_e40_s0",
+  "status": "FINISHED",
+  "params": {
+   "batch": "1",
+   "epochs": "40",
+   "gpu": "NVIDIA GeForce GTX 1650",
+   "imgsz": "1280",
+   "model": "yolo11n.pt",
+   "seed": "0"
+  },
+  "tags": {},
+  "metrics": {
+   "metrics_mAP50": 0.6425,
+   "metrics_mAP50-95": 0.4266,
+   "test_AP50_bus": 0.0368,
+   "test_AP50_car": 0.8242,
+   "test_AP50_motorcycle": 0.5293,
+   "test_AP50_truck": 0.5186,
+   "test_count_mae": 2.4,
+   "test_mAP50": 0.4772,
+   "test_mAP50_95": 0.3137,
+   "train_seconds": 1717.6714
+  }
+ },
+ {
+  "run_id": "ac8ae3a8b5ee44e29032296feeecd962",
+  "run_name": "yolo11n_1280_e40_s0",
+  "status": "KILLED",
+  "params": {
+   "batch": "2",
+   "epochs": "40",
+   "gpu": "NVIDIA GeForce GTX 1650",
+   "imgsz": "1280",
+   "model": "yolo11n.pt",
+   "seed": "0"
+  },
+  "tags": {
+   "stopped_reason": "stopped by hand: shared GPU over-committed (another process held ~2 GB), training slowed 10-50x; restarted with batch 1"
+  },
+  "metrics": {}
+ },
+ {
+  "run_id": "7253fba644b949b39997f311794500d4",
+  "run_name": "yolo11n_1280_e60_s0",
+  "status": "KILLED",
+  "params": {
+   "batch": "2",
+   "epochs": "60",
+   "gpu": "NVIDIA GeForce GTX 1650",
+   "imgsz": "1280",
+   "model": "yolo11n.pt",
+   "seed": "0"
+  },
+  "tags": {
+   "stopped_reason": "stopped by hand: shared GPU over-committed (another process held ~2 GB), training slowed 10-50x; restarted with batch 1"
+  },
+  "metrics": {}
+ },
+ {
+  "run_id": "6da1b7be98f54a2c911e804a2456df56",
+  "run_name": "yolo11n_1280_e60_s0",
+  "status": "FAILED",
+  "params": {
+   "batch": "1",
+   "epochs": "60",
+   "gpu": "NVIDIA GeForce GTX 1650",
+   "imgsz": "1280",
+   "model": "yolo11n.pt",
+   "seed": "0"
+  },
+  "tags": {
+   "stopped_reason": "CUDA OOM or DataLoader worker crash on the shared GPU/RAM"
+  },
+  "metrics": {}
+ },
+ {
+  "run_id": "0c5687a78e6f49e794ac99206f73036c",
+  "run_name": "yolo11n_1280_e60_s0",
+  "status": "FAILED",
+  "params": {
+   "batch": "2",
+   "epochs": "60",
+   "gpu": "NVIDIA GeForce GTX 1650",
+   "imgsz": "1280",
+   "model": "yolo11n.pt",
+   "seed": "0"
+  },
+  "tags": {
+   "stopped_reason": "CUDA OOM or DataLoader worker crash on the shared GPU/RAM"
+  },
+  "metrics": {}
+ },
+ {
+  "run_id": "49a44cb58dd74fa28ae401d1a01777ad",
+  "run_name": "yolo11n_1280_e60_s0",
+  "status": "KILLED",
+  "params": {
+   "batch": "4",
+   "epochs": "60",
+   "gpu": "NVIDIA GeForce GTX 1650",
+   "imgsz": "1280",
+   "model": "yolo11n.pt",
+   "seed": "0"
+  },
+  "tags": {
+   "stopped_reason": "stopped by hand: shared GPU over-committed (another process held ~2 GB), training slowed 10-50x; restarted with batch 1"
+  },
+  "metrics": {}
+ }
+]

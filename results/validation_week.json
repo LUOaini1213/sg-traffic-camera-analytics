@@ -1,0 +1,122 @@
+{
+ "mode": "week",
+ "slow_rule": "mean SpeedBand of category 1-4 links within 200 m <= 3.0",
+ "cameras": {
+  "2701": {
+   "frames": 206,
+   "frames_scored": 78,
+   "links": 28,
+   "threshold": 70.95,
+   "spearman_count_vs_speedband_all": -0.18909856942822253,
+   "mean_count": 47.21844660194175,
+   "flag_rate": 0.44871794871794873,
+   "slow_rate": 0.1794871794871795,
+   "flag_vs_slow": {
+    "n": 78,
+    "tp": 6,
+    "fp": 29,
+    "fn": 8,
+    "tn": 35,
+    "precision": 0.17142857142857143,
+    "recall": 0.42857142857142855,
+    "accuracy": 0.5256410256410257,
+    "kappa": -0.015482054890921887
+   }
+  },
+  "2702": {
+   "frames": 202,
+   "frames_scored": 81,
+   "links": 23,
+   "threshold": 57.0,
+   "spearman_count_vs_speedband_all": -0.24557018152986526,
+   "mean_count": 43.0,
+   "flag_rate": 0.6419753086419753,
+   "slow_rate": 1.0,
+   "flag_vs_slow": {
+    "n": 81,
+    "tp": 52,
+    "fp": 0,
+    "fn": 29,
+    "tn": 0,
+    "precision": 1.0,
+    "recall": 0.6419753086419753,
+    "accuracy": 0.6419753086419753,
+    "kappa": 0.0
+   }
+  },
+  "2704": {
+   "frames": 206,
+   "frames_scored": 80,
+   "links": 12,
+   "threshold": 19.0,
+   "spearman_count_vs_speedband_all": -0.778142598166247,
+   "mean_count": 18.41747572815534,
+   "flag_rate": 0.725,
+   "slow_rate": 0.0,
+   "flag_vs_slow": {
+    "n": 80,
+    "tp": 0,
+    "fp": 58,
+    "fn": 0,
+    "tn": 22,
+    "precision": 0.0,
+    "recall": NaN,
+    "accuracy": 0.275,
+    "kappa": 0.0
+   }
+  },
+  "4798": {
+   "frames": 205,
+   "frames_scored": 77,
+   "links": 11,
+   "threshold": 10.0,
+   "spearman_count_vs_speedband_all": -0.06057019731437435,
+   "mean_count": 5.458536585365854,
+   "flag_rate": 0.35064935064935066,
+   "slow_rate": 0.0,
+   "flag_vs_slow": {
+    "n": 77,
+    "tp": 0,
+    "fp": 27,
+    "fn": 0,
+    "tn": 50,
+    "precision": 0.0,
+    "recall": NaN,
+    "accuracy": 0.6493506493506493,
+    "kappa": 0.0
+   }
+  },
+  "4799": {
+   "frames": 205,
+   "frames_scored": 80,
+   "links": 9,
+   "threshold": 15.0,
+   "spearman_count_vs_speedband_all": -0.07332737237311501,
+   "mean_count": 8.21951219512195,
+   "flag_rate": 0.325,
+   "slow_rate": 0.0,
+   "flag_vs_slow": {
+    "n": 80,
+    "tp": 0,
+    "fp": 26,
+    "fn": 0,
+    "tn": 54,
+    "precision": 0.0,
+    "recall": NaN,
+    "accuracy": 0.675,
+    "kappa": 0.0
+   }
+  }
+ },
+ "pooled_flag_vs_slow": {
+  "n": 396,
+  "tp": 58,
+  "fp": 140,
+  "fn": 37,
+  "tn": 161,
+  "precision": 0.29292929292929293,
+  "recall": 0.6105263157894737,
+  "accuracy": 0.553030303030303,
+  "kappa": 0.10606060606060597
+ }
+}

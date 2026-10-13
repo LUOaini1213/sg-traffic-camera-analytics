@@ -1,0 +1,45 @@
+{
+ "experiment": "sg-traffic-camera-detection",
+ "model": "sg-traffic-vehicle-detector",
+ "versions": [
+  {
+   "version": 1,
+   "run_name": "yolo11n_1280_e40_s0",
+   "run_id": "d86fd99bab53422bae0213220a910f02",
+   "alias": null,
+   "test_mAP50": 0.4772279992554195,
+   "test_mAP50_95": 0.3136504605084331,
+   "test_count_mae": 2.4,
+   "test_AP50_car": 0.824247008546842,
+   "test_AP50_bus": 0.036775106082036775,
+   "test_AP50_truck": 0.5186283841829435,
+   "test_AP50_motorcycle": 0.5292614982098557
+  },
+  {
+   "version": 2,
+   "run_name": "yolo11n_1280_e40_s1",
+   "run_id": "f9189b8938b24ac3b6a4a25b792482f4",
+   "alias": "champion",
+   "test_mAP50": 0.5393188146801304,
+   "test_mAP50_95": 0.3554514814891164,
+   "test_count_mae": 2.3692307692307693,
+   "test_AP50_car": 0.8177270604699136,
+   "test_AP50_bus": 0.2786452247709243,
+   "test_AP50_truck": 0.519923111536317,
+   "test_AP50_motorcycle": 0.5409798619433669
+  },
+  {
+   "version": 3,
+   "run_name": "yolo11n_coco4_1280_e40_s0",
+   "run_id": "db858a6db47640939907ce4279842f5a",
+   "alias": null,
+   "test_mAP50": 0.4614372155835812,
+   "test_mAP50_95": 0.2925255471814413,
+   "test_count_mae": 2.7384615384615385,
+   "test_AP50_car": 0.8137521084128043,
+   "test_AP50_bus": 0.021386138613861388,
+   "test_AP50_truck": 0.5131351162891842,
+   "test_AP50_motorcycle": 0.4974754990184748
+  }
+ ]
+}
