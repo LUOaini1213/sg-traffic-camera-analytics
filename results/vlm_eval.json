@@ -1,0 +1,1020 @@
+{
+ "model": "gemma3:4b",
+ "device": "cpu",
+ "frames": 65,
+ "fields": {
+  "time_of_day": {
+   "n": 65,
+   "accuracy": 0.9384615384615385,
+   "majority_baseline": 0.5692307692307692,
+   "confusion": {
+    "night->night": 27,
+    "day->day": 34,
+    "night->day": 1,
+    "day->night": 3
+   }
+  },
+  "rain": {
+   "n": 65,
+   "accuracy": 0.9384615384615385,
+   "majority_baseline": 0.9538461538461539,
+   "confusion": {
+    "False->False": 60,
+    "True->False": 2,
+    "True->True": 1,
+    "False->True": 2
+   }
+  },
+  "traffic": {
+   "n": 65,
+   "accuracy": 0.5076923076923077,
+   "majority_baseline": 0.4461538461538462,
+   "confusion": {
+    "light->moderate": 24,
+    "heavy->heavy": 2,
+    "moderate->moderate": 26,
+    "heavy->moderate": 5,
+    "light->light": 5,
+    "moderate->heavy": 3
+   }
+  }
+ },
+ "median_seconds_per_frame": 49.71164274215698,
+ "rows": [
+  {
+   "frame_id": "4708_20250706_0606",
+   "ref": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "light",
+    "labels": 4
+   },
+   "vlm": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 55.13871169090271
+  },
+  {
+   "frame_id": "5799_20250716_1733",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "heavy",
+    "labels": 51
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "heavy"
+   },
+   "seconds": 48.16065788269043
+  },
+  {
+   "frame_id": "6716_20250731_2218",
+   "ref": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate",
+    "labels": 12
+   },
+   "vlm": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 48.197229862213135
+  },
+  {
+   "frame_id": "9701_20250731_2218",
+   "ref": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate",
+    "labels": 14
+   },
+   "vlm": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 48.644978284835815
+  },
+  {
+   "frame_id": "4706_20250817_1446",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate",
+    "labels": 12
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 48.673842906951904
+  },
+  {
+   "frame_id": "7795_20250817_1446",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate",
+    "labels": 27
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 50.03425860404968
+  },
+  {
+   "frame_id": "3795_20250904_0743",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate",
+    "labels": 14
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 49.21366906166077
+  },
+  {
+   "frame_id": "1113_20250906_1452",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "light",
+    "labels": 10
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 50.38505172729492
+  },
+  {
+   "frame_id": "1704_20250909_1917",
+   "ref": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate",
+    "labels": 15
+   },
+   "vlm": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 49.53062677383423
+  },
+  {
+   "frame_id": "3793_20250909_1917",
+   "ref": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate",
+    "labels": 12
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 49.620060443878174
+  },
+  {
+   "frame_id": "6711_20250912_1834",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate",
+    "labels": 12
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 50.45570993423462
+  },
+  {
+   "frame_id": "5794_20250920_2114",
+   "ref": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "light",
+    "labels": 5
+   },
+   "vlm": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 49.287771463394165
+  },
+  {
+   "frame_id": "3702_20250924_0457",
+   "ref": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "light",
+    "labels": 7
+   },
+   "vlm": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 49.17993640899658
+  },
+  {
+   "frame_id": "5795_20251001_0851",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "heavy",
+    "labels": 45
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 49.034531354904175
+  },
+  {
+   "frame_id": "6716_20251004_0718",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate",
+    "labels": 21
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 51.06972289085388
+  },
+  {
+   "frame_id": "3795_20251004_1319",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate",
+    "labels": 15
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 49.71164274215698
+  },
+  {
+   "frame_id": "3702_20251004_1319",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate",
+    "labels": 15
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 49.46133089065552
+  },
+  {
+   "frame_id": "5795_20251004_1709",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "heavy",
+    "labels": 44
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "heavy"
+   },
+   "seconds": 49.73577690124512
+  },
+  {
+   "frame_id": "6711_20251014_2040",
+   "ref": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "light",
+    "labels": 6
+   },
+   "vlm": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 49.64324998855591
+  },
+  {
+   "frame_id": "1113_20251110_1427",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "light",
+    "labels": 5
+   },
+   "vlm": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 49.45796585083008
+  },
+  {
+   "frame_id": "5799_20251119_2109",
+   "ref": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate",
+    "labels": 16
+   },
+   "vlm": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 49.57763886451721
+  },
+  {
+   "frame_id": "9701_20251119_2109",
+   "ref": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate",
+    "labels": 12
+   },
+   "vlm": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 49.793636322021484
+  },
+  {
+   "frame_id": "3793_20251122_0210",
+   "ref": {
+    "time_of_day": "night",
+    "rain": true,
+    "traffic": "light",
+    "labels": 4
+   },
+   "vlm": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "light"
+   },
+   "seconds": 50.04104733467102
+  },
+  {
+   "frame_id": "4708_20251122_0210",
+   "ref": {
+    "time_of_day": "night",
+    "rain": true,
+    "traffic": "light",
+    "labels": 3
+   },
+   "vlm": {
+    "time_of_day": "night",
+    "rain": true,
+    "traffic": "light"
+   },
+   "seconds": 49.696752309799194
+  },
+  {
+   "frame_id": "7795_20251208_0805",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate",
+    "labels": 26
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 50.2055184841156
+  },
+  {
+   "frame_id": "5794_20251208_0805",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "light",
+    "labels": 9
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 49.5621337890625
+  },
+  {
+   "frame_id": "4706_20251210_0129",
+   "ref": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "light",
+    "labels": 2
+   },
+   "vlm": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 49.67746162414551
+  },
+  {
+   "frame_id": "1704_20251210_0129",
+   "ref": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "light",
+    "labels": 2
+   },
+   "vlm": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "light"
+   },
+   "seconds": 49.76885962486267
+  },
+  {
+   "frame_id": "1704_20251212_0528",
+   "ref": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "light",
+    "labels": 2
+   },
+   "vlm": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 50.71294188499451
+  },
+  {
+   "frame_id": "4708_20251215_0648",
+   "ref": {
+    "time_of_day": "night",
+    "rain": true,
+    "traffic": "light",
+    "labels": 9
+   },
+   "vlm": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 50.91779947280884
+  },
+  {
+   "frame_id": "6711_20260110_1041",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "light",
+    "labels": 8
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 49.57070803642273
+  },
+  {
+   "frame_id": "5795_20260110_1041",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "heavy",
+    "labels": 35
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 50.81191873550415
+  },
+  {
+   "frame_id": "4706_20260117_0612",
+   "ref": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "light",
+    "labels": 4
+   },
+   "vlm": {
+    "time_of_day": "night",
+    "rain": true,
+    "traffic": "moderate"
+   },
+   "seconds": 50.07682681083679
+  },
+  {
+   "frame_id": "7795_20260117_0612",
+   "ref": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "light",
+    "labels": 4
+   },
+   "vlm": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 50.84330749511719
+  },
+  {
+   "frame_id": "5799_20260118_1854",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "heavy",
+    "labels": 51
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 49.321648597717285
+  },
+  {
+   "frame_id": "9701_20260127_0340",
+   "ref": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "light",
+    "labels": 4
+   },
+   "vlm": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 49.43788242340088
+  },
+  {
+   "frame_id": "6716_20260206_1055",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate",
+    "labels": 20
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 50.7066535949707
+  },
+  {
+   "frame_id": "3795_20260207_1217",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "light",
+    "labels": 9
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 50.594104051589966
+  },
+  {
+   "frame_id": "3793_20260216_1805",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate",
+    "labels": 11
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 51.07414364814758
+  },
+  {
+   "frame_id": "3702_20260219_0846",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate",
+    "labels": 16
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 50.039109230041504
+  },
+  {
+   "frame_id": "5794_20260307_1152",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate",
+    "labels": 15
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 50.363730907440186
+  },
+  {
+   "frame_id": "1113_20260309_1322",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "light",
+    "labels": 7
+   },
+   "vlm": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 51.223731994628906
+  },
+  {
+   "frame_id": "4708_20260313_1012",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate",
+    "labels": 19
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 49.9997878074646
+  },
+  {
+   "frame_id": "3702_20260325_0559",
+   "ref": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate",
+    "labels": 11
+   },
+   "vlm": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 49.37450671195984
+  },
+  {
+   "frame_id": "3795_20260329_0313",
+   "ref": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "light",
+    "labels": 1
+   },
+   "vlm": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "light"
+   },
+   "seconds": 50.059165477752686
+  },
+  {
+   "frame_id": "5794_20260417_1517",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate",
+    "labels": 17
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 51.33854794502258
+  },
+  {
+   "frame_id": "7795_20260417_1517",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate",
+    "labels": 22
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 49.97735333442688
+  },
+  {
+   "frame_id": "3793_20260421_1936",
+   "ref": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "light",
+    "labels": 9
+   },
+   "vlm": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 49.40892171859741
+  },
+  {
+   "frame_id": "1113_20260427_2053",
+   "ref": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "light",
+    "labels": 7
+   },
+   "vlm": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 49.3471999168396
+  },
+  {
+   "frame_id": "5799_20260501_2333",
+   "ref": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate",
+    "labels": 11
+   },
+   "vlm": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "heavy"
+   },
+   "seconds": 49.90692377090454
+  },
+  {
+   "frame_id": "9701_20260502_0349",
+   "ref": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "light",
+    "labels": 6
+   },
+   "vlm": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 50.561254024505615
+  },
+  {
+   "frame_id": "6716_20260512_2021",
+   "ref": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate",
+    "labels": 19
+   },
+   "vlm": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 50.20854353904724
+  },
+  {
+   "frame_id": "4706_20260513_1127",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "light",
+    "labels": 10
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": true,
+    "traffic": "moderate"
+   },
+   "seconds": 51.109065771102905
+  },
+  {
+   "frame_id": "5795_20260514_0524",
+   "ref": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "light",
+    "labels": 4
+   },
+   "vlm": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 49.382264375686646
+  },
+  {
+   "frame_id": "6711_20260516_0728",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "light",
+    "labels": 6
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 49.319159746170044
+  },
+  {
+   "frame_id": "1704_20260516_0728",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "light",
+    "labels": 8
+   },
+   "vlm": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "light"
+   },
+   "seconds": 49.136637926101685
+  },
+  {
+   "frame_id": "7795_20260516_0728",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate",
+    "labels": 15
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 45.30333852767944
+  },
+  {
+   "frame_id": "9701_20260519_1924",
+   "ref": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "moderate",
+    "labels": 30
+   },
+   "vlm": {
+    "time_of_day": "night",
+    "rain": false,
+    "traffic": "heavy"
+   },
+   "seconds": 47.9058563709259
+  },
+  {
+   "frame_id": "5799_20260520_1257",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "heavy",
+    "labels": 47
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 47.25639319419861
+  },
+  {
+   "frame_id": "5795_20260520_1257",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "heavy",
+    "labels": 39
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 46.82873177528381
+  },
+  {
+   "frame_id": "4706_20260623_0747",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate",
+    "labels": 22
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "heavy"
+   },
+   "seconds": 49.800543546676636
+  },
+  {
+   "frame_id": "5794_20260623_0747",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "light",
+    "labels": 10
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 49.23698616027832
+  },
+  {
+   "frame_id": "3702_20260625_0953",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate",
+    "labels": 15
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 48.913583517074585
+  },
+  {
+   "frame_id": "3795_20260627_1244",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "light",
+    "labels": 8
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 51.398197650909424
+  },
+  {
+   "frame_id": "3793_20260629_0842",
+   "ref": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate",
+    "labels": 17
+   },
+   "vlm": {
+    "time_of_day": "day",
+    "rain": false,
+    "traffic": "moderate"
+   },
+   "seconds": 50.293566942214966
+  }
+ ]
+}

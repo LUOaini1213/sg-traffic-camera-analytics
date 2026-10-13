@@ -70,7 +70,8 @@ def replay(p: Producer, manifest: Path, images: Path, rate: float, limit: int | 
         p.poll(0)
         if rate > 0:
             time.sleep(1.0 / rate)
-    p.flush(30)
+    while p.flush(30) > 0:
+        print("waiting for broker to accept queued frames", flush=True)
     return n
 
 

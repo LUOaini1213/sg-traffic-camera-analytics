@@ -39,7 +39,7 @@ def ask(img_path: Path) -> tuple[dict, float]:
     buf = io.BytesIO()
     im.save(buf, "JPEG", quality=90)
     body = {"model": MODEL, "prompt": PROMPT, "images": [base64.b64encode(buf.getvalue()).decode()],
-            "stream": False, "format": "json", "options": {"temperature": 0}}
+            "stream": False, "format": "json", "options": {"temperature": 0, **({"num_gpu": int(os.environ["VLM_NUM_GPU"])} if "VLM_NUM_GPU" in os.environ else {})}}
     t0 = time.time()
     req = urllib.request.Request("http://localhost:11434/api/generate", data=json.dumps(body).encode(),
                                  headers={"Content-Type": "application/json"})
@@ -69,7 +69,8 @@ def main() -> None:
             got, secs = {"error": type(e).__name__}, None
         rows.append({"frame_id": fid, "ref": ref, "vlm": got, "seconds": secs})
         print(fid, ref, got, f"{secs:.1f}s" if secs else "", flush=True)
-    res = {"model": MODEL, "frames": len(rows), "fields": {}}
+    res = {"model": MODEL, "device": "cpu" if os.environ.get("VLM_NUM_GPU") == "0" else "gpu",
+           "frames": len(rows), "fields": {}}
     for k in ("time_of_day", "rain", "traffic"):
         pairs = [(r["ref"][k], r["vlm"].get(k)) for r in rows if r["ref"][k] is not None and k in r["vlm"]]
         res["fields"][k] = {"n": len(pairs), "accuracy": sum(a == b for a, b in pairs) / max(len(pairs), 1),

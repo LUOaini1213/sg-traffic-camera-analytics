@@ -7,6 +7,8 @@ from __future__ import annotations
 
 import json
 import os
+import time
+import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 
@@ -21,11 +23,22 @@ def _headers() -> dict:
     return {"AccountKey": key, "accept": "application/json", "User-Agent": UA}
 
 
-def get_json(endpoint: str, skip: int = 0, timeout: float = 30) -> list[dict]:
+def get_json(endpoint: str, skip: int = 0, timeout: float = 30, retries: int = 5) -> list[dict]:
+    """One DataMall page. Transient HTTP 5xx / network errors are retried with a short backoff."""
     url = f"{BASE}/{endpoint}" + (f"?$skip={skip}" if skip else "")
-    req = urllib.request.Request(url, headers=_headers())
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return json.load(r)["value"]
+    for attempt in range(retries + 1):
+        try:
+            req = urllib.request.Request(url, headers=_headers())
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return json.load(r)["value"]
+        except urllib.error.HTTPError as e:
+            if e.code < 500 or attempt == retries:
+                raise
+        except (urllib.error.URLError, TimeoutError):
+            if attempt == retries:
+                raise
+        time.sleep(2 * (attempt + 1))
+    raise RuntimeError("unreachable")
 
 
 def traffic_images() -> list[dict]:
@@ -37,7 +50,7 @@ def traffic_incidents() -> list[dict]:
     return get_json("TrafficIncidents")
 
 
-def speed_bands(workers: int = 8, page: int = 500) -> list[dict]:
+def speed_bands(workers: int = 3, page: int = 500) -> list[dict]:
     """All TrafficSpeedBands records (about 144k links, ~290 pages), fetched in parallel."""
     first = get_json("v4/TrafficSpeedBands")
     out = list(first)

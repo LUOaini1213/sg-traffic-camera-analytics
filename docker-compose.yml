@@ -1,9 +1,10 @@
-# Single-node Redpanda (Kafka API) for the streaming service. Host clients use localhost:39092.
+# Single-node Redpanda (Kafka API) for the streaming service. Host clients use 127.0.0.1:39092.
 name: tcam
 services:
   redpanda:
     image: redpandadata/redpanda:v25.3.17
     container_name: tcam-redpanda
+    restart: unless-stopped
     command:
       - redpanda
       - start
@@ -11,5 +12,5 @@ services:
       - --smp=1
       - --memory=1G
       - --kafka-addr=internal://0.0.0.0:9092,external://0.0.0.0:39092
-      - --advertise-kafka-addr=internal://redpanda:9092,external://localhost:39092
+      - --advertise-kafka-addr=internal://redpanda:9092,external://${TCAM_ADVERTISE_HOST:-127.0.0.1}:39092
     ports: ["39092:39092"]

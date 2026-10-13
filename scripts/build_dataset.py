@@ -14,6 +14,8 @@ import sys
 from collections import Counter
 from pathlib import Path
 
+from PIL import Image
+
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 from tcam.boxes import to_yolo  # noqa: E402
@@ -22,6 +24,7 @@ from tcam.labels import apply_review, edit_stats  # noqa: E402
 from tcam.split import camera_groups, split_cameras  # noqa: E402
 
 DATA = Path(os.environ.get("TCAM_DATA", "D:/sg-traffic-camera-data"))
+TRAIN_WIDTH = 1280
 LIVE_CAMERAS = {"2701", "2702", "2704", "4798", "4799"}  # deployed cameras stay in train
 
 
@@ -55,7 +58,13 @@ def main() -> None:
         part = split[r["camera"]]
         for sub in ("images", "labels"):
             (out / sub / part).mkdir(parents=True, exist_ok=True)
-        shutil.copy(DATA / "archive" / "images" / f"{fid}.jpg", out / "images" / part / f"{fid}.jpg")
+        # Training copies are resized to at most TRAIN_WIDTH px wide (labels are normalised, so
+        # unchanged); this halves JPEG decode cost on a CPU-bound laptop. Evaluation always
+        # reads these same copies, so all models see identical pixels.
+        im = Image.open(DATA / "archive" / "images" / f"{fid}.jpg").convert("RGB")
+        if im.size[0] > TRAIN_WIDTH:
+            im = im.resize((TRAIN_WIDTH, round(im.size[1] * TRAIN_WIDTH / im.size[0])), Image.LANCZOS)
+        im.save(out / "images" / part / f"{fid}.jpg", quality=95)
         shutil.copy(ROOT / "data" / "labels" / f"{fid}.txt", out / "labels" / part / f"{fid}.txt")
         stats["frames"][part] += 1
         stats["period"][part][r["period"]] += 1

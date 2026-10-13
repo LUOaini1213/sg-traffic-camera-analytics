@@ -35,7 +35,7 @@ def train_once(a, batch: int, name: str):
     model = YOLO(a.model)
     t0 = time.time()
     model.train(data=str(DATA / "yolo" / "dataset.yaml"), imgsz=a.imgsz, epochs=a.epochs, batch=batch,
-                workers=2, seed=a.seed, deterministic=False, project=str(DATA / "runs"), name=name, exist_ok=True,
+                workers=0, seed=a.seed, deterministic=False, project=str(DATA / "runs"), name=name, exist_ok=True,
                 plots=False, amp=False,  # fp16 is broken on this GTX 1650 (no detections)
                 cos_lr=True, close_mosaic=10, patience=0, verbose=False)
     return model, time.time() - t0

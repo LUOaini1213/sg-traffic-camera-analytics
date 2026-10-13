@@ -50,13 +50,15 @@ def predict(weights: str, imgsz: int, coco: bool, frames: list[str], split: str 
     return out
 
 
-def pre_as_predictions(frames: list[str]):
+def pre_as_predictions(frames: list[str], sizes: dict):
+    """Pre-annotation boxes (native resolution) rescaled to the evaluation image size."""
     out = {}
     for fid in frames:
         p = json.loads((ROOT / "data" / "pre" / f"{fid}.json").read_text())
-        b = np.array([x["xyxy"] for x in p["boxes"]]).reshape(-1, 4)
+        w, h = sizes[fid]
+        b = np.array([x["xyxy"] for x in p["boxes"]], float).reshape(-1, 4) * (w / p["width"])
         out[fid] = (b, np.array([x["conf"] for x in p["boxes"]]), np.array([x["cls"] for x in p["boxes"]], int),
-                    (p["width"], p["height"]))
+                    (w, h))
     return out
 
 
@@ -88,7 +90,7 @@ def score(preds, frames, gts, conf_count: float):
         gb, gc = gts[fid]
         agn.append(match_image(b[keep], s_[keep], np.zeros(len(keep), int), gb, [0] * len(gc), [0], iou_thr=0.5))
     ap_agn = per_class_ap(agn, [0])[0]
-    return matches50, {
+    return matches50, err, agn, {
         "mAP50": mean_ap(aps), "mAP50_95": float(np.mean(list(per_iou.values()))),
         "AP50": {NAMES[k]: v for k, v in aps.items()},
         f"precision@{conf_count}": p, f"recall@{conf_count}": r,
@@ -115,7 +117,7 @@ def main() -> None:
         w, h = Image.open(DATA / "yolo" / "images" / a.split / f"{fid}.jpg").size
         sizes[fid] = (w, h)
         gts[fid] = load_gt(fid, w, h)
-    models = {"pre-annotation (YOLO11x tiled)": pre_as_predictions(frames)}
+    models = {"pre-annotation (YOLO11x tiled)": pre_as_predictions(frames, sizes)}
     for spec in a.coco:
         w, sz = spec.rsplit(":", 1)
         models[f"coco-{Path(w).stem}@{sz}"] = predict(w, int(sz), True, frames, a.split)
@@ -127,9 +129,11 @@ def main() -> None:
     result = {"split": a.split, "frames": len(frames), "cameras": len({f.split("_")[0] for f in frames}),
               "labels": {NAMES[c]: sum(gc.count(c) for _, gc in gts.values()) for c in CLASSES},
               "models": {}, "bootstrap": {}}
-    allm = {}
+    allm, errs, agns = {}, {}, {}
     for name, preds in models.items():
-        ms, summary = score(preds, frames, gts, a.conf)
+        ms, err, agn, summary = score(preds, frames, gts, a.conf)
+        errs[name] = dict(zip(frames, err))
+        agns[name] = dict(zip(frames, agn))
         for per in ("day", "night"):
             sub = [ms[f] for f in frames if period[f] == per]
             summary[f"mAP50_{per}"] = mean_ap(per_class_ap(sub, CLASSES))
@@ -147,6 +151,21 @@ def main() -> None:
     for k, n in enumerate(names):
         result["bootstrap"][n] = {"mAP50_ci95": [float(np.nanpercentile(boot[:, k], 2.5)),
                                                  float(np.nanpercentile(boot[:, k], 97.5))]}
+    # camera-level bootstrap of count MAE and class-agnostic AP50
+    rng = np.random.default_rng(1)
+    cams = sorted(groups)
+    cam_frames = {c: [f for f in frames if f.split("_")[0] == c] for c in cams}
+    mae_b = np.zeros((a.boot, len(names)))
+    agn_b = np.zeros((a.boot, len(names)))
+    for bi in range(a.boot):
+        pick = [cams[i] for i in rng.integers(0, len(cams), len(cams))]
+        fs = [f for c in pick for f in cam_frames[c]]
+        for k, n in enumerate(names):
+            mae_b[bi, k] = np.mean([abs(errs[n][f]) for f in fs])
+            agn_b[bi, k] = per_class_ap([agns[n][f] for f in fs], [0])[0]
+    for k, n in enumerate(names):
+        result["bootstrap"][n]["count_mae_ci95"] = [float(np.percentile(mae_b[:, k], 2.5)), float(np.percentile(mae_b[:, k], 97.5))]
+        result["bootstrap"][n]["AP50_class_agnostic_ci95"] = [float(np.percentile(agn_b[:, k], 2.5)), float(np.percentile(agn_b[:, k], 97.5))]
     base = [n for n in names if n.startswith("coco-") and n.endswith("@1280")]
     if base:
         b = names.index(base[0])
@@ -156,6 +175,12 @@ def main() -> None:
                 result["bootstrap"][n]["delta_vs_" + base[0]] = {
                     "mean": float(np.nanmean(d)), "ci95": [float(np.nanpercentile(d, 2.5)), float(np.nanpercentile(d, 97.5))],
                     "share_of_resamples_above_0": float(np.mean(d > 0))}
+                dm = mae_b[:, k] - mae_b[:, b]
+                result["bootstrap"][n]["count_mae_delta_vs_" + base[0]] = {
+                    "mean": float(dm.mean()), "ci95": [float(np.percentile(dm, 2.5)), float(np.percentile(dm, 97.5))]}
+                da = agn_b[:, k] - agn_b[:, b]
+                result["bootstrap"][n]["AP50_class_agnostic_delta_vs_" + base[0]] = {
+                    "mean": float(da.mean()), "ci95": [float(np.percentile(da, 2.5)), float(np.percentile(da, 97.5))]}
     Path(ROOT / a.out).write_text(json.dumps(result, indent=1))
     print(json.dumps(result["bootstrap"], indent=1))
 
