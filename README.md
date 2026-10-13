@@ -19,7 +19,6 @@ Built on a laptop (GTX 1650 4 GB, Windows 11, WSL2 + Docker) between 2026-10-13 
 | Same, class-agnostic AP50 (is there a vehicle?) | 0.707 -> 0.824 | same |
 | Vehicle-count error per frame (MAE) | 5.78 -> 2.37 | same |
 | Streaming replay, 1,024 frames through Redpanda | 14.8 frames/s, 56 ms model time per frame | `results/stream_week_replay.json` |
-| Live run on the DataMall feed | see "Streaming service" | `results/stream_live.json` |
 | Counts vs LTA speed bands (archive week) | Spearman -0.78 on one camera, near zero on the others; flag/slow kappa 0.11 | `results/validation_week.json` |
 | Small local VLM as scene tagger (65 frames) | day/night 93.8% (majority 56.9%); rain and traffic level no better than guessing | `results/vlm_eval.json` |
 | Tests / planted bugs caught | 39 tests; 23/23 mutations caught | CI |
@@ -108,7 +107,7 @@ DataMall poller ──> tcam.frames (Redpanda, Kafka API) ──> detector (YOLO
 
 **Throughput (replay).** 1,024 archive frames through Redpanda in 69.1 s: **14.8 frames/s**, median model time 56 ms per 1280-px frame at batch 4. Another process's LLM server was using the same GPU during this run, so this is a lower bound for this laptop rather than a clean benchmark. The five live cameras together produce about one new frame per minute (each refreshes every few minutes), so the service runs far below capacity.
 
-LIVE_STREAM_SECTION
+**Live run.** In progress; results are added when the collection window closes.
 
 ## Model operations
 
@@ -116,7 +115,7 @@ LIVE_STREAM_SECTION
 - **Registry** (`scripts/register_model.py`): the three finished runs are versions 1-3 of `sg-traffic-vehicle-detector`, each with its held-out test metrics logged back to the run; version 2 carries the alias `champion` (`results/mlflow_registry.json`). The streaming detector loads the champion weights.
 - **Drift check** (`scripts/drift_check.py`): compares each live camera's count distribution in the live window with the archive week, using the population stability index (PSI, alert above 0.25) and the KS statistic, on all hours and on the hours both windows cover. It is logged as an MLflow monitoring run.
 
-DRIFT_SECTION
+
 
 ## Checking the flags against LTA speed bands and incidents
 
@@ -134,7 +133,7 @@ Rules fixed before any agreement number was computed (`src/tcam/validate.py`): a
 
 Pooled flag-versus-slow agreement is weak (kappa 0.11, precision 0.29, recall 0.61). The camera counts track the speed bands clearly on only one camera (2704, Spearman -0.78: more vehicles in view when the nearby expressway links are slower). The reasons are visible in the data rather than guessed: the links near 2702 are always band 1-2 (checkpoint service roads), the links near 2704/4798/4799 never drop to band 3 in this week, and the frames are 20 minutes apart, so a 3-frame median spans an hour. The flag thresholds were also calibrated on a period that included a weekend and scored on weekdays, which pushes the flag share up. Consecutive frames are autocorrelated, so these correlations should not be read with i.i.d. significance tests.
 
-LIVE_VALIDATION_SECTION
+**Live window.** In progress; results are added when the collection window closes.
 
 ## Vision-language model as a scene tagger
 
