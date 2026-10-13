@@ -1,0 +1,35 @@
+{
+ "frame_id": "9706_20260110_1041",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:01:37",
+ "remove": [
+  14,
+  19
+ ],
+ "relabel": {
+  "2": 0,
+  "20": 3
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    638.0,
+    128.0,
+    652.0,
+    155.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    885.0,
+    160.0,
+    900.0,
+    190.0
+   ]
+  }
+ ],
+ "notes": "14 duplicate of lorry 0; 19 is a street light; 2 is a van; 20 is a rider; two riders added"
+}

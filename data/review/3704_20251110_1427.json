@@ -1,0 +1,32 @@
+{
+ "frame_id": "3704_20251110_1427",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:54:38",
+ "remove": [
+  3,
+  12
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 2,
+   "xyxy": [
+    578.0,
+    300.0,
+    668.0,
+    382.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    718.0,
+    288.0,
+    772.0,
+    332.0
+   ]
+  }
+ ],
+ "notes": "partial duplicates of the tipper lorry removed; lorry and car on the far road added"
+}

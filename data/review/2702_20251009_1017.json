@@ -1,0 +1,22 @@
+{
+ "frame_id": "2702_20251009_1017",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:53:18",
+ "remove": [
+  16
+ ],
+ "relabel": {
+  "11": 1,
+  "13": 0
+ },
+ "adjust": {
+  "11": [
+   726,
+   677,
+   825,
+   789
+  ]
+ },
+ "add": [],
+ "notes": "rain at checkpoint; bus split into 11/16, merged; queue vehicles in rain haze largely unlabelled (frame under-counts)"
+}

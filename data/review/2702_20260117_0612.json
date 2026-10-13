@@ -1,0 +1,11 @@
+{
+ "frame_id": "2702_20260117_0612",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:02:56",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [],
+ "notes": "EXCLUDED: night checkpoint jam with several hundred vehicles seen only as headlights; labels cannot be made close to complete",
+ "exclude": true
+}

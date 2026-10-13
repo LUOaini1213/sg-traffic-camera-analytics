@@ -1,0 +1,19 @@
+{
+ "frame_id": "6706_20260118_1854",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:04:09",
+ "remove": [
+  6,
+  9,
+  12,
+  19,
+  29,
+  31
+ ],
+ "relabel": {
+  "21": 2
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "partial duplicates (6,9,12,19,29,31) removed; 21 is a small box lorry, not a bus"
+}

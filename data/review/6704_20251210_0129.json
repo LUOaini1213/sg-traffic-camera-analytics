@@ -1,0 +1,19 @@
+{
+ "frame_id": "6704_20251210_0129",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:59:09",
+ "remove": [
+  3
+ ],
+ "relabel": {},
+ "adjust": {
+  "1": [
+   816,
+   336,
+   926,
+   407
+  ]
+ },
+ "add": [],
+ "notes": "night; blurred car boxed twice, merged"
+}

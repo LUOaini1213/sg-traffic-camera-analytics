@@ -1,0 +1,10 @@
+{
+ "frame_id": "3797_20250706_0606",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:32:13",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [],
+ "notes": "night; far-field vehicles below 10 px not labelled; box 6 at left edge is ambiguous (partly visible object on service road), kept"
+}

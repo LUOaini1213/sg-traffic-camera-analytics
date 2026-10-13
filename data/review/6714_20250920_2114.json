@@ -1,0 +1,12 @@
+{
+ "frame_id": "6714_20250920_2114",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:46:22",
+ "remove": [
+  5
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [],
+ "notes": "5 is a road stud/manhole at the bottom edge, not a vehicle"
+}

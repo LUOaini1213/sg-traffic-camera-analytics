@@ -1,0 +1,29 @@
+{
+ "frame_id": "2708_20260122_2009",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:06:17",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 2,
+   "xyxy": [
+    935.0,
+    485.0,
+    1100.0,
+    665.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    905.0,
+    755.0,
+    1105.0,
+    1000.0
+   ]
+  }
+ ],
+ "notes": "night; two motion-blurred box lorries missed by the teacher added"
+}

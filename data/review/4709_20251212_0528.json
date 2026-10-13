@@ -1,0 +1,29 @@
+{
+ "frame_id": "4709_20251212_0528",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:00:10",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    1245.0,
+    322.0,
+    1300.0,
+    392.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    1330.0,
+    280.0,
+    1386.0,
+    362.0
+   ]
+  }
+ ],
+ "notes": "night with haze; teacher found nothing; car and lorry in headlights added; far vehicles not separable"
+}

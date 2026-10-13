@@ -1,0 +1,31 @@
+{
+ "frame_id": "6705_20251212_0528",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:00:10",
+ "remove": [],
+ "relabel": {
+  "1": 1
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    938.0,
+    320.0,
+    1002.0,
+    362.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    1203.0,
+    463.0,
+    1226.0,
+    502.0
+   ]
+  }
+ ],
+ "notes": "night; 1 is a bus (tall lit body); car and rider added"
+}

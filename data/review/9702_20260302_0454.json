@@ -1,0 +1,10 @@
+{
+ "frame_id": "9702_20260302_0454",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:09:19",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [],
+ "notes": "night; far vehicles in glare left as pre-annotated"
+}

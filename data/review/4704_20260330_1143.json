@@ -1,0 +1,15 @@
+{
+ "frame_id": "4704_20260330_1143",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:12:21",
+ "remove": [
+  8
+ ],
+ "relabel": {
+  "1": 0,
+  "2": 0
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "8 partial duplicate; 1 is a pickup with canopy and 2 a van (both car under this scheme)"
+}

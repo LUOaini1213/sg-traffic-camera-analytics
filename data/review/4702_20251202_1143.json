@@ -1,0 +1,56 @@
+{
+ "frame_id": "4702_20251202_1143",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:56:32",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 2,
+   "xyxy": [
+    328.0,
+    195.0,
+    386.0,
+    275.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    395.0,
+    138.0,
+    440.0,
+    196.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    420.0,
+    265.0,
+    470.0,
+    302.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    598.0,
+    168.0,
+    636.0,
+    242.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    645.0,
+    128.0,
+    670.0,
+    160.0
+   ]
+  }
+ ],
+ "notes": "rain haze; teacher found one car; two lorries, a van-type lorry and two cars added"
+}

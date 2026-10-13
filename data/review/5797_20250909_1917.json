@@ -1,0 +1,44 @@
+{
+ "frame_id": "5797_20250909_1917",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:45:11",
+ "remove": [
+  16,
+  23,
+  24
+ ],
+ "relabel": {
+  "21": 2
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    862.0,
+    950.0,
+    1120.0,
+    1080.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1100.0,
+    585.0,
+    1322.0,
+    722.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1785.0,
+    710.0,
+    1920.0,
+    862.0
+   ]
+  }
+ ],
+ "notes": "dusk with blur; three large blurred cars missed by the teacher added; contained duplicates removed; 21 is a box lorry"
+}

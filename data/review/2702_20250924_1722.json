@@ -1,0 +1,11 @@
+{
+ "frame_id": "2702_20250924_1722",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:02:56",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [],
+ "notes": "EXCLUDED: checkpoint crowd of several hundred motorcycles and queued cars; labels cannot be made close to complete, so the frame is left out of training and evaluation",
+ "exclude": true
+}

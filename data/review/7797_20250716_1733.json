@@ -1,0 +1,49 @@
+{
+ "frame_id": "7797_20250716_1733",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:37:39",
+ "remove": [],
+ "relabel": {
+  "4": 0
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    712.0,
+    316.0,
+    726.0,
+    337.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    909.0,
+    343.0,
+    924.0,
+    368.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    961.0,
+    264.0,
+    979.0,
+    286.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1338.0,
+    400.0,
+    1372.0,
+    428.0
+   ]
+  }
+ ],
+ "notes": "4 hatchback; two riders, a distant lorry and a car on the service road added"
+}

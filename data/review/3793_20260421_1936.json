@@ -1,0 +1,32 @@
+{
+ "frame_id": "3793_20260421_1936",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:59:44",
+ "remove": [
+  6
+ ],
+ "relabel": {
+  "2": 0,
+  "3": 0
+ },
+ "adjust": {
+  "5": [
+   615,
+   660,
+   737,
+   793
+  ]
+ },
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    1040.0,
+    985.0,
+    1230.0,
+    1080.0
+   ]
+  }
+ ],
+ "notes": "night with blur; car boxed twice (5,6) merged; 2 and 3 are cars; second blurred car at the bottom added (4 was a sliver of it)"
+}

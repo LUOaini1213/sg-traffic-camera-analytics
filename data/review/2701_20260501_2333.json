@@ -1,0 +1,83 @@
+{
+ "frame_id": "2701_20260501_2333",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:14:22",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    1140.0,
+    790.0,
+    1185.0,
+    818.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1388.0,
+    650.0,
+    1430.0,
+    675.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1600.0,
+    520.0,
+    1650.0,
+    548.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1700.0,
+    475.0,
+    1740.0,
+    495.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1730.0,
+    490.0,
+    1775.0,
+    510.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    1015.0,
+    745.0,
+    1040.0,
+    765.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    1475.0,
+    512.0,
+    1490.0,
+    530.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    640.0,
+    900.0,
+    760.0,
+    960.0
+   ]
+  }
+ ],
+ "notes": "night causeway: five cars, two riders and a lorry added; many far motorcycle lights not separable"
+}

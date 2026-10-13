@@ -1,0 +1,16 @@
+{
+ "frame_id": "5797_20251004_1709",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:50:42",
+ "remove": [
+  11,
+  19,
+  28
+ ],
+ "relabel": {
+  "37": 2
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "partial duplicates removed; 37 is a lorry with yellow load"
+}

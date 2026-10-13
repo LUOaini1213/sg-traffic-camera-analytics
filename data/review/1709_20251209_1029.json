@@ -1,0 +1,16 @@
+{
+ "frame_id": "1709_20251209_1029",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:58:46",
+ "remove": [
+  20,
+  26
+ ],
+ "relabel": {
+  "16": 0,
+  "21": 0
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "20/26 partial duplicates; 16 and 21 are vans"
+}

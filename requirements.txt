@@ -1,0 +1,9 @@
+# Runtime (training, streaming, tracking). Tested with Python 3.11, torch 2.7.1+cu126.
+numpy
+pillow
+ultralytics
+mlflow
+confluent-kafka
+fastapi
+uvicorn
+pytest

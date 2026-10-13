@@ -1,0 +1,56 @@
+{
+ "frame_id": "6701_20260512_2021",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:15:19",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    880.0,
+    375.0,
+    950.0,
+    420.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1460.0,
+    405.0,
+    1540.0,
+    460.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    440.0,
+    1000.0,
+    560.0,
+    1080.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    830.0,
+    215.0,
+    870.0,
+    245.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    425.0,
+    425.0,
+    475.0,
+    450.0
+   ]
+  }
+ ],
+ "notes": "night haze; five cars marked from head/tail lights (approximate)"
+}

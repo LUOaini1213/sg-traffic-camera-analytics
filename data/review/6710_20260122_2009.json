@@ -1,0 +1,51 @@
+{
+ "frame_id": "6710_20260122_2009",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:05:41",
+ "remove": [
+  5
+ ],
+ "relabel": {
+  "2": 0
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 2,
+   "xyxy": [
+    120.0,
+    270.0,
+    440.0,
+    440.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    610.0,
+    190.0,
+    780.0,
+    265.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1515.0,
+    215.0,
+    1555.0,
+    262.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1600.0,
+    205.0,
+    1700.0,
+    285.0
+   ]
+  }
+ ],
+ "notes": "night with blur: 5 spans several cars, replaced with two car boxes; 2 is a van; blurred lorry on the left and a lorry behind van 2 added"
+}

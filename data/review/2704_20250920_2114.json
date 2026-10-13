@@ -1,0 +1,50 @@
+{
+ "frame_id": "2704_20250920_2114",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:46:22",
+ "remove": [
+  4,
+  7
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    940.0,
+    445.0,
+    960.0,
+    475.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    895.0,
+    390.0,
+    912.0,
+    415.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    72.0,
+    742.0,
+    100.0,
+    800.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    245.0,
+    635.0,
+    300.0,
+    680.0
+   ]
+  }
+ ],
+ "notes": "night; three riders and a car on the left road added; contained duplicates removed"
+}

@@ -1,0 +1,29 @@
+{
+ "frame_id": "9701_20260502_0349",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:01:05",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    818.0,
+    238.0,
+    836.0,
+    268.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    800.0,
+    100.0,
+    825.0,
+    115.0
+   ]
+  }
+ ],
+ "notes": "night; rider and a far car added; dark car at the right edge cut off and blurred, not labelled"
+}

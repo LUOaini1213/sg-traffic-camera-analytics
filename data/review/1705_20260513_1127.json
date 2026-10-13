@@ -1,0 +1,42 @@
+{
+ "frame_id": "1705_20260513_1127",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:15:36",
+ "remove": [
+  15
+ ],
+ "relabel": {
+  "3": 0
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    1165.0,
+    145.0,
+    1205.0,
+    170.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1170.0,
+    110.0,
+    1200.0,
+    132.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1225.0,
+    90.0,
+    1260.0,
+    115.0
+   ]
+  }
+ ],
+ "notes": "rain: 15 is the windscreen of tipper lorry 9; 3 is a light van/pickup (car under this scheme); three cars in the far spray added"
+}

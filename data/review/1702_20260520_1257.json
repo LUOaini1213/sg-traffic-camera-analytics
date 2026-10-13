@@ -1,0 +1,44 @@
+{
+ "frame_id": "1702_20260520_1257",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:19:14",
+ "remove": [
+  18
+ ],
+ "relabel": {
+  "11": 0,
+  "27": 0,
+  "21": 0
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    450.0,
+    405.0,
+    492.0,
+    440.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    355.0,
+    580.0,
+    428.0,
+    660.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    760.0,
+    345.0,
+    775.0,
+    362.0
+   ]
+  }
+ ],
+ "notes": "haze/backlight: 11 is a car (18 its duplicate); 27 and 21 are vans; two dark cars and a rider missed by the teacher added"
+}

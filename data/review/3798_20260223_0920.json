@@ -1,0 +1,15 @@
+{
+ "frame_id": "3798_20260223_0920",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:09:03",
+ "remove": [
+  6
+ ],
+ "relabel": {
+  "12": 0,
+  "15": 1
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "6 duplicate; 12 is a white car; 15 is a bus on the ramp"
+}

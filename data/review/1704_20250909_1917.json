@@ -1,0 +1,38 @@
+{
+ "frame_id": "1704_20250909_1917",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:35:25",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    1133.0,
+    338.0,
+    1197.0,
+    377.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    1243.0,
+    322.0,
+    1322.0,
+    392.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1240.0,
+    268.0,
+    1290.0,
+    297.0
+   ]
+  }
+ ],
+ "notes": "dusk glare; three vehicles in headlight glare added (positions approximate)"
+}

@@ -1,0 +1,38 @@
+{
+ "frame_id": "1706_20260521_0055",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:19:39",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    1460.0,
+    540.0,
+    1620.0,
+    640.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    520.0,
+    210.0,
+    545.0,
+    222.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    550.0,
+    212.0,
+    575.0,
+    225.0
+   ]
+  }
+ ],
+ "notes": "night rain: blurred car on the right carriageway and two far cars added"
+}

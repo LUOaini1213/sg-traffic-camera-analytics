@@ -1,0 +1,66 @@
+{
+ "frame_id": "7798_20260623_0747",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:19:59",
+ "remove": [
+  3,
+  15,
+  20
+ ],
+ "relabel": {
+  "17": 3,
+  "0": 0,
+  "5": 0,
+  "13": 0,
+  "21": 3
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    548.0,
+    165.0,
+    560.0,
+    182.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    605.0,
+    190.0,
+    618.0,
+    208.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    1075.0,
+    210.0,
+    1088.0,
+    230.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    1490.0,
+    232.0,
+    1502.0,
+    248.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    1540.0,
+    285.0,
+    1552.0,
+    302.0
+   ]
+  }
+ ],
+ "notes": "17 is a motorcyclist (20 its duplicate), 21 a motorcycle; car 1 boxed three times (3,15 removed); 0, 5 and 13 are vans; five riders added"
+}

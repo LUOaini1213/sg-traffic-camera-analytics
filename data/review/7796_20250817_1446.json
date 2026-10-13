@@ -1,0 +1,13 @@
+{
+ "frame_id": "7796_20250817_1446",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:40:42",
+ "remove": [],
+ "relabel": {
+  "6": 0,
+  "9": 0
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "6 and 9 are vans; two buses at the stop are separate vehicles"
+}

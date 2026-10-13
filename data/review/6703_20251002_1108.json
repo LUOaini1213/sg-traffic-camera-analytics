@@ -1,0 +1,17 @@
+{
+ "frame_id": "6703_20251002_1108",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:49:22",
+ "remove": [
+  8,
+  22,
+  24,
+  25
+ ],
+ "relabel": {
+  "14": 0
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "24 is an excavator on a site; 8/22/25 partial duplicates; 14 is a van"
+}

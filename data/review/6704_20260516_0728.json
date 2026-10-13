@@ -1,0 +1,22 @@
+{
+ "frame_id": "6704_20260516_0728",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:16:10",
+ "remove": [],
+ "relabel": {
+  "6": 1
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    555.0,
+    245.0,
+    570.0,
+    265.0
+   ]
+  }
+ ],
+ "notes": "6 is a bus; rider added"
+}

@@ -1,0 +1,29 @@
+{
+ "frame_id": "2708_20250819_0222",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:40:42",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    668.0,
+    133.0,
+    692.0,
+    157.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    735.0,
+    207.0,
+    752.0,
+    228.0
+   ]
+  }
+ ],
+ "notes": "night; distant car and rider added"
+}

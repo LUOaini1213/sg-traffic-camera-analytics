@@ -1,0 +1,47 @@
+{
+ "frame_id": "7797_20260514_0524",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:15:36",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    1420.0,
+    815.0,
+    1530.0,
+    920.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    770.0,
+    170.0,
+    830.0,
+    195.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    960.0,
+    275.0,
+    980.0,
+    295.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    990.0,
+    185.0,
+    1005.0,
+    198.0
+   ]
+  }
+ ],
+ "notes": "night: motion-blurred car on the right, a lit lorry/van far left and two far cars added (approximate)"
+}

@@ -1,0 +1,15 @@
+{
+ "frame_id": "7794_20250912_1834",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:45:59",
+ "remove": [
+  2,
+  11,
+  15,
+  23
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [],
+ "notes": "15 is a crash cushion; 23 a sign; contained duplicates removed"
+}

@@ -1,0 +1,38 @@
+{
+ "frame_id": "2706_20260419_0001",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:13:36",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    960.0,
+    860.0,
+    1020.0,
+    900.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1740.0,
+    1005.0,
+    1830.0,
+    1060.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1370.0,
+    890.0,
+    1400.0,
+    915.0
+   ]
+  }
+ ],
+ "notes": "night (greyscale IR); three cars from lights/shape added; distant headlights not separable"
+}

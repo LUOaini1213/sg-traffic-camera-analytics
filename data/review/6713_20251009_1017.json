@@ -1,0 +1,18 @@
+{
+ "frame_id": "6713_20251009_1017",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:53:18",
+ "remove": [
+  6,
+  7,
+  8
+ ],
+ "relabel": {
+  "0": 0,
+  "2": 0,
+  "3": 0
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "6/7/8 are chevron road markings; 0, 2 and 3 are vans"
+}

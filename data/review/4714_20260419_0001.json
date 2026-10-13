@@ -1,0 +1,22 @@
+{
+ "frame_id": "4714_20260419_0001",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:13:07",
+ "remove": [
+  4
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    1062.0,
+    262.0,
+    1078.0,
+    285.0
+   ]
+  }
+ ],
+ "notes": "night; 4 inner duplicate of van 1; rider added"
+}

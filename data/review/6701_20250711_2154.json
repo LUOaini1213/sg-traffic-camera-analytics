@@ -1,0 +1,38 @@
+{
+ "frame_id": "6701_20250711_2154",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:37:39",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 2,
+   "xyxy": [
+    1630.0,
+    420.0,
+    1862.0,
+    617.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    975.0,
+    325.0,
+    1025.0,
+    370.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    858.0,
+    355.0,
+    900.0,
+    400.0
+   ]
+  }
+ ],
+ "notes": "night; blurred lorry on the right road and two cars in the middle added; far cars in glare left"
+}

@@ -1,0 +1,38 @@
+{
+ "frame_id": "8704_20251016_0645",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:54:38",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    320.0,
+    126.0,
+    334.0,
+    149.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1488.0,
+    688.0,
+    1732.0,
+    880.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1228.0,
+    512.0,
+    1302.0,
+    560.0
+   ]
+  }
+ ],
+ "notes": "rider, a motion-blurred car and a car on the far road added"
+}

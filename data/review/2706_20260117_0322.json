@@ -1,0 +1,56 @@
+{
+ "frame_id": "2706_20260117_0322",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:02:08",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 2,
+   "xyxy": [
+    1160.0,
+    762.0,
+    1205.0,
+    800.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    1270.0,
+    825.0,
+    1360.0,
+    880.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1330.0,
+    915.0,
+    1395.0,
+    950.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1505.0,
+    885.0,
+    1590.0,
+    955.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    935.0,
+    715.0,
+    965.0,
+    735.0
+   ]
+  }
+ ],
+ "notes": "night in fog; two lorries and three cars added from lights and shapes (approximate)"
+}

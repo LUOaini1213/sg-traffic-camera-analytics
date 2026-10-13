@@ -1,0 +1,16 @@
+{
+ "frame_id": "2707_20260629_0842",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:20:56",
+ "remove": [
+  11,
+  25,
+  33,
+  37,
+  38
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [],
+ "notes": "inner duplicates removed (11,25,33,38); 37 is a rider part already covered by the riders near car 2; 1 is a double-decker bus"
+}

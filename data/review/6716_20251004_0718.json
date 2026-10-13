@@ -1,0 +1,93 @@
+{
+ "frame_id": "6716_20251004_0718",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:36:54",
+ "remove": [
+  8
+ ],
+ "relabel": {
+  "0": 0,
+  "5": 0,
+  "12": 1,
+  "7": 0,
+  "13": 0,
+  "3": 0,
+  "6": 0
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    1488.0,
+    488.0,
+    1600.0,
+    580.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1629.0,
+    533.0,
+    1717.0,
+    600.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    1643.0,
+    595.0,
+    1680.0,
+    643.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1776.0,
+    605.0,
+    1875.0,
+    701.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1760.0,
+    669.0,
+    1821.0,
+    750.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1883.0,
+    541.0,
+    1920.0,
+    611.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1661.0,
+    429.0,
+    1696.0,
+    456.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    1078.0,
+    618.0,
+    1107.0,
+    672.0
+   ]
+  }
+ ],
+ "notes": "low sun haze: teacher called most white cars/vans trucks; 12 is a bus; seven vehicles in the haze on the right and one rider added"
+}

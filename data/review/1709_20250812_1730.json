@@ -1,0 +1,13 @@
+{
+ "frame_id": "1709_20250812_1730",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:38:49",
+ "remove": [
+  22,
+  25
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [],
+ "notes": "25 is a chevron sign; 22 duplicate"
+}

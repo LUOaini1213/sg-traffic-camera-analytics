@@ -1,0 +1,14 @@
+{
+ "frame_id": "2703_20260513_1127",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:15:36",
+ "remove": [
+  20
+ ],
+ "relabel": {
+  "11": 0
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "rain; 20 inner duplicate of 14; 11 is a van; rider 16 and 18 kept"
+}

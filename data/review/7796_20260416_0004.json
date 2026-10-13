@@ -1,0 +1,47 @@
+{
+ "frame_id": "7796_20260416_0004",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:12:47",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    1755.0,
+    550.0,
+    1905.0,
+    650.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1065.0,
+    190.0,
+    1100.0,
+    215.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1180.0,
+    75.0,
+    1215.0,
+    95.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1225.0,
+    75.0,
+    1255.0,
+    92.0
+   ]
+  }
+ ],
+ "notes": "night; car on the right road (blurred, lit) and three far cars with headlights added"
+}

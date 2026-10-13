@@ -1,0 +1,12 @@
+{
+ "frame_id": "4710_20251209_1029",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:58:06",
+ "remove": [
+  6
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [],
+ "notes": "6 duplicate box of the container lorry"
+}

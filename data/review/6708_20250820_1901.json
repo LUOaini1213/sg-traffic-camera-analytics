@@ -1,0 +1,47 @@
+{
+ "frame_id": "6708_20250820_1901",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:41:26",
+ "remove": [
+  9
+ ],
+ "relabel": {},
+ "adjust": {
+  "6": [
+   1340,
+   350,
+   1612,
+   519
+  ]
+ },
+ "add": [
+  {
+   "cls": 2,
+   "xyxy": [
+    188.0,
+    728.0,
+    552.0,
+    1080.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    548.0,
+    90.0,
+    564.0,
+    114.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    316.0,
+    56.0,
+    330.0,
+    77.0
+   ]
+  }
+ ],
+ "notes": "large lorry at the bottom edge missed by the teacher; 6 extended over its container; 9 duplicate; two riders added"
+}

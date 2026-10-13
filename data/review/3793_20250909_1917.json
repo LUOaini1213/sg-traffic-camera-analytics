@@ -1,0 +1,20 @@
+{
+ "frame_id": "3793_20250909_1917",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:35:36",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 2,
+   "xyxy": [
+    738.0,
+    593.0,
+    982.0,
+    897.0
+   ]
+  }
+ ],
+ "notes": "motion-blurred cement tanker missed by the teacher, added"
+}

@@ -1,0 +1,20 @@
+{
+ "frame_id": "3795_20250904_0743",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:35:10",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    700.0,
+    525.0,
+    765.0,
+    565.0
+   ]
+  }
+ ],
+ "notes": "car partly behind foliage added"
+}

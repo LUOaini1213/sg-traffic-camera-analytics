@@ -1,0 +1,38 @@
+{
+ "frame_id": "9704_20260419_0001",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:13:07",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 2,
+   "xyxy": [
+    935.0,
+    400.0,
+    1045.0,
+    480.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    800.0,
+    600.0,
+    930.0,
+    700.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    1170.0,
+    355.0,
+    1195.0,
+    385.0
+   ]
+  }
+ ],
+ "notes": "night with motion blur: tow/flatbed lorry, a blurred car and a rider on the other carriageway added"
+}

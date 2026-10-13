@@ -1,0 +1,31 @@
+{
+ "frame_id": "6711_20260516_0728",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:04:48",
+ "remove": [],
+ "relabel": {
+  "1": 0
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    962.0,
+    140.0,
+    990.0,
+    165.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    880.0,
+    55.0,
+    898.0,
+    72.0
+   ]
+  }
+ ],
+ "notes": "1 is a yellow taxi (car), not a truck; two far cars added"
+}

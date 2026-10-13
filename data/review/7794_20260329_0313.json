@@ -1,0 +1,47 @@
+{
+ "frame_id": "7794_20260329_0313",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:11:57",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    1105.0,
+    118.0,
+    1135.0,
+    140.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1075.0,
+    180.0,
+    1115.0,
+    215.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    825.0,
+    152.0,
+    875.0,
+    172.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    608.0,
+    312.0,
+    642.0,
+    332.0
+   ]
+  }
+ ],
+ "notes": "night; teacher found nothing; four cars from head/tail lights added"
+}

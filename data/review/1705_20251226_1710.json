@@ -1,0 +1,15 @@
+{
+ "frame_id": "1705_20251226_1710",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:01:05",
+ "remove": [
+  21,
+  34
+ ],
+ "relabel": {
+  "5": 0
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "34 is a huge false box over the roadside barrier; 21 duplicate; 5 is a van"
+}

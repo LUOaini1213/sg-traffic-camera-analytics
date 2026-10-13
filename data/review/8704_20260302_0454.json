@@ -1,0 +1,29 @@
+{
+ "frame_id": "8704_20260302_0454",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:09:19",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    145.0,
+    215.0,
+    165.0,
+    255.0
+   ]
+  },
+  {
+   "cls": 1,
+   "xyxy": [
+    302.0,
+    40.0,
+    332.0,
+    68.0
+   ]
+  }
+ ],
+ "notes": "night; rider and a bus at the far end added"
+}

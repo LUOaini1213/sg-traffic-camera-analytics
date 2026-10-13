@@ -1,0 +1,63 @@
+{
+ "frame_id": "6716_20260512_2021",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:02:08",
+ "remove": [
+  3
+ ],
+ "relabel": {
+  "1": 0,
+  "13": 0,
+  "9": 0,
+  "4": 2
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 2,
+   "xyxy": [
+    1325.0,
+    340.0,
+    1400.0,
+    450.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    1620.0,
+    445.0,
+    1760.0,
+    560.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    990.0,
+    355.0,
+    1060.0,
+    420.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1010.0,
+    395.0,
+    1080.0,
+    440.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1760.0,
+    610.0,
+    1840.0,
+    690.0
+   ]
+  }
+ ],
+ "notes": "night; 3 spans two vehicles (8 kept); 1 and 13 are vans, 9 an MPV; 4 is a lorry with yellow load; a lorry on the far road, a container trailer, two blurred cars on the middle road and a car at the right added (positions approximate)"
+}

@@ -1,0 +1,12 @@
+{
+ "frame_id": "9706_20251002_1108",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:49:22",
+ "remove": [],
+ "relabel": {
+  "1": 0
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "1 is a van"
+}

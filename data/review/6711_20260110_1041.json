@@ -1,0 +1,15 @@
+{
+ "frame_id": "6711_20260110_1041",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:48:09",
+ "remove": [
+  3,
+  6
+ ],
+ "relabel": {
+  "4": 0
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "4 is an SUV (car), 3 a partial duplicate; 6 is the rear of lorry 8"
+}

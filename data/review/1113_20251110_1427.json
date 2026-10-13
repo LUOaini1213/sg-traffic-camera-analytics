@@ -1,0 +1,56 @@
+{
+ "frame_id": "1113_20251110_1427",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:39:30",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 2,
+   "xyxy": [
+    683.0,
+    193.0,
+    760.0,
+    277.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    738.0,
+    153.0,
+    772.0,
+    182.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    779.0,
+    163.0,
+    811.0,
+    191.0
+   ]
+  },
+  {
+   "cls": 1,
+   "xyxy": [
+    1118.0,
+    123.0,
+    1212.0,
+    167.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    178.0,
+    310.0,
+    224.0,
+    342.0
+   ]
+  }
+ ],
+ "notes": "teacher found nothing; lorry with crane, two lorries, a coach and a pickup added"
+}

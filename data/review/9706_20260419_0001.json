@@ -1,0 +1,20 @@
+{
+ "frame_id": "9706_20260419_0001",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:13:07",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    145.0,
+    712.0,
+    240.0,
+    812.0
+   ]
+  }
+ ],
+ "notes": "night; blurred rider added"
+}

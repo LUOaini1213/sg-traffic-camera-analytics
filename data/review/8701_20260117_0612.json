@@ -1,0 +1,38 @@
+{
+ "frame_id": "8701_20260117_0612",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:03:12",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    540.0,
+    305.0,
+    588.0,
+    358.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    505.0,
+    248.0,
+    530.0,
+    265.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    548.0,
+    250.0,
+    570.0,
+    262.0
+   ]
+  }
+ ],
+ "notes": "pre-dawn; three cars with lights added"
+}

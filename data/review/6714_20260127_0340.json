@@ -1,0 +1,47 @@
+{
+ "frame_id": "6714_20260127_0340",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:07:21",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 2,
+   "xyxy": [
+    385.0,
+    838.0,
+    722.0,
+    1080.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1040.0,
+    1018.0,
+    1140.0,
+    1080.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    838.0,
+    152.0,
+    862.0,
+    168.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    872.0,
+    130.0,
+    895.0,
+    148.0
+   ]
+  }
+ ],
+ "notes": "night; box lorry and a yellow-top car at the bottom edge missed by the teacher; two far cars added"
+}

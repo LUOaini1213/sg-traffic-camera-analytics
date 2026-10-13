@@ -1,0 +1,23 @@
+{
+ "frame_id": "8706_20260206_1055",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:07:21",
+ "remove": [],
+ "relabel": {
+  "0": 0,
+  "6": 0
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    780.0,
+    282.0,
+    808.0,
+    302.0
+   ]
+  }
+ ],
+ "notes": "0 and 6 are vans; car behind lorry 0 added"
+}

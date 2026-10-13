@@ -1,0 +1,31 @@
+{
+ "frame_id": "8706_20260313_1012",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:10:40",
+ "remove": [
+  3
+ ],
+ "relabel": {
+  "5": 2
+ },
+ "adjust": {
+  "5": [
+   1395,
+   735,
+   1690,
+   1037
+  ]
+ },
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    766.0,
+    252.0,
+    782.0,
+    276.0
+   ]
+  }
+ ],
+ "notes": "5 was only the cab of a flatbed trailer lorry: one truck box over cab and trailer; 3 duplicate; rider added"
+}

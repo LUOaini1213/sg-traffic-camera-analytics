@@ -1,0 +1,59 @@
+{
+ "edits": {
+  "pre_boxes": 4888,
+  "removed": 442,
+  "relabelled": 302,
+  "adjusted": 22,
+  "added": 519
+ },
+ "boxes": {
+  "train": {
+   "car": 2630,
+   "motorcycle": 192,
+   "truck": 486,
+   "bus": 55
+  },
+  "val": {
+   "car": 544,
+   "truck": 65,
+   "motorcycle": 16,
+   "bus": 9
+  },
+  "test": {
+   "truck": 131,
+   "car": 777,
+   "motorcycle": 42,
+   "bus": 18
+  }
+ },
+ "frames": {
+  "train": 235,
+  "val": 30,
+  "test": 65
+ },
+ "cameras": {
+  "test": 14,
+  "train": 54,
+  "val": 7
+ },
+ "period": {
+  "train": {
+   "night": 107,
+   "day": 128
+  },
+  "val": {
+   "night": 15,
+   "day": 15
+  },
+  "test": {
+   "night": 28,
+   "day": 37
+  }
+ },
+ "camera_groups": 65,
+ "excluded_by_reviewer": [
+  "2702_20250924_1722",
+  "2702_20260117_0612",
+  "2702_20260516_0728"
+ ]
+}

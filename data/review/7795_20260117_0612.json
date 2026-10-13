@@ -1,0 +1,47 @@
+{
+ "frame_id": "7795_20260117_0612",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:49:22",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    840.0,
+    580.0,
+    915.0,
+    650.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1300.0,
+    615.0,
+    1390.0,
+    690.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    480.0,
+    700.0,
+    680.0,
+    900.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    1300.0,
+    940.0,
+    1440.0,
+    1080.0
+   ]
+  }
+ ],
+ "notes": "dark, rain-hazed night; teacher found nothing; three cars (headlights/blur) and a lorry at the bottom edge added, positions approximate"
+}

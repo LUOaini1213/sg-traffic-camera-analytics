@@ -1,0 +1,15 @@
+{
+ "frame_id": "7794_20260219_0846",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:08:41",
+ "remove": [
+  7,
+  9
+ ],
+ "relabel": {
+  "4": 1
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "7 duplicate of lorry 3; 9 is a crash cushion at the gore; 4 is a bus"
+}

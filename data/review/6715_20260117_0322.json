@@ -1,0 +1,36 @@
+{
+ "frame_id": "6715_20260117_0322",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:01:37",
+ "remove": [],
+ "relabel": {},
+ "adjust": {
+  "0": [
+   802,
+   705,
+   1000,
+   1080
+  ]
+ },
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    612.0,
+    200.0,
+    645.0,
+    232.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    652.0,
+    200.0,
+    682.0,
+    230.0
+   ]
+  }
+ ],
+ "notes": "night; motion-blurred car box extended over its blur; two far cars with tail lights added"
+}

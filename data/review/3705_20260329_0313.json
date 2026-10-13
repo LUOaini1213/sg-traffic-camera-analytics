@@ -1,0 +1,29 @@
+{
+ "frame_id": "3705_20260329_0313",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:11:57",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    705.0,
+    148.0,
+    742.0,
+    172.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    465.0,
+    80.0,
+    492.0,
+    96.0
+   ]
+  }
+ ],
+ "notes": "night; two far cars in glare added"
+}

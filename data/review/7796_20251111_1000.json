@@ -1,0 +1,33 @@
+{
+ "frame_id": "7796_20251111_1000",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:55:49",
+ "remove": [
+  16
+ ],
+ "relabel": {
+  "9": 0
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 2,
+   "xyxy": [
+    620.0,
+    605.0,
+    1040.0,
+    1080.0
+   ]
+  },
+  {
+   "cls": 1,
+   "xyxy": [
+    160.0,
+    555.0,
+    285.0,
+    640.0
+   ]
+  }
+ ],
+ "notes": "container trailer at the bottom missed by the teacher, added; partly hidden yellow bus on the left road added; 9 is an SUV; 16 duplicate"
+}

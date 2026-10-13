@@ -1,0 +1,20 @@
+{
+ "frame_id": "3797_20260504_2237",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:14:57",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    1720.0,
+    820.0,
+    1920.0,
+    960.0
+   ]
+  }
+ ],
+ "notes": "night; motion-blurred car at the bottom right added"
+}

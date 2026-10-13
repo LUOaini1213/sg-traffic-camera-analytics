@@ -1,0 +1,29 @@
+{
+ "frame_id": "2707_20250924_0457",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:46:44",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    1272.0,
+    312.0,
+    1296.0,
+    330.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1238.0,
+    330.0,
+    1258.0,
+    345.0
+   ]
+  }
+ ],
+ "notes": "night, low light; two far cars with lights added"
+}

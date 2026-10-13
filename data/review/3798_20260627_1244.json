@@ -1,0 +1,41 @@
+{
+ "frame_id": "3798_20260627_1244",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:20:56",
+ "remove": [
+  3,
+  5
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    920.0,
+    75.0,
+    945.0,
+    92.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    150.0,
+    320.0,
+    172.0,
+    338.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    160.0,
+    265.0,
+    178.0,
+    280.0
+   ]
+  }
+ ],
+ "notes": "3 and 5 inner duplicates; three small cars on the far roads added"
+}

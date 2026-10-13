@@ -1,0 +1,44 @@
+{
+ "frame_id": "2707_20251211_0558",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:59:27",
+ "remove": [],
+ "relabel": {
+  "0": 3,
+  "3": 3,
+  "7": 3,
+  "8": 3,
+  "2": 0
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 2,
+   "xyxy": [
+    1165.0,
+    585.0,
+    1350.0,
+    950.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    862.0,
+    437.0,
+    882.0,
+    465.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    915.0,
+    430.0,
+    932.0,
+    452.0
+   ]
+  }
+ ],
+ "notes": "pre-dawn: teacher called riders cars (0,3,7,8 relabelled motorcycle); 2 is an MPV; box lorry in the foreground and two riders added"
+}

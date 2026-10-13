@@ -1,0 +1,20 @@
+{
+ "frame_id": "4704_20251122_0210",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:56:32",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    1138.0,
+    64.0,
+    1163.0,
+    86.0
+   ]
+  }
+ ],
+ "notes": "night; one far car added"
+}

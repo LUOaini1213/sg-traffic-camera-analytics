@@ -1,0 +1,25 @@
+{
+ "frame_id": "8702_20260207_1217",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:07:52",
+ "remove": [
+  8,
+  9
+ ],
+ "relabel": {
+  "7": 3
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    1582.0,
+    508.0,
+    1610.0,
+    565.0
+   ]
+  }
+ ],
+ "notes": "8 and 9 partial duplicates; 7 is a rider; rider on the right road added"
+}

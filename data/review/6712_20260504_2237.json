@@ -1,0 +1,67 @@
+{
+ "frame_id": "6712_20260504_2237",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:14:57",
+ "remove": [
+  0
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    280.0,
+    295.0,
+    325.0,
+    335.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    425.0,
+    295.0,
+    475.0,
+    330.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    425.0,
+    250.0,
+    460.0,
+    280.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    285.0,
+    240.0,
+    320.0,
+    270.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    830.0,
+    205.0,
+    880.0,
+    250.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1810.0,
+    690.0,
+    1920.0,
+    760.0
+   ]
+  }
+ ],
+ "notes": "night: 0 spanned a group of tail lights; six cars marked from lights (approximate)"
+}

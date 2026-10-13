@@ -1,0 +1,13 @@
+{
+ "frame_id": "6710_20260520_1257",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:19:39",
+ "remove": [
+  6,
+  9
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [],
+ "notes": "6 is the roof rack of the sensor-equipped car 0 (one vehicle); 9 inner duplicate of minibus 3 (kept as car)"
+}

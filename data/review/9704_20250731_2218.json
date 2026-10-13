@@ -1,0 +1,47 @@
+{
+ "frame_id": "9704_20250731_2218",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:38:19",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    1543.0,
+    207.0,
+    1575.0,
+    233.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1579.0,
+    167.0,
+    1601.0,
+    189.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1617.0,
+    161.0,
+    1641.0,
+    183.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1639.0,
+    176.0,
+    1659.0,
+    200.0
+   ]
+  }
+ ],
+ "notes": "night; four far cars with headlights added"
+}

@@ -1,0 +1,63 @@
+{
+ "frame_id": "1112_20250906_1452",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:44:34",
+ "remove": [
+  11,
+  16,
+  17,
+  24,
+  25,
+  30
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    683.0,
+    690.0,
+    707.0,
+    729.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    672.0,
+    747.0,
+    703.0,
+    786.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    730.0,
+    736.0,
+    762.0,
+    784.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    639.0,
+    831.0,
+    687.0,
+    879.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    727.0,
+    657.0,
+    747.0,
+    678.0
+   ]
+  }
+ ],
+ "notes": "five cars on the left carriageway missed by the teacher added; 24/25/30 are barrier and cones; 17 is the roof of lorry 8; 16 is a site container; 11 duplicate"
+}

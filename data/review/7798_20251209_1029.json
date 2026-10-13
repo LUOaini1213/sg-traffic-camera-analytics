@@ -1,0 +1,14 @@
+{
+ "frame_id": "7798_20251209_1029",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:58:46",
+ "remove": [
+  17
+ ],
+ "relabel": {
+  "1": 0
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "17 duplicate under car 0; 1 is a passenger van"
+}

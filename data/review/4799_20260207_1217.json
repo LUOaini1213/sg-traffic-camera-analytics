@@ -1,0 +1,31 @@
+{
+ "frame_id": "4799_20260207_1217",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:07:52",
+ "remove": [],
+ "relabel": {
+  "2": 0
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 2,
+   "xyxy": [
+    668.0,
+    135.0,
+    752.0,
+    228.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    858.0,
+    48.0,
+    890.0,
+    70.0
+   ]
+  }
+ ],
+ "notes": "2 is a minibus/van (car); cement mixer missed by the teacher and a far car added"
+}

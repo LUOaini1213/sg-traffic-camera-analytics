@@ -1,0 +1,17 @@
+{
+ "frame_id": "9701_20260519_1924",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:04:48",
+ "remove": [
+  14,
+  26,
+  30,
+  32
+ ],
+ "relabel": {
+  "0": 0
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "14 is the cab of trailer lorry 4 (one vehicle); 26/30/32 partial duplicates; 0 is a van; far headlight cluster not exhaustively checked"
+}

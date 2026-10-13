@@ -1,0 +1,38 @@
+{
+ "frame_id": "6708_20251004_1709",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:51:31",
+ "remove": [
+  2
+ ],
+ "relabel": {},
+ "adjust": {
+  "1": [
+   445,
+   606,
+   846,
+   1078
+  ]
+ },
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    275.0,
+    30.0,
+    292.0,
+    42.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    350.0,
+    15.0,
+    366.0,
+    30.0
+   ]
+  }
+ ],
+ "notes": "lorry with hook-lift split into cab (2) and body (1); merged into one box; two far cars added"
+}

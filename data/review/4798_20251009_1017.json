@@ -1,0 +1,56 @@
+{
+ "frame_id": "4798_20251009_1017",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:53:59",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    755.0,
+    548.0,
+    797.0,
+    582.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    795.0,
+    445.0,
+    821.0,
+    465.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    780.0,
+    422.0,
+    800.0,
+    438.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    1295.0,
+    398.0,
+    1332.0,
+    440.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    1213.0,
+    398.0,
+    1247.0,
+    426.0
+   ]
+  }
+ ],
+ "notes": "rain; three cars on the left carriageway and two lorries on the right road added; monorail train is not a road vehicle and is not labelled"
+}

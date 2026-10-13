@@ -1,0 +1,29 @@
+{
+ "frame_id": "4709_20251014_2040",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:53:59",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    1290.0,
+    318.0,
+    1332.0,
+    350.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1358.0,
+    303.0,
+    1396.0,
+    330.0
+   ]
+  }
+ ],
+ "notes": "night; two far cars with headlights added"
+}

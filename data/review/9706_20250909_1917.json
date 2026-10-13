@@ -1,0 +1,18 @@
+{
+ "frame_id": "9706_20250909_1917",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:45:11",
+ "remove": [
+  19,
+  25
+ ],
+ "relabel": {
+  "0": 0,
+  "13": 0,
+  "4": 1,
+  "15": 3
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "0 and 13 are vans; 4 is a bus; 15 is a rider; 25 is a roadside sign; 19 duplicate"
+}

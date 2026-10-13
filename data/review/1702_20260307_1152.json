@@ -1,0 +1,27 @@
+{
+ "frame_id": "1702_20260307_1152",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:10:14",
+ "remove": [
+  13,
+  14,
+  24
+ ],
+ "relabel": {
+  "4": 0,
+  "5": 0
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    328.0,
+    370.0,
+    342.0,
+    392.0
+   ]
+  }
+ ],
+ "notes": "13/14 inner duplicates; 24 is a roadside billboard; 4 and 5 are vans (car); rider added"
+}

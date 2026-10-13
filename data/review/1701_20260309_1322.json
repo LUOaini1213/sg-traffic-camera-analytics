@@ -1,0 +1,25 @@
+{
+ "frame_id": "1701_20260309_1322",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:10:14",
+ "remove": [
+  50,
+  68
+ ],
+ "relabel": {
+  "36": 0
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    1778.0,
+    840.0,
+    1805.0,
+    895.0
+   ]
+  }
+ ],
+ "notes": "dense junction on the right reviewed coarsely; 50/68 duplicates; 36 is a van, not a bus; rider at the junction added"
+}

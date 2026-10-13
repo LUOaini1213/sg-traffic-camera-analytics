@@ -1,0 +1,29 @@
+{
+ "frame_id": "6706_20250924_0457",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:46:44",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    1140.0,
+    860.0,
+    1550.0,
+    1080.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    478.0,
+    203.0,
+    494.0,
+    222.0
+   ]
+  }
+ ],
+ "notes": "night; motion-blurred car at bottom and a rider added"
+}

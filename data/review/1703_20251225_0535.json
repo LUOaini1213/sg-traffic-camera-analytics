@@ -1,0 +1,29 @@
+{
+ "frame_id": "1703_20251225_0535",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:00:48",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 1,
+   "xyxy": [
+    1422.0,
+    880.0,
+    1720.0,
+    1080.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1400.0,
+    215.0,
+    1450.0,
+    245.0
+   ]
+  }
+ ],
+ "notes": "night; motion-blurred red bus at the bottom right and a car with headlights added"
+}

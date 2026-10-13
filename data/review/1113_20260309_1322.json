@@ -1,0 +1,38 @@
+{
+ "frame_id": "1113_20260309_1322",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:55:10",
+ "remove": [],
+ "relabel": {
+  "4": 0
+ },
+ "adjust": {
+  "4": [
+   245,
+   388,
+   412,
+   472
+  ]
+ },
+ "add": [
+  {
+   "cls": 2,
+   "xyxy": [
+    1800.0,
+    640.0,
+    1920.0,
+    1010.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    1112.0,
+    110.0,
+    1195.0,
+    168.0
+   ]
+  }
+ ],
+ "notes": "4 boxed two vehicles; refit to the pickup behind MPV 3; lorry at the right edge and a cement mixer at the top added"
+}

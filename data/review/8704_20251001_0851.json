@@ -1,0 +1,76 @@
+{
+ "frame_id": "8704_20251001_0851",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:48:09",
+ "remove": [],
+ "relabel": {
+  "2": 2
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 2,
+   "xyxy": [
+    298.0,
+    285.0,
+    420.0,
+    445.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    280.0,
+    200.0,
+    348.0,
+    300.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    285.0,
+    150.0,
+    325.0,
+    200.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    320.0,
+    125.0,
+    345.0,
+    147.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    345.0,
+    90.0,
+    366.0,
+    108.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    250.0,
+    105.0,
+    276.0,
+    130.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    397.0,
+    213.0,
+    414.0,
+    252.0
+   ]
+  }
+ ],
+ "notes": "2 is a lorry, not a bus; teacher missed the far-left lane: three lorries, three cars and a rider added"
+}

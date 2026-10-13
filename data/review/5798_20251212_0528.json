@@ -1,0 +1,40 @@
+{
+ "frame_id": "5798_20251212_0528",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:59:44",
+ "remove": [],
+ "relabel": {
+  "1": 1
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 2,
+   "xyxy": [
+    1385.0,
+    395.0,
+    1450.0,
+    445.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1550.0,
+    320.0,
+    1600.0,
+    350.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1620.0,
+    295.0,
+    1665.0,
+    322.0
+   ]
+  }
+ ],
+ "notes": "night; 1 is a bus seen from above; a lorry and two cars on the far carriageway added"
+}

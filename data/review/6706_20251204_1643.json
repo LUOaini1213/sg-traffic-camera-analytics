@@ -1,0 +1,21 @@
+{
+ "frame_id": "6706_20251204_1643",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:57:39",
+ "remove": [
+  0,
+  4,
+  12,
+  24,
+  25,
+  28,
+  31
+ ],
+ "relabel": {
+  "10": 1,
+  "19": 1
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "tipper lorry boxed five times, kept 1; 4 is a car being carried on transporter 15 (not counted separately); 10 is a double-decker bus and 19 a bus; 24/31 duplicates"
+}

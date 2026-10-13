@@ -1,0 +1,15 @@
+{
+ "frame_id": "3702_20260219_0846",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:53:18",
+ "remove": [
+  15
+ ],
+ "relabel": {
+  "6": 0,
+  "10": 0
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "15 is an object on the verge; 6 and 10 are cars"
+}

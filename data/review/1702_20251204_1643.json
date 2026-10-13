@@ -1,0 +1,23 @@
+{
+ "frame_id": "1702_20251204_1643",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:57:39",
+ "remove": [
+  12,
+  17,
+  41,
+  51,
+  55,
+  56,
+  60
+ ],
+ "relabel": {
+  "31": 0,
+  "22": 0,
+  "5": 0,
+  "30": 0
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "rainy queue reviewed coarsely: partial duplicates and a box spanning several vehicles (56) removed; 31/22/30 cars and 5 a van relabelled car; 12 is part of car 31"
+}

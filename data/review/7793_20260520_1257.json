@@ -1,0 +1,33 @@
+{
+ "frame_id": "7793_20260520_1257",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:19:39",
+ "remove": [
+  3
+ ],
+ "relabel": {
+  "2": 0,
+  "10": 0,
+  "8": 2
+ },
+ "adjust": {
+  "10": [
+   523,
+   364,
+   659,
+   447
+  ]
+ },
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    1356.0,
+    125.0,
+    1368.0,
+    140.0
+   ]
+  }
+ ],
+ "notes": "2 is a white van; dark MPV boxed twice (3,10), merged as car; 8 is a lorry far away; rider added"
+}

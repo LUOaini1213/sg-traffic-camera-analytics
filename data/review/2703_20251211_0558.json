@@ -1,0 +1,22 @@
+{
+ "frame_id": "2703_20251211_0558",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:59:27",
+ "remove": [],
+ "relabel": {
+  "9": 2
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    876.0,
+    225.0,
+    896.0,
+    252.0
+   ]
+  }
+ ],
+ "notes": "9 is a lorry; rider added"
+}

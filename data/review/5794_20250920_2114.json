@@ -1,0 +1,29 @@
+{
+ "frame_id": "5794_20250920_2114",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:35:49",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    1225.0,
+    343.0,
+    1330.0,
+    382.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1330.0,
+    372.0,
+    1388.0,
+    397.0
+   ]
+  }
+ ],
+ "notes": "two cars on the far carriageway added; queue at top-left hidden by tree trunk not labelled"
+}

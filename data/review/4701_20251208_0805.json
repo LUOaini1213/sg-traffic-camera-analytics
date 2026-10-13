@@ -1,0 +1,17 @@
+{
+ "frame_id": "4701_20251208_0805",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:58:06",
+ "remove": [
+  15,
+  21,
+  22,
+  31
+ ],
+ "relabel": {
+  "4": 0
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "partial duplicates around car 9 removed; 31 is a roadside object; 4 is a van"
+}

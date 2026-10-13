@@ -1,0 +1,31 @@
+{
+ "frame_id": "3702_20251004_1319",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:37:27",
+ "remove": [
+  2
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    193.0,
+    372.0,
+    228.0,
+    448.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    412.0,
+    75.0,
+    441.0,
+    105.0
+   ]
+  }
+ ],
+ "notes": "2 duplicate; rider in shade and a far car added"
+}

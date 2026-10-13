@@ -1,0 +1,31 @@
+{
+ "frame_id": "6716_20250731_2218",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:34:35",
+ "remove": [
+  4
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    1698.0,
+    645.0,
+    1725.0,
+    710.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    1068.0,
+    212.0,
+    1120.0,
+    250.0
+   ]
+  }
+ ],
+ "notes": "4 is the trailer of prime mover 2; missed rider and distant lorry added; cluster 2/5/8/9 kept as separate vehicles (uncertain)"
+}

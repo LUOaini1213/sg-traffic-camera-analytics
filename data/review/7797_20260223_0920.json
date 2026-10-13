@@ -1,0 +1,15 @@
+{
+ "frame_id": "7797_20260223_0920",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:09:03",
+ "remove": [
+  17
+ ],
+ "relabel": {
+  "4": 0,
+  "12": 0
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "4 is a dark car seen from behind, not a bus (17 its duplicate); 12 is a car"
+}

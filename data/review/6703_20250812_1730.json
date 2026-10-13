@@ -1,0 +1,38 @@
+{
+ "frame_id": "6703_20250812_1730",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:39:30",
+ "remove": [
+  16,
+  24,
+  25,
+  29,
+  31,
+  38,
+  39,
+  40
+ ],
+ "relabel": {
+  "36": 0,
+  "28": 0,
+  "17": 0,
+  "14": 0,
+  "20": 0,
+  "23": 0,
+  "32": 0,
+  "35": 0
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    632.0,
+    295.0,
+    650.0,
+    325.0
+   ]
+  }
+ ],
+ "notes": "40 is a rooftop; 16/25/38 duplicates of lorry 8, 39 of lorry 12, 24/29/31 duplicates; eight vans and cars relabelled from truck; rider added"
+}

@@ -1,0 +1,42 @@
+{
+ "frame_id": "5798_20260519_1924",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:18:54",
+ "remove": [
+  15
+ ],
+ "relabel": {
+  "17": 1
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    590.0,
+    345.0,
+    665.0,
+    375.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    630.0,
+    300.0,
+    690.0,
+    325.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1380.0,
+    215.0,
+    1420.0,
+    235.0
+   ]
+  }
+ ],
+ "notes": "dusk: 15 inner duplicate of blurred car 16; 17 is a bus; three cars on the ramp and far road added; light trails on the left ramp not separable"
+}

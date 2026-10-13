@@ -1,0 +1,20 @@
+{
+ "frame_id": "4799_20260521_0055",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:19:59",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    1135.0,
+    70.0,
+    1165.0,
+    92.0
+   ]
+  }
+ ],
+ "notes": "night rain; one far car with headlights added; other lights are street lamps"
+}

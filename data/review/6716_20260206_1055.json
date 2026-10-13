@@ -1,0 +1,12 @@
+{
+ "frame_id": "6716_20260206_1055",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:51:31",
+ "remove": [],
+ "relabel": {
+  "14": 0
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "14 is a dark SUV; two tankers 8 and 13 are separate vehicles in adjacent lanes (kept)"
+}

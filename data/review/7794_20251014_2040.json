@@ -1,0 +1,29 @@
+{
+ "frame_id": "7794_20251014_2040",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:53:59",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    278.0,
+    470.0,
+    342.0,
+    512.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    295.0,
+    1015.0,
+    452.0,
+    1080.0
+   ]
+  }
+ ],
+ "notes": "night; car on the far road and a blurred car at the bottom edge added; 2 is a taxi (car)"
+}

@@ -1,0 +1,22 @@
+{
+ "frame_id": "7791_20251001_0851",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:48:54",
+ "remove": [
+  5
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    1250.0,
+    395.0,
+    1273.0,
+    450.0
+   ]
+  }
+ ],
+ "notes": "5 is a sign at the gore; rider added"
+}

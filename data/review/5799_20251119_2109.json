@@ -1,0 +1,52 @@
+{
+ "frame_id": "5799_20251119_2109",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:40:42",
+ "remove": [
+  12,
+  13,
+  14,
+  15
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    1238.0,
+    768.0,
+    1442.0,
+    978.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    1560.0,
+    640.0,
+    1595.0,
+    722.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1622.0,
+    415.0,
+    1702.0,
+    472.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1498.0,
+    298.0,
+    1547.0,
+    337.0
+   ]
+  }
+ ],
+ "notes": "night with motion blur; for blurred cars the box covering the full blurred extent is kept and the inner duplicate removed (12,13,14); 15 is a road sign; four vehicles in glare added"
+}

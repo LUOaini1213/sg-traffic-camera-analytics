@@ -1,0 +1,47 @@
+{
+ "frame_id": "5798_20260325_0559",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:11:37",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 2,
+   "xyxy": [
+    1078.0,
+    350.0,
+    1205.0,
+    430.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1148.0,
+    250.0,
+    1192.0,
+    278.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1640.0,
+    245.0,
+    1690.0,
+    268.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1505.0,
+    370.0,
+    1555.0,
+    400.0
+   ]
+  }
+ ],
+ "notes": "night; lorry on the middle road and three cars from lights added"
+}

@@ -1,0 +1,16 @@
+{
+ "frame_id": "2704_20260122_2009",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:06:17",
+ "remove": [
+  15
+ ],
+ "relabel": {
+  "21": 3,
+  "28": 3,
+  "19": 1
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "night checkpoint approach queue: 21 and 28 are riders; 19 is a lit bus on the far road; 15 duplicate; dense far queue (tail lights) partly unlabelled"
+}

@@ -1,0 +1,12 @@
+{
+ "frame_id": "1707_20251004_1709",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:51:31",
+ "remove": [
+  6
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [],
+ "notes": "6 is a keep-left sign"
+}

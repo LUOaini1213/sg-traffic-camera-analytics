@@ -1,0 +1,67 @@
+{
+ "frame_id": "1113_20260427_2053",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:00:10",
+ "remove": [
+  1
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 2,
+   "xyxy": [
+    742.0,
+    262.0,
+    1300.0,
+    622.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    720.0,
+    185.0,
+    790.0,
+    255.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    848.0,
+    178.0,
+    925.0,
+    252.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    1290.0,
+    190.0,
+    1462.0,
+    352.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1715.0,
+    300.0,
+    1838.0,
+    398.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1758.0,
+    238.0,
+    1802.0,
+    290.0
+   ]
+  }
+ ],
+ "notes": "night; motion-blurred cement mixer was boxed only at the cab (1): one truck box over the mixer; two lorries, a lorry with headlights and two cars on the right added (positions approximate)"
+}

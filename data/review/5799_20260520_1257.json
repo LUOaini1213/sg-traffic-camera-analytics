@@ -1,0 +1,28 @@
+{
+ "frame_id": "5799_20260520_1257",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:05:41",
+ "remove": [
+  1,
+  3,
+  11,
+  12,
+  33
+ ],
+ "relabel": {
+  "23": 0,
+  "29": 0,
+  "41": 0,
+  "42": 0
+ },
+ "adjust": {
+  "51": [
+   816,
+   621,
+   1200,
+   1072
+  ]
+ },
+ "add": [],
+ "notes": "box lorry was boxed three times (3,12 bus,51): one truck box kept; 1 and 11 duplicate bus boxes; 33 duplicate; 23/29/41/42 are dark cars/MPVs, not trucks"
+}

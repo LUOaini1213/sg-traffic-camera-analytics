@@ -1,0 +1,19 @@
+{
+ "frame_id": "9705_20250904_0743",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:43:31",
+ "remove": [
+  30,
+  31,
+  33,
+  40,
+  41
+ ],
+ "relabel": {
+  "17": 0,
+  "16": 0
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "30/31 are trees; contained duplicates removed; 16 and 17 are white cars/MPVs"
+}

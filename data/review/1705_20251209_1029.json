@@ -1,0 +1,15 @@
+{
+ "frame_id": "1705_20251209_1029",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:58:46",
+ "remove": [
+  18,
+  26,
+  28,
+  30
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [],
+ "notes": "30 is a huge false box over the roadside; 18/26/28 partial duplicates"
+}

@@ -1,0 +1,29 @@
+{
+ "frame_id": "1112_20260519_1924",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:19:14",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    785.0,
+    628.0,
+    800.0,
+    652.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    968.0,
+    710.0,
+    1000.0,
+    730.0
+   ]
+  }
+ ],
+ "notes": "night roadworks; 0 is a small lorry at the site lane; rider and a car added; plant at the site is not traffic"
+}

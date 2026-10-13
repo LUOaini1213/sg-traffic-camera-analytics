@@ -1,0 +1,25 @@
+{
+ "frame_id": "1709_20260519_1924",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:16:10",
+ "remove": [
+  6,
+  23,
+  27,
+  33,
+  36
+ ],
+ "relabel": {
+  "0": 2
+ },
+ "adjust": {
+  "15": [
+   948,
+   529,
+   1117,
+   640
+  ]
+ },
+ "add": [],
+ "notes": "dusk heavy traffic: 27 spanned two cars (15,17 kept; 15 refit); 23 duplicate inside blurred car 18; 33/36 are a chevron sign and a bollard; 6 duplicate between 4 and 8; 0 is a box lorry"
+}

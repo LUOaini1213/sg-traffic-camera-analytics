@@ -1,0 +1,26 @@
+{
+ "frame_id": "1711_20260323_0939",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:11:05",
+ "remove": [
+  2,
+  3,
+  9
+ ],
+ "relabel": {
+  "10": 0
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 2,
+   "xyxy": [
+    588.0,
+    455.0,
+    662.0,
+    488.0
+   ]
+  }
+ ],
+ "notes": "partial duplicates removed; 10 is a van at the bottom edge; dark lorry in the haze added"
+}

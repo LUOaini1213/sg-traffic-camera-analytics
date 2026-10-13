@@ -1,0 +1,19 @@
+{
+ "frame_id": "6705_20250924_1722",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:46:44",
+ "remove": [
+  16,
+  21,
+  22,
+  25,
+  30,
+  31
+ ],
+ "relabel": {
+  "4": 0
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "16 duplicate of minibus 0; 22/21/25/31 duplicates; 30 is a tree; 4 is a pickup (car)"
+}

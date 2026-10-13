@@ -1,0 +1,65 @@
+{
+ "frame_id": "1111_20260313_1012",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:10:40",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    1068.0,
+    600.0,
+    1088.0,
+    622.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1120.0,
+    602.0,
+    1142.0,
+    622.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1070.0,
+    620.0,
+    1090.0,
+    645.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1122.0,
+    628.0,
+    1145.0,
+    650.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1355.0,
+    640.0,
+    1400.0,
+    680.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1283.0,
+    648.0,
+    1307.0,
+    668.0
+   ]
+  }
+ ],
+ "notes": "strong backlight; six far cars missed by the teacher added"
+}

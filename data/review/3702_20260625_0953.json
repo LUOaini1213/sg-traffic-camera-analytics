@@ -1,0 +1,33 @@
+{
+ "frame_id": "3702_20260625_0953",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:06:49",
+ "remove": [
+  6
+ ],
+ "relabel": {
+  "9": 0
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    460.0,
+    93.0,
+    472.0,
+    112.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    585.0,
+    62.0,
+    595.0,
+    78.0
+   ]
+  }
+ ],
+ "notes": "6 sliver duplicate; 9 is a white van; two riders added"
+}

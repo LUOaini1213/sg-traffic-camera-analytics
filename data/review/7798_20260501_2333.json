@@ -1,0 +1,38 @@
+{
+ "frame_id": "7798_20260501_2333",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:14:22",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    600.0,
+    220.0,
+    615.0,
+    250.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    660.0,
+    262.0,
+    682.0,
+    300.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1640.0,
+    325.0,
+    1690.0,
+    355.0
+   ]
+  }
+ ],
+ "notes": "night; two riders and a car on the far road added"
+}

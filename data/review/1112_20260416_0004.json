@@ -1,0 +1,31 @@
+{
+ "frame_id": "1112_20260416_0004",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:12:47",
+ "remove": [
+  1
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    835.0,
+    580.0,
+    858.0,
+    598.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    812.0,
+    515.0,
+    826.0,
+    530.0
+   ]
+  }
+ ],
+ "notes": "night roadworks: 0 is a lorry at the site (kept); 1 is a boom lift (construction plant), removed; car and rider added"
+}

@@ -1,0 +1,20 @@
+{
+ "frame_id": "4706_20260623_0747",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:06:49",
+ "remove": [
+  14,
+  16,
+  21
+ ],
+ "relabel": {
+  "0": 0,
+  "1": 0,
+  "11": 0,
+  "13": 0,
+  "19": 3
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "dawn: 0 is an MPV and 1 a van (car); 11 and 13 are vans; 19 is a rider (21 its duplicate); 14 and 16 partial duplicates"
+}

@@ -1,0 +1,41 @@
+{
+ "frame_id": "2707_20251215_0648",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:00:10",
+ "remove": [
+  2,
+  7,
+  16
+ ],
+ "relabel": {
+  "0": 0,
+  "3": 0,
+  "12": 0,
+  "14": 0,
+  "1": 0,
+  "11": 3,
+  "9": 3
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    1083.0,
+    478.0,
+    1100.0,
+    505.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    1212.0,
+    488.0,
+    1230.0,
+    526.0
+   ]
+  }
+ ],
+ "notes": "dusk in rain: jeep, SUVs and vans (0,3,12,14,1) relabelled car; 11 and 9 are riders; 2 and 7 are boxes spanning several vehicles; 16 duplicate; two riders added"
+}

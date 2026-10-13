@@ -1,0 +1,14 @@
+{
+ "frame_id": "4701_20260216_1805",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:08:17",
+ "remove": [
+  11
+ ],
+ "relabel": {
+  "1": 2
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "11 duplicate of lorry 3; 1 is a box lorry, not a bus"
+}

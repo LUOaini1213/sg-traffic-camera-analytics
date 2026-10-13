@@ -1,0 +1,23 @@
+{
+ "frame_id": "2705_20260330_1143",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:12:21",
+ "remove": [
+  2,
+  3
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    1078.0,
+    262.0,
+    1160.0,
+    315.0
+   ]
+  }
+ ],
+ "notes": "2 and 3 partial duplicates; car in shade on the other carriageway added"
+}

@@ -1,0 +1,47 @@
+{
+ "frame_id": "2708_20251014_2040",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:53:59",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    244.0,
+    104.0,
+    269.0,
+    133.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    274.0,
+    84.0,
+    293.0,
+    99.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    171.0,
+    88.0,
+    189.0,
+    107.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    337.0,
+    164.0,
+    353.0,
+    186.0
+   ]
+  }
+ ],
+ "notes": "640x360 night frame; teacher found nothing; three cars and a rider added"
+}

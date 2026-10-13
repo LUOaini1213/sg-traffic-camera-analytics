@@ -1,0 +1,47 @@
+{
+ "frame_id": "3793_20251122_0210",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:41:03",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    662.0,
+    732.0,
+    762.0,
+    835.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    426.0,
+    243.0,
+    457.0,
+    274.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    417.0,
+    143.0,
+    441.0,
+    167.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1335.0,
+    432.0,
+    1392.0,
+    482.0
+   ]
+  }
+ ],
+ "notes": "night in heavy rain; teacher found nothing; four cars added"
+}

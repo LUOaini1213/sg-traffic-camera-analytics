@@ -1,0 +1,38 @@
+{
+ "frame_id": "9701_20251119_2109",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:40:42",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    1448.0,
+    393.0,
+    1582.0,
+    472.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    1788.0,
+    652.0,
+    1870.0,
+    722.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    808.0,
+    176.0,
+    823.0,
+    207.0
+   ]
+  }
+ ],
+ "notes": "night; blurred car and two riders added"
+}

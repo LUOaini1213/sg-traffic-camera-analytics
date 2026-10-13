@@ -1,0 +1,53 @@
+{
+ "frame_id": "7798_20250716_1733",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:38:19",
+ "remove": [
+  9,
+  22
+ ],
+ "relabel": {
+  "1": 0,
+  "11": 0
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 2,
+   "xyxy": [
+    505.0,
+    785.0,
+    900.0,
+    1080.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    460.0,
+    275.0,
+    486.0,
+    318.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    577.0,
+    173.0,
+    593.0,
+    198.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    642.0,
+    198.0,
+    656.0,
+    226.0
+   ]
+  }
+ ],
+ "notes": "22 was cargo on a lorry bed, lorry itself added; 1 and 11 vans; three riders added"
+}

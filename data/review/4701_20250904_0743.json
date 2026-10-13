@@ -1,0 +1,16 @@
+{
+ "frame_id": "4701_20250904_0743",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:42:47",
+ "remove": [
+  6,
+  18,
+  30,
+  32,
+  35
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [],
+ "notes": "tile-edge truncated duplicates removed; 35 duplicate of 39"
+}

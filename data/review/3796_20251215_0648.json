@@ -1,0 +1,29 @@
+{
+ "frame_id": "3796_20251215_0648",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:00:25",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    1378.0,
+    660.0,
+    1460.0,
+    720.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1435.0,
+    705.0,
+    1500.0,
+    755.0
+   ]
+  }
+ ],
+ "notes": "dusk in rain; two cars on the right road behind the tree added; far cars in spray not separable"
+}

@@ -1,0 +1,25 @@
+{
+ "frame_id": "4701_20260325_0559",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:11:37",
+ "remove": [
+  0,
+  2,
+  4,
+  9
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    1360.0,
+    595.0,
+    1470.0,
+    670.0
+   ]
+  }
+ ],
+ "notes": "night: 0 spanned two cars (6 and 8 kept); 2/9 duplicates; 4 is the roof of bus 10; motion-blurred car on the right added"
+}

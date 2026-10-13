@@ -1,0 +1,22 @@
+{
+ "frame_id": "4710_20250711_2154",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:37:06",
+ "remove": [
+  10
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    976.0,
+    205.0,
+    999.0,
+    242.0
+   ]
+  }
+ ],
+ "notes": "10 duplicate inside lorry 2; rider added"
+}

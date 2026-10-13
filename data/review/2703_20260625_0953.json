@@ -1,0 +1,35 @@
+{
+ "frame_id": "2703_20260625_0953",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:20:25",
+ "remove": [
+  11
+ ],
+ "relabel": {
+  "10": 0,
+  "24": 0,
+  "13": 0
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    650.0,
+    190.0,
+    662.0,
+    212.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    733.0,
+    150.0,
+    745.0,
+    168.0
+   ]
+  }
+ ],
+ "notes": "11 duplicate of tipper lorry 0; 10 is a minibus/van (car under this scheme); 24 and 13 are vans; two riders added"
+}

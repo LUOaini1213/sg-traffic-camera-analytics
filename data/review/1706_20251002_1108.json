@@ -1,0 +1,13 @@
+{
+ "frame_id": "1706_20251002_1108",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:48:54",
+ "remove": [
+  21,
+  36
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [],
+ "notes": "contained duplicates removed"
+}

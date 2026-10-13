@@ -1,0 +1,12 @@
+{
+ "frame_id": "4704_20260302_0454",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:09:50",
+ "remove": [
+  2
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [],
+ "notes": "night; 2 partial duplicate of the blurred red car"
+}

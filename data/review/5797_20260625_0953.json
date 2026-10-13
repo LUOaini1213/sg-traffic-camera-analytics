@@ -1,0 +1,26 @@
+{
+ "frame_id": "5797_20260625_0953",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:20:25",
+ "remove": [
+  8,
+  20
+ ],
+ "relabel": {
+  "7": 0,
+  "9": 0
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    625.0,
+    280.0,
+    640.0,
+    298.0
+   ]
+  }
+ ],
+ "notes": "7 and 9 are dark SUVs, not trucks; 8 inner duplicate of 9; 20 spans two queued cars; rider added; 25 at the right edge is a van"
+}

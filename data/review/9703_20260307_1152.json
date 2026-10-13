@@ -1,0 +1,23 @@
+{
+ "frame_id": "9703_20260307_1152",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:09:50",
+ "remove": [
+  13,
+  19
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    1172.0,
+    248.0,
+    1190.0,
+    280.0
+   ]
+  }
+ ],
+ "notes": "13 inner duplicate of SUV 5; 19 lower part of box lorry 9; rider added"
+}

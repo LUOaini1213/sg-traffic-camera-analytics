@@ -1,0 +1,23 @@
+{
+ "frame_id": "9703_20260623_0747",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:19:59",
+ "remove": [],
+ "relabel": {
+  "2": 1,
+  "6": 0
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    995.0,
+    370.0,
+    1070.0,
+    395.0
+   ]
+  }
+ ],
+ "notes": "low sun haze: 2 is a bus; 6 is a van at the bottom edge; car behind the median tree added"
+}

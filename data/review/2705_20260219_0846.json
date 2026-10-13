@@ -1,0 +1,16 @@
+{
+ "frame_id": "2705_20260219_0846",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:08:41",
+ "remove": [
+  0,
+  1,
+  5
+ ],
+ "relabel": {
+  "9": 0
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "bus 2 also boxed as two partial trucks (0,1), removed; 9 is a car (5 its duplicate)"
+}

@@ -1,0 +1,24 @@
+{
+ "frame_id": "9704_20251209_1029",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:59:09",
+ "remove": [
+  0,
+  6,
+  10
+ ],
+ "relabel": {
+  "5": 0,
+  "9": 3
+ },
+ "adjust": {
+  "4": [
+   787,
+   440,
+   940,
+   581
+  ]
+ },
+ "add": [],
+ "notes": "tipper lorry boxed twice (0,4) kept 4; 5 is a van and 6 its duplicate; 9 is a rider and 10 duplicate"
+}

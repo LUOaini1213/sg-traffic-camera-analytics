@@ -1,0 +1,25 @@
+{
+ "frame_id": "8701_20250912_1834",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:45:59",
+ "remove": [
+  3
+ ],
+ "relabel": {
+  "5": 0,
+  "2": 0
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    1095.0,
+    1032.0,
+    1142.0,
+    1080.0
+   ]
+  }
+ ],
+ "notes": "3 is the lower half of lorry 7; 5 van and 2 SUV are cars; rider at bottom edge added"
+}

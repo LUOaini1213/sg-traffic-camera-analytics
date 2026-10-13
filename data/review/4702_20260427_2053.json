@@ -1,0 +1,58 @@
+{
+ "frame_id": "4702_20260427_2053",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:14:22",
+ "remove": [
+  0
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    525.0,
+    770.0,
+    780.0,
+    970.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    315.0,
+    235.0,
+    400.0,
+    300.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    420.0,
+    140.0,
+    452.0,
+    178.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    480.0,
+    140.0,
+    520.0,
+    170.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1100.0,
+    1010.0,
+    1260.0,
+    1080.0
+   ]
+  }
+ ],
+ "notes": "night haze: 0 spanned a group of tail lights; blurred car in the foreground, a car on the left lane, two far cars and a car cut by the bottom edge added (approximate)"
+}

@@ -1,0 +1,17 @@
+{
+ "frame_id": "3796_20250823_0958",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:42:47",
+ "remove": [
+  6,
+  10,
+  16,
+  17
+ ],
+ "relabel": {
+  "3": 0
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "contained duplicates removed; 3 is a van; rider 12 kept as motorcycle"
+}

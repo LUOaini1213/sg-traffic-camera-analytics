@@ -1,0 +1,24 @@
+{
+ "frame_id": "6711_20251014_2040",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:38:19",
+ "remove": [
+  5,
+  6,
+  7
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    647.0,
+    120.0,
+    685.0,
+    175.0
+   ]
+  }
+ ],
+ "notes": "6 covers the whole queue and 5 two cars; 7 duplicate; dense night queue of tail lights cannot be separated into vehicles and is not labelled beyond one clear car"
+}

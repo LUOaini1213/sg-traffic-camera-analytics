@@ -1,0 +1,42 @@
+{
+ "frame_id": "4710_20260421_1936",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:13:36",
+ "remove": [
+  20,
+  21,
+  23,
+  30,
+  31,
+  32,
+  33,
+  34
+ ],
+ "relabel": {
+  "13": 3,
+  "22": 3,
+  "35": 1
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 2,
+   "xyxy": [
+    930.0,
+    780.0,
+    1230.0,
+    1080.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1360.0,
+    970.0,
+    1595.0,
+    1080.0
+   ]
+  }
+ ],
+ "notes": "night: 31/32/34 are lamps on the overpass; inner duplicates removed; 13 and 22 are riders; 35 is a bus; lorry and a van cut by the bottom edge added"
+}

@@ -1,0 +1,16 @@
+{
+ "frame_id": "1703_20260417_1517",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:12:47",
+ "remove": [],
+ "relabel": {
+  "21": 0,
+  "14": 2,
+  "25": 0,
+  "39": 0,
+  "38": 0
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "21 is a van (car); 14 is a box lorry; 25, 38 and 39 are vans; 12 and 15 already car"
+}

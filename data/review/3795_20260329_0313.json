@@ -1,0 +1,20 @@
+{
+ "frame_id": "3795_20260329_0313",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:58:06",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    918.0,
+    158.0,
+    956.0,
+    202.0
+   ]
+  }
+ ],
+ "notes": "night; teacher found nothing; car with headlights added"
+}

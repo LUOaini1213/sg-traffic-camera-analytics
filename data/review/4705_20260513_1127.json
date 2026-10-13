@@ -1,0 +1,27 @@
+{
+ "frame_id": "4705_20260513_1127",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:15:19",
+ "remove": [
+  11,
+  14
+ ],
+ "relabel": {
+  "2": 0,
+  "8": 0,
+  "6": 2
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    245.0,
+    240.0,
+    262.0,
+    262.0
+   ]
+  }
+ ],
+ "notes": "rain: 2 is a van and 8 a white car (not trucks); 6 is a box lorry; flatbed lorry boxed three times (1,11,14), kept 1; rider added"
+}

@@ -1,0 +1,18 @@
+{
+ "frame_id": "2701_20251202_1143",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:56:59",
+ "remove": [
+  19,
+  37,
+  42,
+  44,
+  45,
+  46,
+  47
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [],
+ "notes": "causeway queue in rain reviewed coarsely: contained partial duplicates removed; dense queue not exhaustively checked for misses"
+}

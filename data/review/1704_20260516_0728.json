@@ -1,0 +1,65 @@
+{
+ "frame_id": "1704_20260516_0728",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:04:48",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    668.0,
+    308.0,
+    690.0,
+    350.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    1632.0,
+    505.0,
+    1675.0,
+    580.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    898.0,
+    268.0,
+    938.0,
+    298.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1150.0,
+    245.0,
+    1172.0,
+    262.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    1190.0,
+    232.0,
+    1222.0,
+    265.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1250.0,
+    258.0,
+    1278.0,
+    285.0
+   ]
+  }
+ ],
+ "notes": "two riders, two cars, a lorry and a car near the underpass added"
+}

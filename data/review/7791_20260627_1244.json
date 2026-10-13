@@ -1,0 +1,47 @@
+{
+ "frame_id": "7791_20260627_1244",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:20:56",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 2,
+   "xyxy": [
+    1385.0,
+    180.0,
+    1405.0,
+    205.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1270.0,
+    220.0,
+    1292.0,
+    238.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    1330.0,
+    150.0,
+    1350.0,
+    170.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    1355.0,
+    150.0,
+    1370.0,
+    168.0
+   ]
+  }
+ ],
+ "notes": "far lorries and a car in the distance added; 0 is a car with sun glare"
+}

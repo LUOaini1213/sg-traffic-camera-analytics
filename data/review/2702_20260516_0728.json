@@ -1,0 +1,11 @@
+{
+ "frame_id": "2702_20260516_0728",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:16:10",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [],
+ "notes": "EXCLUDED: checkpoint morning queue with dozens of unlabelled vehicles on the left approach road; labels cannot be made close to complete",
+ "exclude": true
+}

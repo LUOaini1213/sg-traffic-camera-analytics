@@ -1,0 +1,59 @@
+{
+ "frame_id": "2704_20260427_2053",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:14:03",
+ "remove": [
+  9,
+  12,
+  16,
+  17,
+  19
+ ],
+ "relabel": {
+  "5": 3,
+  "11": 3,
+  "14": 3,
+  "15": 3,
+  "3": 2
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    1130.0,
+    680.0,
+    1175.0,
+    775.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    935.0,
+    465.0,
+    955.0,
+    500.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    985.0,
+    490.0,
+    1005.0,
+    530.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    945.0,
+    435.0,
+    965.0,
+    465.0
+   ]
+  }
+ ],
+ "notes": "night approach to the checkpoint: 5/11/14/15 are riders; 3 is a lorry with 16 its inner duplicate; car 4 had duplicates 12/17; 19 spans a group of cars; four riders added; far queue not exhaustively labelled"
+}

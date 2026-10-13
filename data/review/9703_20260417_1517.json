@@ -1,0 +1,16 @@
+{
+ "frame_id": "9703_20260417_1517",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:13:07",
+ "remove": [
+  9,
+  11,
+  16
+ ],
+ "relabel": {
+  "4": 0
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "tipper lorry boxed twice (0,9) kept 0; 11 inner duplicate; 16 is debris/vegetation on the median; 4 is a van"
+}

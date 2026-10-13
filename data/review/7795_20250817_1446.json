@@ -1,0 +1,43 @@
+{
+ "frame_id": "7795_20250817_1446",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:35:10",
+ "remove": [],
+ "relabel": {
+  "1": 0,
+  "13": 0,
+  "20": 0,
+  "23": 0
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    990.0,
+    270.0,
+    1002.0,
+    295.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    1048.0,
+    275.0,
+    1060.0,
+    299.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    609.0,
+    375.0,
+    631.0,
+    404.0
+   ]
+  }
+ ],
+ "notes": "van and three dark SUVs/sedans relabelled car; three riders added"
+}

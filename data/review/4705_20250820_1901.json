@@ -1,0 +1,13 @@
+{
+ "frame_id": "4705_20250820_1901",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:41:54",
+ "remove": [],
+ "relabel": {
+  "10": 3,
+  "13": 3
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "10 and 13 are blurred riders"
+}

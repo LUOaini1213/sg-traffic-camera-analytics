@@ -1,0 +1,74 @@
+{
+ "frame_id": "9705_20251009_1017",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:52:30",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 1,
+   "xyxy": [
+    1010.0,
+    210.0,
+    1100.0,
+    285.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    960.0,
+    235.0,
+    1022.0,
+    292.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1100.0,
+    240.0,
+    1150.0,
+    282.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1185.0,
+    170.0,
+    1232.0,
+    210.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    978.0,
+    312.0,
+    1002.0,
+    352.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1428.0,
+    175.0,
+    1458.0,
+    195.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1385.0,
+    165.0,
+    1410.0,
+    185.0
+   ]
+  }
+ ],
+ "notes": "heavy rain; teacher missed most of the far carriageway: blurred bus, four cars, a rider and two cars in spray added (positions approximate)"
+}

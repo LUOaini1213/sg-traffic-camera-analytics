@@ -1,0 +1,35 @@
+{
+ "frame_id": "7795_20260516_0728",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:04:48",
+ "remove": [
+  13
+ ],
+ "relabel": {
+  "1": 0,
+  "2": 0,
+  "6": 0
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    520.0,
+    785.0,
+    568.0,
+    895.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    1280.0,
+    935.0,
+    1420.0,
+    1080.0
+   ]
+  }
+ ],
+ "notes": "rain haze: 1, 2 and 6 are vans (car); 13 is a partial duplicate of van 2; rider at the bottom and a flatbed at the bottom edge added"
+}

@@ -1,0 +1,18 @@
+{
+ "frame_id": "6701_20260223_0920",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:09:03",
+ "remove": [
+  5,
+  21,
+  22,
+  24
+ ],
+ "relabel": {
+  "0": 0,
+  "1": 0
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "0 is a van (5 its duplicate) and 1 a red van; 24 a sliver; 22 edge sliver; 21 is a lamp post/structure, not a vehicle"
+}

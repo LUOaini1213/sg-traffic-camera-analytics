@@ -1,0 +1,29 @@
+{
+ "frame_id": "1111_20250731_2218",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:38:49",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 1,
+   "xyxy": [
+    1543.0,
+    638.0,
+    1612.0,
+    702.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1497.0,
+    722.0,
+    1562.0,
+    768.0
+   ]
+  }
+ ],
+ "notes": "night; blurred yellow bus-like vehicle (class uncertain) and a car on the right road added"
+}

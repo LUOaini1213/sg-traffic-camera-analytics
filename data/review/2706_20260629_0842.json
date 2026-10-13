@@ -1,0 +1,105 @@
+{
+ "frame_id": "2706_20260629_0842",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:21:19",
+ "remove": [],
+ "relabel": {
+  "0": 0,
+  "2": 0,
+  "1": 0
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 1,
+   "xyxy": [
+    1215.0,
+    800.0,
+    1305.0,
+    870.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    860.0,
+    850.0,
+    915.0,
+    930.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    870.0,
+    985.0,
+    970.0,
+    1080.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1120.0,
+    910.0,
+    1180.0,
+    950.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    1380.0,
+    860.0,
+    1470.0,
+    910.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    1475.0,
+    880.0,
+    1530.0,
+    925.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1760.0,
+    1010.0,
+    1880.0,
+    1075.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    1315.0,
+    895.0,
+    1335.0,
+    925.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    1525.0,
+    950.0,
+    1545.0,
+    985.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    1650.0,
+    1045.0,
+    1675.0,
+    1080.0
+   ]
+  }
+ ],
+ "notes": "low sun: teacher missed most vehicles; 0/1/2 are vans or a red car (car); bus, three lorries, two vans/cars and three riders added; far queue (under ~12 px) not labelled"
+}

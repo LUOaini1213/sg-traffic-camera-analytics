@@ -1,0 +1,31 @@
+{
+ "frame_id": "2705_20250920_2114",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:46:22",
+ "remove": [
+  3
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    537.0,
+    195.0,
+    557.0,
+    222.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    478.0,
+    145.0,
+    516.0,
+    185.0
+   ]
+  }
+ ],
+ "notes": "3 is a lit sign board; rider and a car in glare added"
+}

@@ -1,0 +1,24 @@
+{
+ "frame_id": "3798_20251002_1108",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:49:56",
+ "remove": [
+  16
+ ],
+ "relabel": {
+  "13": 3
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    643.0,
+    180.0,
+    660.0,
+    212.0
+   ]
+  }
+ ],
+ "notes": "13 is a motorcyclist; 16 is machinery on a construction site; rider added"
+}

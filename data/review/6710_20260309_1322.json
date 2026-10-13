@@ -1,0 +1,15 @@
+{
+ "frame_id": "6710_20260309_1322",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:10:14",
+ "remove": [
+  8,
+  11
+ ],
+ "relabel": {
+  "4": 2
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "8 and 11 inner duplicates; 4 is a small lorry"
+}

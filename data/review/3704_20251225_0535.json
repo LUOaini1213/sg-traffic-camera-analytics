@@ -1,0 +1,13 @@
+{
+ "frame_id": "3704_20251225_0535",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:00:25",
+ "remove": [],
+ "relabel": {
+  "0": 0,
+  "1": 0
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "night; 0 and 1 are vans, not truck/bus"
+}

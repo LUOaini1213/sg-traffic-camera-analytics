@@ -1,0 +1,47 @@
+{
+ "frame_id": "6703_20260502_0349",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:14:39",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    1400.0,
+    365.0,
+    1495.0,
+    410.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    800.0,
+    240.0,
+    845.0,
+    270.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    615.0,
+    225.0,
+    650.0,
+    250.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    535.0,
+    210.0,
+    568.0,
+    230.0
+   ]
+  }
+ ],
+ "notes": "night; four cars from headlights added"
+}

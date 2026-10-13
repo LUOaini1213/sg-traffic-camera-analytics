@@ -1,0 +1,23 @@
+{
+ "frame_id": "5794_20260417_1517",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:58:46",
+ "remove": [
+  5,
+  7,
+  16,
+  19,
+  20
+ ],
+ "relabel": {},
+ "adjust": {
+  "1": [
+   706,
+   435,
+   1232,
+   858
+  ]
+ },
+ "add": [],
+ "notes": "open-sided lorry boxed six times (1,5,7,16,19,20); one box over the whole lorry kept"
+}

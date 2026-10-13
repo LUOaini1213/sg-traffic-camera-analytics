@@ -1,0 +1,17 @@
+{
+ "frame_id": "4714_20260219_0846",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:08:41",
+ "remove": [
+  1,
+  15,
+  17
+ ],
+ "relabel": {
+  "10": 2,
+  "5": 2
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "1 and 17 partial duplicates; 15 is a flower bush at the frame edge; 10 is a prime mover (truck), 5 a red lorry"
+}

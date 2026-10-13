@@ -1,0 +1,20 @@
+{
+ "frame_id": "1705_20250924_1722",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:47:36",
+ "remove": [
+  14,
+  19,
+  25,
+  35,
+  36,
+  40,
+  42
+ ],
+ "relabel": {
+  "21": 2
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "tile-edge partial duplicates removed (14,19,25,35,36,40,42); 21 lorry kept as truck"
+}

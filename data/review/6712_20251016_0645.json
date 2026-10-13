@@ -1,0 +1,22 @@
+{
+ "frame_id": "6712_20251016_0645",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:54:38",
+ "remove": [],
+ "relabel": {
+  "5": 0
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    1370.0,
+    1038.0,
+    1462.0,
+    1080.0
+   ]
+  }
+ ],
+ "notes": "5 is a van; blurred car at the bottom edge added"
+}

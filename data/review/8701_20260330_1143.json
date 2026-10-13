@@ -1,0 +1,22 @@
+{
+ "frame_id": "8701_20260330_1143",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:12:21",
+ "remove": [],
+ "relabel": {
+  "13": 3
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 2,
+   "xyxy": [
+    474.0,
+    378.0,
+    537.0,
+    487.0
+   ]
+  }
+ ],
+ "notes": "13 is a motorcycle; crane lorry on the left lane missed by the teacher, added"
+}

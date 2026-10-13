@@ -1,0 +1,25 @@
+{
+ "frame_id": "9706_20260627_1244",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:20:56",
+ "remove": [
+  24,
+  26
+ ],
+ "relabel": {
+  "9": 0
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    610.0,
+    300.0,
+    635.0,
+    345.0
+   ]
+  }
+ ],
+ "notes": "24 and 26 inner duplicates; 9 is a white van (car); 3 is a cement mixer, 17 a lorry; rider added"
+}

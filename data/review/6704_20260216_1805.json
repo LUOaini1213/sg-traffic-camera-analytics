@@ -1,0 +1,15 @@
+{
+ "frame_id": "6704_20260216_1805",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:08:41",
+ "remove": [
+  8,
+  25
+ ],
+ "relabel": {
+  "32": 0
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "rain; 8 and 25 partial duplicates; 32 is a white van (car); 28 kept as small lorry"
+}

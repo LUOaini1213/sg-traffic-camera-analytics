@@ -1,0 +1,22 @@
+{
+ "frame_id": "4710_20260127_0340",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:07:21",
+ "remove": [
+  1
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 2,
+   "xyxy": [
+    815.0,
+    85.0,
+    842.0,
+    120.0
+   ]
+  }
+ ],
+ "notes": "1 is a flashing amber road-works light behind cones, not a vehicle; far lorry added"
+}

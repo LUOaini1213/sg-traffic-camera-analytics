@@ -1,0 +1,26 @@
+{
+ "frame_id": "1702_20250812_1730",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:39:55",
+ "remove": [
+  35,
+  40,
+  62
+ ],
+ "relabel": {
+  "16": 0,
+  "24": 0,
+  "48": 0,
+  "54": 2
+ },
+ "adjust": {
+  "54": [
+   302,
+   415,
+   378,
+   527
+  ]
+ },
+ "add": [],
+ "notes": "dense queue on the left lanes reviewed only at a coarse level (duplicates and obvious class errors); 54 is a mixer lorry, box extended; 16/24 vans; 48 not a bus"
+}

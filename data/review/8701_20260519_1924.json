@@ -1,0 +1,22 @@
+{
+ "frame_id": "8701_20260519_1924",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:19:14",
+ "remove": [
+  13
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 2,
+   "xyxy": [
+    1705.0,
+    275.0,
+    1840.0,
+    330.0
+   ]
+  }
+ ],
+ "notes": "dusk; 13 duplicate of car 9; tipper lorry on the far slip road added"
+}

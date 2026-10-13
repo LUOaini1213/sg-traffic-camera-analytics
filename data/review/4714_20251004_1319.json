@@ -1,0 +1,23 @@
+{
+ "frame_id": "4714_20251004_1319",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:50:42",
+ "remove": [
+  2
+ ],
+ "relabel": {
+  "4": 0,
+  "6": 0,
+  "10": 0
+ },
+ "adjust": {
+  "0": [
+   415,
+   385,
+   750,
+   711
+  ]
+ },
+ "add": [],
+ "notes": "tanker split into two boxes, merged; 4, 6 and 10 are cars"
+}

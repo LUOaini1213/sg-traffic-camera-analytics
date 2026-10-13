@@ -1,0 +1,15 @@
+{
+ "frame_id": "2703_20260223_0920",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:09:03",
+ "remove": [
+  16,
+  26
+ ],
+ "relabel": {
+  "20": 0
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "16 is the cab of container lorry 3; 26 is a crash cushion at the gore; 20 is a dark van"
+}

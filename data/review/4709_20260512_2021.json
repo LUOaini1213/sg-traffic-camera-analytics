@@ -1,0 +1,47 @@
+{
+ "frame_id": "4709_20260512_2021",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:15:19",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 1,
+   "xyxy": [
+    1030.0,
+    600.0,
+    1300.0,
+    1080.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    590.0,
+    660.0,
+    670.0,
+    710.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    790.0,
+    430.0,
+    840.0,
+    460.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1250.0,
+    295.0,
+    1290.0,
+    320.0
+   ]
+  }
+ ],
+ "notes": "night haze: motion-blurred green bus in the bus lane missed by the teacher, added; three cars from lights added"
+}

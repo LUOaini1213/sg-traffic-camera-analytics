@@ -1,0 +1,40 @@
+{
+ "frame_id": "5795_20260514_0524",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:04:09",
+ "remove": [],
+ "relabel": {
+  "0": 1
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    800.0,
+    860.0,
+    1080.0,
+    1080.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    345.0,
+    620.0,
+    440.0,
+    690.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1440.0,
+    210.0,
+    1505.0,
+    262.0
+   ]
+  }
+ ],
+ "notes": "night; 0 is a double-decker bus; large blurred car at the bottom, a blurred car on the left road and a car with headlights added"
+}

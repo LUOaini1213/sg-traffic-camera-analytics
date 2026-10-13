@@ -1,0 +1,88 @@
+{
+ "frame_id": "5799_20260501_2333",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:00:48",
+ "remove": [
+  0,
+  3,
+  4,
+  7
+ ],
+ "relabel": {
+  "2": 2
+ },
+ "adjust": {
+  "5": [
+   0,
+   603,
+   130,
+   682
+  ]
+ },
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    0.0,
+    688.0,
+    196.0,
+    797.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    640.0,
+    552.0,
+    762.0,
+    602.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1318.0,
+    465.0,
+    1402.0,
+    522.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1560.0,
+    445.0,
+    1640.0,
+    482.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1118.0,
+    372.0,
+    1172.0,
+    400.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1150.0,
+    325.0,
+    1200.0,
+    350.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1060.0,
+    318.0,
+    1100.0,
+    345.0
+   ]
+  }
+ ],
+ "notes": "night with light trails: 0/3/4 were boxes over whole groups of tail lights and 7 was glare, removed; 2 is a box lorry; 5 split into two cars; seven cars marked from their lights (positions approximate)"
+}

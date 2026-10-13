@@ -1,0 +1,20 @@
+{
+ "frame_id": "4706_20260513_1127",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:03:12",
+ "remove": [
+  2,
+  11
+ ],
+ "relabel": {},
+ "adjust": {
+  "0": [
+   1098,
+   521,
+   1235,
+   682
+  ]
+ },
+ "add": [],
+ "notes": "rain; open lorry boxed twice (0,2) merged into 0 (kept as truck); 11 is a partial duplicate of car 5; car at the bottom edge kept (8)"
+}

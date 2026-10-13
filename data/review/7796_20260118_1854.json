@@ -1,0 +1,22 @@
+{
+ "frame_id": "7796_20260118_1854",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:04:09",
+ "remove": [
+  5
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    1145.0,
+    170.0,
+    1158.0,
+    188.0
+   ]
+  }
+ ],
+ "notes": "5 is a partial duplicate of car 2; rider added"
+}

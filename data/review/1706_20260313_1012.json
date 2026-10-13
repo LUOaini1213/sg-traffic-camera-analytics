@@ -1,0 +1,28 @@
+{
+ "frame_id": "1706_20260313_1012",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:10:40",
+ "remove": [
+  25,
+  33,
+  37
+ ],
+ "relabel": {
+  "19": 0,
+  "18": 0,
+  "28": 0
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    622.0,
+    250.0,
+    636.0,
+    272.0
+   ]
+  }
+ ],
+ "notes": "inner duplicates removed; 19, 18 and 28 are white vans/cars; rider added"
+}

@@ -1,0 +1,27 @@
+{
+ "frame_id": "7793_20260307_1152",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:09:50",
+ "remove": [
+  14,
+  17,
+  21,
+  26
+ ],
+ "relabel": {
+  "6": 0
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    250.0,
+    1025.0,
+    430.0,
+    1080.0
+   ]
+  }
+ ],
+ "notes": "inner duplicates removed; 17 is a crash cushion at the gore; 6 is a van; car at the bottom-left edge added"
+}

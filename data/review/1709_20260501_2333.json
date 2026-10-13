@@ -1,0 +1,31 @@
+{
+ "frame_id": "1709_20260501_2333",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:14:22",
+ "remove": [
+  4
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    1060.0,
+    340.0,
+    1130.0,
+    385.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1120.0,
+    305.0,
+    1170.0,
+    340.0
+   ]
+  }
+ ],
+ "notes": "night haze; 4 is foliage at the frame edge; two cars on the far carriageway added"
+}

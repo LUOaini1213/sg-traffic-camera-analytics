@@ -1,0 +1,10 @@
+{
+ "frame_id": "8704_20260330_1143",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:12:21",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [],
+ "notes": "no clear errors; vehicles behind the trees on the far road not labelled"
+}

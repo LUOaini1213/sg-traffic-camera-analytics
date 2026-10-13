@@ -1,0 +1,27 @@
+{
+ "frame_id": "5795_20260520_1257",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:05:41",
+ "remove": [
+  19,
+  33,
+  36,
+  37,
+  41
+ ],
+ "relabel": {
+  "1": 2,
+  "25": 0,
+  "26": 0
+ },
+ "adjust": {
+  "2": [
+   26,
+   376,
+   166,
+   493
+  ]
+ },
+ "add": [],
+ "notes": "1 is an open lorry, not a bus; red-top lorry boxed twice (2,33) merged; 25 is a red car and 19 its duplicate; 26 is an MPV; 36/37/41 partial duplicates"
+}

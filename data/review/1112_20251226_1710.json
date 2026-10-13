@@ -1,0 +1,10 @@
+{
+ "frame_id": "1112_20251226_1710",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:00:48",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [],
+ "notes": "blank white frame (camera fault); kept as an empty negative"
+}

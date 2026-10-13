@@ -1,0 +1,13 @@
+{
+ "frame_id": "1707_20260118_1854",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:04:09",
+ "remove": [
+  2,
+  4
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [],
+ "notes": "2 and 4 are partial duplicates of cars 0 and 1"
+}

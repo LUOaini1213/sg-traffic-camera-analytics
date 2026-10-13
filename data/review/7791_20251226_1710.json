@@ -1,0 +1,33 @@
+{
+ "frame_id": "7791_20251226_1710",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:01:05",
+ "remove": [],
+ "relabel": {
+  "0": 0,
+  "3": 0,
+  "1": 0
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    1022.0,
+    228.0,
+    1035.0,
+    246.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1060.0,
+    215.0,
+    1090.0,
+    240.0
+   ]
+  }
+ ],
+ "notes": "0 SUV, 3 van and 1 MPV relabelled car; rider and a car under the viaduct added"
+}

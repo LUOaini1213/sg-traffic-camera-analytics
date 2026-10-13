@@ -1,0 +1,22 @@
+{
+ "frame_id": "6705_20251009_1017",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:53:18",
+ "remove": [
+  8,
+  11,
+  20
+ ],
+ "relabel": {
+  "0": 0,
+  "1": 0,
+  "2": 0,
+  "3": 0,
+  "7": 0,
+  "18": 0,
+  "21": 3
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "rain: teacher called vans/MPVs trucks - 0,1,2,3,7,18 relabelled car; 21 is a rider; 8/11/20 partial duplicates"
+}

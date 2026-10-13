@@ -1,0 +1,15 @@
+{
+ "frame_id": "6712_20260625_0953",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:20:25",
+ "remove": [
+  10
+ ],
+ "relabel": {
+  "11": 0,
+  "9": 2
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "10 duplicate of car 0; 11 is a van; 9 is a box lorry (already truck)"
+}

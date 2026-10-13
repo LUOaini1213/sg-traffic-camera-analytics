@@ -1,0 +1,21 @@
+{
+ "frame_id": "1707_20251001_0851",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:48:09",
+ "remove": [
+  0
+ ],
+ "relabel": {
+  "4": 0
+ },
+ "adjust": {
+  "4": [
+   990,
+   516,
+   1158,
+   658
+  ]
+ },
+ "add": [],
+ "notes": "SUV was split into two partial boxes (0 and 4); merged into one car box"
+}

@@ -1,0 +1,14 @@
+{
+ "frame_id": "1111_20260629_0842",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:21:19",
+ "remove": [
+  12
+ ],
+ "relabel": {
+  "10": 0
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "12 duplicate; 10 is a small car far away"
+}

@@ -1,0 +1,38 @@
+{
+ "frame_id": "6703_20260216_1805",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:08:17",
+ "remove": [
+  4,
+  6,
+  10,
+  16,
+  24
+ ],
+ "relabel": {
+  "20": 0,
+  "14": 2
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    770.0,
+    312.0,
+    792.0,
+    345.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1770.0,
+    500.0,
+    1910.0,
+    575.0
+   ]
+  }
+ ],
+ "notes": "partial duplicates of cars 1 and 2 removed (4,6,16,24); 10 is construction material on the verge; 20 is a dark MPV; 14 a small lorry; rider and a car on the ramp added"
+}

@@ -1,0 +1,40 @@
+{
+ "frame_id": "2704_20251211_0558",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:59:44",
+ "remove": [
+  2
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    853.0,
+    440.0,
+    875.0,
+    478.0
+   ]
+  },
+  {
+   "cls": 3,
+   "xyxy": [
+    1710.0,
+    580.0,
+    1755.0,
+    640.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1470.0,
+    430.0,
+    1540.0,
+    475.0
+   ]
+  }
+ ],
+ "notes": "night; 2 covers street-light glare and trees; two riders and a car on the far road added"
+}

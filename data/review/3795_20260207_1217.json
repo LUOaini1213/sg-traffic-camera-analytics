@@ -1,0 +1,21 @@
+{
+ "frame_id": "3795_20260207_1217",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:52:30",
+ "remove": [
+  8
+ ],
+ "relabel": {
+  "0": 0
+ },
+ "adjust": {
+  "5": [
+   985,
+   580,
+   1262,
+   1079
+  ]
+ },
+ "add": [],
+ "notes": "long flatbed trailer only boxed at its cab (5, 8): one box over the whole visible trailer; 0 is a van"
+}

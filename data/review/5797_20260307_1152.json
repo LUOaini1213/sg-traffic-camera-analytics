@@ -1,0 +1,25 @@
+{
+ "frame_id": "5797_20260307_1152",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:09:50",
+ "remove": [
+  20
+ ],
+ "relabel": {
+  "27": 0,
+  "24": 1
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    650.0,
+    300.0,
+    672.0,
+    340.0
+   ]
+  }
+ ],
+ "notes": "27 is a yellow car, not a bus; 24 is a green bus; 20 duplicate; rider added"
+}

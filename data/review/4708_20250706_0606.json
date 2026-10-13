@@ -1,0 +1,12 @@
+{
+ "frame_id": "4708_20250706_0606",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:33:15",
+ "remove": [],
+ "relabel": {
+  "0": 2
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "0 is a lorry with chevron rear panel, not a bus"
+}

@@ -1,0 +1,85 @@
+{
+ "frame_id": "5797_20260325_0559",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:11:37",
+ "remove": [
+  0
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    320.0,
+    240.0,
+    355.0,
+    262.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    425.0,
+    340.0,
+    488.0,
+    375.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    340.0,
+    295.0,
+    385.0,
+    330.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    395.0,
+    225.0,
+    425.0,
+    248.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    320.0,
+    190.0,
+    350.0,
+    212.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    848.0,
+    368.0,
+    925.0,
+    408.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    1495.0,
+    495.0,
+    1585.0,
+    565.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    1380.0,
+    465.0,
+    1440.0,
+    500.0
+   ]
+  }
+ ],
+ "notes": "night in rain: 0 was one box over a whole group of tail lights; replaced with five cars, plus a car, a lorry and a car on the other carriageways, all marked from lights (positions approximate)"
+}

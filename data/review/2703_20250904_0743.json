@@ -1,0 +1,16 @@
+{
+ "frame_id": "2703_20250904_0743",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:42:47",
+ "remove": [
+  9,
+  15,
+  23,
+  39,
+  43
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [],
+ "notes": "contained duplicates removed; 39 is a crash cushion at the gore, not a vehicle"
+}

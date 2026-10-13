@@ -1,0 +1,17 @@
+{
+ "frame_id": "1703_20251202_1143",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:56:59",
+ "remove": [
+  10,
+  17,
+  24,
+  25,
+  37,
+  49
+ ],
+ "relabel": {},
+ "adjust": {},
+ "add": [],
+ "notes": "partial duplicates removed; 49 is a roadside object"
+}

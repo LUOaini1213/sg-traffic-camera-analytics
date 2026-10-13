@@ -1,0 +1,15 @@
+{
+ "frame_id": "1701_20250924_1722",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:47:36",
+ "remove": [
+  32,
+  73
+ ],
+ "relabel": {
+  "6": 2
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "6 is a box lorry, not a bus; 73 is foliage; 32 duplicate"
+}

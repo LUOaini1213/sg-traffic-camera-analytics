@@ -1,0 +1,29 @@
+{
+ "frame_id": "1707_20260514_0524",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:16:10",
+ "remove": [],
+ "relabel": {},
+ "adjust": {},
+ "add": [
+  {
+   "cls": 0,
+   "xyxy": [
+    400.0,
+    55.0,
+    430.0,
+    80.0
+   ]
+  },
+  {
+   "cls": 0,
+   "xyxy": [
+    445.0,
+    80.0,
+    480.0,
+    105.0
+   ]
+  }
+ ],
+ "notes": "night; two cars with tail lights at the far end added"
+}

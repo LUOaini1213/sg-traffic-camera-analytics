@@ -1,0 +1,31 @@
+{
+ "frame_id": "4716_20260110_1041",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:01:37",
+ "remove": [],
+ "relabel": {
+  "1": 2
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 2,
+   "xyxy": [
+    765.0,
+    62.0,
+    785.0,
+    95.0
+   ]
+  },
+  {
+   "cls": 2,
+   "xyxy": [
+    788.0,
+    72.0,
+    802.0,
+    98.0
+   ]
+  }
+ ],
+ "notes": "1 is a box lorry, not a bus; two far lorries added"
+}

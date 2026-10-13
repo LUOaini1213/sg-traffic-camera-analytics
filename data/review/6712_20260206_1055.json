@@ -1,0 +1,14 @@
+{
+ "frame_id": "6712_20260206_1055",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:07:21",
+ "remove": [],
+ "relabel": {
+  "4": 0,
+  "10": 0,
+  "9": 2
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "4 is a van (car); 10 a dark car; 9 is a lorry, not a bus"
+}

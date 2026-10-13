@@ -1,0 +1,18 @@
+{
+ "frame_id": "6714_20260323_0939",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:11:05",
+ "remove": [
+  3,
+  11,
+  19
+ ],
+ "relabel": {
+  "8": 2,
+  "2": 2,
+  "17": 0
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "3/11/19 partial duplicates; 8 is an orange-cab lorry, not a bus; 2 is the back of a yellow lorry; 17 is a red car"
+}

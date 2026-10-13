@@ -1,0 +1,24 @@
+{
+ "frame_id": "1703_20250711_2154",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:33:15",
+ "remove": [
+  5,
+  27,
+  29,
+  32,
+  34,
+  35,
+  40,
+  48,
+  49
+ ],
+ "relabel": {
+  "18": 0,
+  "30": 0,
+  "42": 3
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "partial duplicate boxes removed (5,27,29,32,34,35,40); 48 roadside sign; 49 bush at frame edge; 18 hatchback and 30 van are cars; 42 delivery rider is a motorcycle"
+}

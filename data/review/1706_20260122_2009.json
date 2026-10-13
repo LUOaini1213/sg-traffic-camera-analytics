@@ -1,0 +1,23 @@
+{
+ "frame_id": "1706_20260122_2009",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T23:06:17",
+ "remove": [
+  20,
+  25
+ ],
+ "relabel": {
+  "15": 0,
+  "4": 0
+ },
+ "adjust": {
+  "10": [
+   0,
+   323,
+   66,
+   409
+  ]
+ },
+ "add": [],
+ "notes": "night; 15 is a pickup (car); 4 is a blurred van and 25 its duplicate; 20 duplicate inside 10"
+}

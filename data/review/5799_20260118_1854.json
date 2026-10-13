@@ -1,0 +1,27 @@
+{
+ "frame_id": "5799_20260118_1854",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:49:56",
+ "remove": [
+  9,
+  36,
+  38
+ ],
+ "relabel": {
+  "23": 0,
+  "31": 0
+ },
+ "adjust": {},
+ "add": [
+  {
+   "cls": 3,
+   "xyxy": [
+    1384.0,
+    362.0,
+    1402.0,
+    388.0
+   ]
+  }
+ ],
+ "notes": "9/36/38 partial duplicates; 23 and 31 are MPVs (car); rider added"
+}

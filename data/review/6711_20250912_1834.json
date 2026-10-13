@@ -1,0 +1,14 @@
+{
+ "frame_id": "6711_20250912_1834",
+ "reviewer": "Claude (AI assistant), visual review of the rendered frame",
+ "reviewed_at": "2026-10-13T22:35:36",
+ "remove": [
+  9
+ ],
+ "relabel": {
+  "7": 0
+ },
+ "adjust": {},
+ "add": [],
+ "notes": "9 is an aircraft tail at the airport; 7 is a van"
+}
