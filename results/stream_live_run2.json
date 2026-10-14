@@ -1,0 +1,23 @@
+{
+ "frames": 53,
+ "skipped_unreadable": 0,
+ "wall_s": 2911.9968111515045,
+ "throughput_fps": 0.018200569381476062,
+ "model_ms_per_frame_p50": 93.81312500045169,
+ "e2e_ms_p50": 859.72,
+ "e2e_ms_p95": 1426.0937199999998,
+ "queue_ms_p50": 457.2935,
+ "mean_batch": 2.9622641509433962,
+ "cameras": [
+  "2701",
+  "2702",
+  "2704",
+  "4798",
+  "4799"
+ ],
+ "start": "05:57",
+ "end": "06:46",
+ "capture_to_state_s_p50": 120.88620448112488,
+ "capture_to_state_s_p95": 210.45369362831116,
+ "note": "live run 2: ended when the WSL VM hosting Redpanda was shut down from outside this project"
+}

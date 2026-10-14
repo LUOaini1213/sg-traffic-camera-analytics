@@ -31,7 +31,9 @@ def summarise(path: Path) -> dict:
            "e2e_ms_p50": float(np.percentile(e2e, 50)), "e2e_ms_p95": float(np.percentile(e2e, 95)),
            "queue_ms_p50": float(np.median([e["queue_ms"] for e in ev])),
            "mean_batch": float(np.mean([e["batch"] for e in ev])),
-           "cameras": sorted({e["camera"] for e in ev})}
+           "cameras": sorted({e["camera"] for e in ev}),
+           "start": datetime.fromtimestamp(min(pub)).strftime("%H:%M"),
+           "end": datetime.fromtimestamp(max(e["emitted"] for e in ev)).strftime("%H:%M")}
     lag = []
     for e in ev:
         c = e.get("capture") or ""

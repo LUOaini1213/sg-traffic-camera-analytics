@@ -1,0 +1,23 @@
+{
+ "frames": 199,
+ "skipped_unreadable": 0,
+ "wall_s": 11522.397320270538,
+ "throughput_fps": 0.017270711508091584,
+ "model_ms_per_frame_p50": 106.21017499943264,
+ "e2e_ms_p50": 884.9032,
+ "e2e_ms_p95": 1389.968,
+ "queue_ms_p50": 447.0303,
+ "mean_batch": 3.050251256281407,
+ "cameras": [
+  "2701",
+  "2702",
+  "2704",
+  "4798",
+  "4799"
+ ],
+ "start": "07:13",
+ "end": "10:25",
+ "capture_to_state_s_p50": 114.40097784996033,
+ "capture_to_state_s_p95": 174.41356298923492,
+ "note": "live run 3: DataMall polled every 30 s, 5 cameras, champion model, thresholds from data/thresholds.json"
+}

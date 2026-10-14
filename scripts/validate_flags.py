@@ -132,6 +132,8 @@ def main() -> None:
                 c.setdefault("flag_rate_when_incident", {})[ty] = float(np.mean(hit)) if hit else None
         result["cameras"][cam] = c
     result["pooled_flag_vs_slow"] = agreement(pooled_pred, pooled_true) if pooled_pred else None
+    times = [x["time"] for s in series.values() for x in s]
+    result["first"], result["last"] = min(times), max(times)
     a.out.write_text(json.dumps(result, indent=1, default=float))
     (a.out.with_suffix(".series.json")).write_text(json.dumps(series))
     print(json.dumps({k: v for k, v in result.items() if k != "cameras"}, indent=1, default=float))

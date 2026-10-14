@@ -1,5 +1,26 @@
 [
  {
+  "run_id": "66a83a040af84f4b8cfc96d0dd75ce54",
+  "run_name": "drift-check-week-vs-live",
+  "status": "FINISHED",
+  "params": {},
+  "tags": {
+   "kind": "monitoring"
+  },
+  "metrics": {
+   "ks_2701": 0.1737,
+   "ks_2702": 0.374,
+   "ks_2704": 0.1875,
+   "ks_4798": 0.1024,
+   "ks_4799": 0.1478,
+   "psi_2701": 0.3463,
+   "psi_2702": 0.7351,
+   "psi_2704": 0.4723,
+   "psi_4798": 0.0689,
+   "psi_4799": 0.367
+  }
+ },
+ {
   "run_id": "db858a6db47640939907ce4279842f5a",
   "run_name": "yolo11n_coco4_1280_e40_s0",
   "status": "FINISHED",

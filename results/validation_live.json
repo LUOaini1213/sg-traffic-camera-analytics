@@ -1,0 +1,150 @@
+{
+ "mode": "live",
+ "slow_rule": "mean SpeedBand of category 1-4 links within 200 m <= 3.0",
+ "cameras": {
+  "2701": {
+   "frames": 118,
+   "frames_scored": 118,
+   "links": 28,
+   "threshold": 70.95,
+   "spearman_count_vs_speedband_all": -0.20631267098192277,
+   "mean_count": 27.23728813559322,
+   "flag_rate": 0.07627118644067797,
+   "slow_rate": 0.0847457627118644,
+   "flag_vs_slow": {
+    "n": 118,
+    "tp": 0,
+    "fp": 9,
+    "fn": 10,
+    "tn": 99,
+    "precision": 0.0,
+    "recall": 0.0,
+    "accuracy": 0.8389830508474576,
+    "kappa": -0.08729388942774023
+   },
+   "frames_with_incident_within_1km": {
+    "Vehicle breakdown": 1,
+    "Heavy Traffic": 4
+   },
+   "flag_rate_when_incident": {
+    "Vehicle breakdown": 0.0,
+    "Heavy Traffic": 0.0
+   }
+  },
+  "2702": {
+   "frames": 123,
+   "frames_scored": 123,
+   "links": 23,
+   "threshold": 57.0,
+   "spearman_count_vs_speedband_all": -0.5514254366285807,
+   "mean_count": 14.260162601626016,
+   "flag_rate": 0.04065040650406504,
+   "slow_rate": 1.0,
+   "flag_vs_slow": {
+    "n": 123,
+    "tp": 5,
+    "fp": 0,
+    "fn": 118,
+    "tn": 0,
+    "precision": 1.0,
+    "recall": 0.04065040650406504,
+    "accuracy": 0.04065040650406504,
+    "kappa": 0.0
+   },
+   "frames_with_incident_within_1km": {
+    "Heavy Traffic": 10,
+    "Vehicle breakdown": 1
+   },
+   "flag_rate_when_incident": {
+    "Heavy Traffic": 0.0,
+    "Vehicle breakdown": 0.0
+   }
+  },
+  "2704": {
+   "frames": 122,
+   "frames_scored": 122,
+   "links": 12,
+   "threshold": 19.0,
+   "spearman_count_vs_speedband_all": -0.6071719351821204,
+   "mean_count": 7.319672131147541,
+   "flag_rate": 0.09016393442622951,
+   "slow_rate": 0.0,
+   "flag_vs_slow": {
+    "n": 122,
+    "tp": 0,
+    "fp": 11,
+    "fn": 0,
+    "tn": 111,
+    "precision": 0.0,
+    "recall": NaN,
+    "accuracy": 0.9098360655737705,
+    "kappa": 0.0
+   },
+   "frames_with_incident_within_1km": {
+    "Heavy Traffic": 6,
+    "Vehicle breakdown": 2
+   },
+   "flag_rate_when_incident": {
+    "Heavy Traffic": 0.0,
+    "Vehicle breakdown": 0.0
+   }
+  },
+  "4798": {
+   "frames": 120,
+   "frames_scored": 120,
+   "links": 11,
+   "threshold": 10.0,
+   "spearman_count_vs_speedband_all": 0.06278122648202365,
+   "mean_count": 2.3333333333333335,
+   "flag_rate": 0.09166666666666666,
+   "slow_rate": 0.0,
+   "flag_vs_slow": {
+    "n": 120,
+    "tp": 0,
+    "fp": 11,
+    "fn": 0,
+    "tn": 109,
+    "precision": 0.0,
+    "recall": NaN,
+    "accuracy": 0.9083333333333333,
+    "kappa": 0.0
+   },
+   "frames_with_incident_within_1km": {}
+  },
+  "4799": {
+   "frames": 121,
+   "frames_scored": 121,
+   "links": 9,
+   "threshold": 15.0,
+   "spearman_count_vs_speedband_all": -0.07546999003771178,
+   "mean_count": 4.2809917355371905,
+   "flag_rate": 0.11570247933884298,
+   "slow_rate": 0.0,
+   "flag_vs_slow": {
+    "n": 121,
+    "tp": 0,
+    "fp": 14,
+    "fn": 0,
+    "tn": 107,
+    "precision": 0.0,
+    "recall": NaN,
+    "accuracy": 0.8842975206611571,
+    "kappa": 0.0
+   },
+   "frames_with_incident_within_1km": {}
+  }
+ },
+ "pooled_flag_vs_slow": {
+  "n": 604,
+  "tp": 5,
+  "fp": 45,
+  "fn": 128,
+  "tn": 426,
+  "precision": 0.1,
+  "recall": 0.03759398496240601,
+  "accuracy": 0.7135761589403974,
+  "kappa": -0.07466677636991945
+ },
+ "first": "2026-10-13T21:43",
+ "last": "2026-10-14T10:24"
+}

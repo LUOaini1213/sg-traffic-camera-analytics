@@ -553,5 +553,220 @@
   "file": "label_stats.json",
   "path": "frames|test",
   "fmt": "d"
+ },
+ {
+  "file": "stream_live.json",
+  "path": "frames",
+  "fmt": "d"
+ },
+ {
+  "file": "stream_live.json",
+  "path": "e2e_ms_p50",
+  "fmt": ".0f"
+ },
+ {
+  "file": "stream_live.json",
+  "path": "e2e_ms_p95",
+  "fmt": ".0f"
+ },
+ {
+  "file": "stream_live.json",
+  "path": "capture_to_state_s_p50",
+  "fmt": ".0f"
+ },
+ {
+  "file": "stream_live.json",
+  "path": "capture_to_state_s_p95",
+  "fmt": ".0f"
+ },
+ {
+  "file": "stream_live.json",
+  "path": "model_ms_per_frame_p50",
+  "fmt": ".0f"
+ },
+ {
+  "file": "stream_live.json",
+  "path": "mean_batch",
+  "fmt": ".1f"
+ },
+ {
+  "file": "stream_live_run1.json",
+  "path": "frames",
+  "fmt": "d"
+ },
+ {
+  "file": "stream_live_run2.json",
+  "path": "frames",
+  "fmt": "d"
+ },
+ {
+  "file": "validation_live.json",
+  "path": "pooled_flag_vs_slow|kappa",
+  "fmt": ".2f"
+ },
+ {
+  "file": "validation_live.json",
+  "path": "pooled_flag_vs_slow|n",
+  "fmt": "d"
+ },
+ {
+  "file": "validation_live.json",
+  "path": "pooled_flag_vs_slow|precision",
+  "fmt": ".2f"
+ },
+ {
+  "file": "validation_live.json",
+  "path": "pooled_flag_vs_slow|recall",
+  "fmt": ".2f"
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|2701|spearman_count_vs_speedband_all",
+  "fmt": ".2f"
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|2701|frames_scored",
+  "fmt": "d"
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|2702|spearman_count_vs_speedband_all",
+  "fmt": ".2f"
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|2702|frames_scored",
+  "fmt": "d"
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|2704|spearman_count_vs_speedband_all",
+  "fmt": ".2f"
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|2704|frames_scored",
+  "fmt": "d"
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|4798|spearman_count_vs_speedband_all",
+  "fmt": ".2f"
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|4798|frames_scored",
+  "fmt": "d"
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|4799|spearman_count_vs_speedband_all",
+  "fmt": ".2f"
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|4799|frames_scored",
+  "fmt": "d"
+ },
+ {
+  "file": "drift.json",
+  "path": "matched_hours|2701|psi",
+  "fmt": ".2f"
+ },
+ {
+  "file": "drift.json",
+  "path": "matched_hours|2701|mean_ref",
+  "fmt": ".1f"
+ },
+ {
+  "file": "drift.json",
+  "path": "matched_hours|2701|mean_cur",
+  "fmt": ".1f"
+ },
+ {
+  "file": "drift.json",
+  "path": "all_hours|2701|psi",
+  "fmt": ".2f"
+ },
+ {
+  "file": "drift.json",
+  "path": "matched_hours|2702|psi",
+  "fmt": ".2f"
+ },
+ {
+  "file": "drift.json",
+  "path": "matched_hours|2702|mean_ref",
+  "fmt": ".1f"
+ },
+ {
+  "file": "drift.json",
+  "path": "matched_hours|2702|mean_cur",
+  "fmt": ".1f"
+ },
+ {
+  "file": "drift.json",
+  "path": "all_hours|2702|psi",
+  "fmt": ".2f"
+ },
+ {
+  "file": "drift.json",
+  "path": "matched_hours|2704|psi",
+  "fmt": ".2f"
+ },
+ {
+  "file": "drift.json",
+  "path": "matched_hours|2704|mean_ref",
+  "fmt": ".1f"
+ },
+ {
+  "file": "drift.json",
+  "path": "matched_hours|2704|mean_cur",
+  "fmt": ".1f"
+ },
+ {
+  "file": "drift.json",
+  "path": "all_hours|2704|psi",
+  "fmt": ".2f"
+ },
+ {
+  "file": "drift.json",
+  "path": "matched_hours|4798|psi",
+  "fmt": ".2f"
+ },
+ {
+  "file": "drift.json",
+  "path": "matched_hours|4798|mean_ref",
+  "fmt": ".1f"
+ },
+ {
+  "file": "drift.json",
+  "path": "matched_hours|4798|mean_cur",
+  "fmt": ".1f"
+ },
+ {
+  "file": "drift.json",
+  "path": "all_hours|4798|psi",
+  "fmt": ".2f"
+ },
+ {
+  "file": "drift.json",
+  "path": "matched_hours|4799|psi",
+  "fmt": ".2f"
+ },
+ {
+  "file": "drift.json",
+  "path": "matched_hours|4799|mean_ref",
+  "fmt": ".1f"
+ },
+ {
+  "file": "drift.json",
+  "path": "matched_hours|4799|mean_cur",
+  "fmt": ".1f"
+ },
+ {
+  "file": "drift.json",
+  "path": "all_hours|4799|psi",
+  "fmt": ".2f"
  }
 ]

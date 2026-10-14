@@ -19,7 +19,10 @@ Built on a laptop (GTX 1650 4 GB, Windows 11, WSL2 + Docker) between 2026-10-13 
 | Same, class-agnostic AP50 (is there a vehicle?) | 0.707 -> 0.824 | same |
 | Vehicle-count error per frame (MAE) | 5.78 -> 2.37 | same |
 | Streaming replay, 1,024 frames through Redpanda | 14.8 frames/s, 56 ms model time per frame | `results/stream_week_replay.json` |
+| Live run on the DataMall feed, 07:13-10:25 | 199 frames from 5 cameras; publish-to-state 885 ms median; camera capture to state 114 s median (feed delay) | `results/stream_live.json` |
 | Counts vs LTA speed bands (archive week) | Spearman -0.78 on one camera, near zero on the others; flag/slow kappa 0.11 | `results/validation_week.json` |
+| Flags vs LTA incidents and speed bands (live window, 604 frames) | 0 of 20 frames under a reported Heavy Traffic incident flagged; kappa -0.07 | `results/validation_live.json` |
+| Drift check, live window vs archive week | alert on 4 of 5 cameras (PSI > 0.25 at the same clock hours) | `results/drift.json` |
 | Small local VLM as scene tagger (65 frames) | day/night 93.8% (majority 56.9%); rain and traffic level no better than guessing | `results/vlm_eval.json` |
 | Tests / planted bugs caught | 39 tests; 23/23 mutations caught | CI |
 
@@ -100,14 +103,14 @@ DataMall poller ──> tcam.frames (Redpanda, Kafka API) ──> detector (YOLO
 
 - `src/tcam/stream/producer.py`: `live` polls `Traffic-Imagesv2` every 30 s and publishes only frames whose MD5 changed (cameras refresh every 1-5 minutes); `replay` publishes a frame manifest as fast as the broker accepts.
 - `src/tcam/stream/detector.py`: consumes in batches of up to 4, counts vehicles per class (`src/tcam/counting.py`), updates the per-camera congestion flag (`src/tcam/flags.py`) and publishes the camera state with timings.
-- `src/tcam/stream/api.py`: FastAPI service that keeps the latest state per camera (`GET /cameras`, `GET /cameras/{id}`); sample responses from the live run are in `results/api_*_sample.json`.
+- `src/tcam/stream/api.py`: FastAPI service that keeps the latest state per camera (`GET /cameras`, `GET /cameras/{id}`); sample responses from the live run are in `results/api_cameras_sample.json` and `results/api_camera_2704_sample.json` (taken at 07:44, when 2704 was flagged).
 - `docker-compose.yml`: single-node Redpanda. On this machine it runs in WSL2 Docker and the Windows-side clients connect to the WSL VM address (the localhost relay dropped Kafka connections).
 
 **Congestion flag.** A camera is flagged when the median of its last 3 vehicle counts reaches a threshold, and released when that median falls below 0.8 x threshold. The threshold is the camera's own 85th-percentile count on a calibration period, never below 8 vehicles (`data/thresholds.json`, calibrated on 2026-09-26 to 09-29 archive frames only).
 
 **Throughput (replay).** 1,024 archive frames through Redpanda in 69.1 s: **14.8 frames/s**, median model time 56 ms per 1280-px frame at batch 4. Another process's LLM server was using the same GPU during this run, so this is a lower bound for this laptop rather than a clean benchmark. The five live cameras together produce about one new frame per minute (each refreshes every few minutes), so the service runs far below capacity.
 
-**Live run.** In progress; results are added when the collection window closes.
+**Live run.** From 07:13 to 10:25 on 2026-10-14 the producer polled DataMall every 30 s and the detector served the five cameras: 199 frames, 0 unreadable frames skipped. Publish-to-state latency was 885 ms median and 1390 ms at the 95th percentile (model time 106 ms per frame; each poll publishes the new frames of several cameras at once, so batches averaged 3.1 frames). From the camera's capture minute to the published state took 114 s median and 174 s at the 95th percentile; DataMall gives the capture time only to the minute and publishes each image some time after it is taken, so this is almost all feed delay and polling interval, not processing. A first live run (from 05:36, last state at 05:50, 20 frames) stopped when the feed served a truncated JPEG and the detector raised on decode; the producer now checks that each image decodes and the detector skips unreadable frames. A second run (from 05:57, last state at 06:46, 53 frames) ended when the WSL VM that hosts Redpanda was shut down by something outside this project; the third run above kept a WSL session open for its whole duration.
 
 ## Model operations
 
@@ -115,7 +118,17 @@ DataMall poller ──> tcam.frames (Redpanda, Kafka API) ──> detector (YOLO
 - **Registry** (`scripts/register_model.py`): the three finished runs are versions 1-3 of `sg-traffic-vehicle-detector`, each with its held-out test metrics logged back to the run; version 2 carries the alias `champion` (`results/mlflow_registry.json`). The streaming detector loads the champion weights.
 - **Drift check** (`scripts/drift_check.py`): compares each live camera's count distribution in the live window with the archive week, using the population stability index (PSI, alert above 0.25) and the KS statistic, on all hours and on the hours both windows cover. It is logged as an MLflow monitoring run.
 
+**Drift result** (`results/drift.json`; shared hours: the live window covers 14 clock hours):
 
+| Camera | archive-week mean count (shared hours) | live mean count | PSI (all hours) | PSI (shared hours) | KS (shared hours) | alert |
+|---|---|---|---|---|---|---|
+| 2701 | 32.6 | 27.2 | 0.77 | 0.35 | 0.17 | yes |
+| 2702 | 24.9 | 14.3 | 2.15 | 0.74 | 0.37 | yes |
+| 2704 | 11.7 | 7.3 | 2.05 | 0.47 | 0.19 | yes |
+| 4798 | 2.1 | 2.3 | 0.81 | 0.07 | 0.10 | no |
+| 4799 | 3.6 | 4.3 | 0.85 | 0.37 | 0.15 | yes |
+
+Four of the five cameras raise the alert even on the shared hours, and in every alerted case except 4799 the live counts are lower than the archive week's at the same clock hours (2702: 24.9 -> 14.3). This alert cannot separate a change in traffic from a change in the detector's behaviour: the archive week includes a Friday and a Saturday night, when the checkpoint cameras are busiest, while the live window is a Tuesday night and a Wednesday morning, and archive frames are 20 minutes apart against about 5 minutes live. Its use is as a trigger to label a sample of the new frames and re-score the detector; that follow-up was not done here.
 
 ## Checking the flags against LTA speed bands and incidents
 
@@ -133,7 +146,19 @@ Rules fixed before any agreement number was computed (`src/tcam/validate.py`): a
 
 Pooled flag-versus-slow agreement is weak (kappa 0.11, precision 0.29, recall 0.61). The camera counts track the speed bands clearly on only one camera (2704, Spearman -0.78: more vehicles in view when the nearby expressway links are slower). The reasons are visible in the data rather than guessed: the links near 2702 are always band 1-2 (checkpoint service roads), the links near 2704/4798/4799 never drop to band 3 in this week, and the frames are 20 minutes apart, so a 3-frame median spans an hour. The flag thresholds were also calibrated on a period that included a weekend and scored on weekdays, which pushes the flag share up. Consecutive frames are autocorrelated, so these correlations should not be read with i.i.d. significance tests.
 
-**Live window.** In progress; results are added when the collection window closes.
+**Live window** (`results/validation_live.json`): every frame the collector saved from 2026-10-13T21:43 to 2026-10-14T10:24, replayed through the same service with the week-calibrated thresholds, speed bands every 5 minutes (where the API answered) and incidents every 2 minutes.
+
+| Camera | frames | Spearman(count, speed band) | slow share | flag share | flag vs slow | frames with a Heavy Traffic incident within 1 km | flag share on those frames |
+|---|---|---|---|---|---|---|---|
+| 2701 | 118 | -0.21 | 8% | 8% | 0 TP, 9 FP, 10 FN, 99 TN | 4 | 0% |
+| 2702 | 123 | -0.55 | 100% | 4% | 5 TP, 0 FP, 118 FN, 0 TN | 10 | 0% |
+| 2704 | 122 | -0.61 | 0% | 9% | 0 TP, 11 FP, 0 FN, 111 TN | 6 | 0% |
+| 4798 | 120 | 0.06 | 0% | 9% | 0 TP, 11 FP, 0 FN, 109 TN | 0 |  |
+| 4799 | 121 | -0.08 | 0% | 12% | 0 TP, 14 FP, 0 FN, 107 TN | 0 |  |
+
+Pooled flag-versus-slow kappa: -0.07 (precision 0.10, recall 0.04, n = 604).
+
+In the live window the flags did not fire when it mattered. LTA reported Heavy Traffic on the BKE towards Woodlands within 1 km of cameras 2701, 2702 and 2704 during 20 of the scored frames, and none of those frames was flagged; agreement with the speed-band rule is no better than chance (kappa -0.07). The counts themselves still move with the speed bands on the two Woodlands cameras 2702 and 2704 (Spearman -0.55 and -0.61: more vehicles in view when the nearby links are slower). Two things in the data explain much of the miss. The thresholds came from the archive week, whose counts at the same hours were higher (see the drift check), so the live counts rarely reached them. And LTA does not publish which way a camera faces, so a camera can look at the free-flowing carriageway while the incident and the slow links are on the other one. Re-calibrating thresholds on recent data and per-direction regions of interest are the obvious next steps; neither was done here.
 
 ## Vision-language model as a scene tagger
 

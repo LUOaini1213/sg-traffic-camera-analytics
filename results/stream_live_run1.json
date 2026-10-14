@@ -1,0 +1,23 @@
+{
+ "frames": 20,
+ "skipped_unreadable": 0,
+ "wall_s": 810.7074792385101,
+ "throughput_fps": 0.024669810643397308,
+ "model_ms_per_frame_p50": 44.563400000697584,
+ "e2e_ms_p50": 664.9123999999999,
+ "e2e_ms_p95": 1342.247,
+ "queue_ms_p50": 328.54395,
+ "mean_batch": 3.2,
+ "cameras": [
+  "2701",
+  "2702",
+  "2704",
+  "4798",
+  "4799"
+ ],
+ "start": "05:36",
+ "end": "05:50",
+ "capture_to_state_s_p50": 144.24711298942566,
+ "capture_to_state_s_p95": 234.77109003067017,
+ "note": "first live run; stopped when the detector raised on a truncated JPEG"
+}
