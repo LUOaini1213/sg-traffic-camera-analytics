@@ -1,4 +1,6 @@
 # Single-node Redpanda (Kafka API) for the streaming service. Host clients use 127.0.0.1:39092.
+# The broker has no authentication, so the port is published on 127.0.0.1 only. To reach it from another machine or
+# the Windows side of WSL2, set TCAM_BIND=0.0.0.0 (and TCAM_ADVERTISE_HOST) on a network you trust.
 name: tcam
 services:
   redpanda:
@@ -13,4 +15,4 @@ services:
       - --memory=1G
       - --kafka-addr=internal://0.0.0.0:9092,external://0.0.0.0:39092
       - --advertise-kafka-addr=internal://redpanda:9092,external://${TCAM_ADVERTISE_HOST:-127.0.0.1}:39092
-    ports: ["39092:39092"]
+    ports: ["${TCAM_BIND:-127.0.0.1}:39092:39092"]

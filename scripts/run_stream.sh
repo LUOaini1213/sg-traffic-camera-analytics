@@ -4,7 +4,7 @@
 #   live:   scripts/run_stream.sh live   UNTIL(YYYYmmddHHMM) - LOG WEIGHTS   (needs LTA_KEY)
 # Redpanda runs from docker-compose.yml inside WSL2 here. Windows-side clients could not use the
 # localhost relay reliably, so the broker advertises the WSL VM address:
-#   TCAM_ADVERTISE_HOST=<wsl ip> docker compose up -d ;  TCAM_BOOTSTRAP=<wsl ip>:39092
+#   TCAM_BIND=0.0.0.0 TCAM_ADVERTISE_HOST=<wsl ip> docker compose up -d ;  TCAM_BOOTSTRAP=<wsl ip>:39092
 set -euo pipefail
 MODE=$1; ARG=$2; IMAGES=$3; LOG=$4; WEIGHTS=$5
 ROOT=$(cd "$(dirname "$0")/.." && pwd)

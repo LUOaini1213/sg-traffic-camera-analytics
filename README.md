@@ -187,7 +187,7 @@ python scripts/fetch_frames.py                     # 380 archive frames, MD5-che
 python scripts/build_dataset.py                    # labels + split + YOLO folders
 python scripts/train.py --model yolo11n.pt --imgsz 1280 --epochs 40 --batch 1 --seed 1
 python scripts/evaluate.py --ft "ft-yolo11n_1280_e40_s1=<runs>/yolo11n_1280_e40_s1/weights/best.pt:1280"
-TCAM_ADVERTISE_HOST=<host ip> docker compose up -d
+TCAM_BIND=0.0.0.0 TCAM_ADVERTISE_HOST=<host ip> docker compose up -d   # the broker has no auth: trusted network only
 TCAM_BOOTSTRAP=<host ip>:39092 bash scripts/run_stream.sh replay data/week_frames_manifest.csv <data>/week/images out.jsonl best.pt
 LTA_KEY=... python -m tcam.collect <data>/live --until YYYYmmddHHMM
 python -m pytest -q && python scripts/mutation_check.py && python scripts/check_readme.py
