@@ -43,6 +43,9 @@ MUTATIONS = [
     # labels
     ("labels.py", "if i in remove:\n            continue", "if False:\n            continue", "review removals ignored"),
     ("labels.py", "out.append((relabel.get(i, int(b[\"cls\"]))", "out.append((int(b[\"cls\"])", "review relabels ignored"),
+    # streaming API
+    ("stream/api.py", "    except (ValueError, TypeError, KeyError):\n        return False", "    except ():\n        return False", "malformed state message raises in the consumer"),
+    ("stream/api.py", "    if not isinstance(cam, str):\n        return False", "    if False:\n        return False", "non-string camera id accepted"),
 ]
 
 

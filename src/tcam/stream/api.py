@@ -16,6 +16,21 @@ from . import BOOTSTRAP, STATE
 LATEST: dict[str, dict] = {}
 
 
+def apply_state(raw: bytes | str) -> bool:
+    """Fold one camera-state message into LATEST. A malformed message is skipped and reported as False:
+    an exception here would end the consumer thread and leave the API serving a frozen view."""
+    try:
+        st = json.loads(raw)
+        cam = st["camera"]
+        int(st["counts"]["total"]), bool(st["congested"])  # the fields /cameras reads
+    except (ValueError, TypeError, KeyError):
+        return False
+    if not isinstance(cam, str):
+        return False
+    LATEST[cam] = st
+    return True
+
+
 def _consume(bootstrap: str = BOOTSTRAP) -> None:
     from confluent_kafka import Consumer
     # a fresh group each start: the API rebuilds its view from the start of the state topic
@@ -26,8 +41,7 @@ def _consume(bootstrap: str = BOOTSTRAP) -> None:
         m = c.poll(1.0)
         if m is None or m.error():
             continue
-        st = json.loads(m.value())
-        LATEST[st["camera"]] = st
+        apply_state(m.value())
 
 
 @asynccontextmanager

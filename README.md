@@ -24,7 +24,7 @@ Built on a laptop (GTX 1650 4 GB, Windows 11, WSL2 + Docker) between 2026-10-13 
 | Flags vs LTA incidents and speed bands (live window, 604 frames) | 0 of 20 frames under a reported Heavy Traffic incident flagged; kappa -0.07 | `results/validation_live.json` |
 | Drift check, live window vs archive week | alert on 4 of 5 cameras (PSI > 0.25 at the same clock hours) | `results/drift.json` |
 | Small local VLM as scene tagger (65 frames) | day/night 93.8% (majority 56.9%); rain and traffic level no better than guessing | `results/vlm_eval.json` |
-| Tests / planted bugs caught | 39 tests; 23/23 mutations caught | CI |
+| Tests / planted bugs caught | 50 tests; 25/25 mutations caught | CI |
 
 ## Data and licence
 
@@ -175,7 +175,7 @@ Only day/night is useful. The rain answer is worse than always saying "no rain" 
 ## Engineering checks
 
 - `tests/`: 39 unit tests on counting (ROI, thresholds, size floor), the congestion flag (median window, hysteresis, calibration), AP and matching (hand-computed cases), the camera bootstrap, speed-band and incident matching, PSI/KS, label application and the camera split.
-- `scripts/mutation_check.py`: plants 23 known bugs (exclusive thresholds, mean instead of median, no hysteresis, no precision envelope, labels matched twice, wrong kappa, flipped PSI, ignored review edits, and more) one at a time and requires the test suite to fail on each. All 23 are caught. The first run let 3 through: two exposed weak tests, which were strengthened, and one was a mutation that cannot change behaviour (flipping the ray-casting direction in point-in-polygon), which was replaced.
+- `scripts/mutation_check.py`: plants 25 known bugs (exclusive thresholds, mean instead of median, no hysteresis, no precision envelope, labels matched twice, wrong kappa, flipped PSI, ignored review edits, a streaming API that crashes on a malformed state message, and more) one at a time and requires the test suite to fail on each. All 25 are caught. The first run let 3 through: two exposed weak tests, which were strengthened, and one was a mutation that cannot change behaviour (flipping the ray-casting direction in point-in-polygon), which was replaced.
 - `scripts/check_readme.py`: every number listed in `results/readme_claims.json` must appear in this README exactly as the result file gives it.
 - GitHub Actions runs all three on every push. No training or GPU step runs in CI.
 
