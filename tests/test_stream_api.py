@@ -28,3 +28,12 @@ def test_valid_state_is_kept():
 def test_malformed_state_is_skipped_without_raising(raw):
     assert api.apply_state(raw) is False
     assert api.LATEST == {}
+
+
+def test_responses_carry_security_headers():
+    from fastapi.testclient import TestClient
+    client = TestClient(api.app)  # no `with`: the lifespan (Kafka consumer) does not start
+    for r in (client.get("/health"), client.get("/cameras/none")):  # 200 and 404
+        assert r.headers["x-content-type-options"] == "nosniff"
+        assert r.headers["x-frame-options"] == "DENY"
+        assert r.headers["content-security-policy"] == "default-src 'none'; frame-ancestors 'none'"

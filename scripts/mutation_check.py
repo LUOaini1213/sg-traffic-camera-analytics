@@ -46,6 +46,7 @@ MUTATIONS = [
     # streaming API
     ("stream/api.py", "    except (ValueError, TypeError, KeyError):\n        return False", "    except ():\n        return False", "malformed state message raises in the consumer"),
     ("stream/api.py", "    if not isinstance(cam, str):\n        return False", "    if False:\n        return False", "non-string camera id accepted"),
+    ("stream/api.py", 'response.headers.setdefault("X-Content-Type-Options", "nosniff")', "pass", "nosniff header dropped"),
 ]
 
 

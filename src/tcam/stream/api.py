@@ -9,7 +9,7 @@ import threading
 import uuid
 from contextlib import asynccontextmanager
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 
 from . import BOOTSTRAP, STATE
 
@@ -51,6 +51,19 @@ async def lifespan(_app):
 
 
 app = FastAPI(title="sg-traffic-camera-analytics", lifespan=lifespan)
+
+
+@app.middleware("http")
+async def security_headers(request: Request, call_next):
+    """JSON only, so no content may load; the Swagger and ReDoc pages keep FastAPI's defaults."""
+    response = await call_next(request)
+    response.headers.setdefault("X-Content-Type-Options", "nosniff")
+    response.headers.setdefault("X-Frame-Options", "DENY")
+    response.headers.setdefault("Referrer-Policy", "no-referrer")
+    response.headers.setdefault("Cross-Origin-Resource-Policy", "same-origin")
+    if not request.url.path.startswith(("/docs", "/redoc")):
+        response.headers.setdefault("Content-Security-Policy", "default-src 'none'; frame-ancestors 'none'")
+    return response
 
 
 @app.get("/health")
