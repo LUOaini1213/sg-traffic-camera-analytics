@@ -1,7 +1,7 @@
 """Render pre-annotations for visual review: numbered boxes, colour by class, 100-px grid.
 
 Writes {frame_id}_full.jpg (whole frame) and {frame_id}_z{k}.jpg (two half-height strips at
-native resolution) to D:/.../archive/review/. Reviewers then record corrections in
+native resolution) to TCAM_DATA/archive/review/. Reviewers then record corrections in
 data/review/{frame_id}.json (remove ids, relabel ids, add boxes in native pixels).
 """
 from __future__ import annotations
@@ -14,7 +14,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA = Path(os.environ.get("TCAM_DATA", "D:/sg-traffic-camera-data"))
+DATA = Path(os.environ.get("TCAM_DATA", ROOT / "data_local"))  # images, YOLO folders, MLflow store (not committed)
 COLORS = {0: (0, 255, 255), 1: (255, 160, 0), 2: (255, 0, 255), 3: (0, 255, 0)}
 LETTER = {0: "c", 1: "B", 2: "T", 3: "m"}
 

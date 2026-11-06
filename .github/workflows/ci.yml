@@ -6,13 +6,23 @@ permissions:
   contents: read
 jobs:
   test:
-    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
         with:
           python-version: "3.11"
       - run: pip install -r requirements-ci.txt
+      - name: No local machine paths in tracked files
+        if: runner.os == 'Linux'
+        run: |
+          if git grep -nIE '[A-Za-z]:[\/]+Users[\/]|(^|[^A-Za-z0-9])[C-Z]:[\/]|/home/[a-z]|wsl\.exe -d [A-Z]' -- . ':!.github/workflows/ci.yml'; then
+            echo "local paths found (above); use repo-relative defaults or environment variables"; exit 1
+          fi
       - name: Unit tests
         run: python -m pytest -q
       - name: Mutation check (planted bugs must be caught)

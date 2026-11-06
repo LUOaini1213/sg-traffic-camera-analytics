@@ -10,3 +10,5 @@ mlruns/
 *.png
 !docs/*.svg
 .env
+data_local/
+.venv/

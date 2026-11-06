@@ -24,7 +24,7 @@ from tcam.boxes import from_yolo, size_ok  # noqa: E402
 from tcam.classes import COCO_TO_OURS, MIN_SIDE_FRAC, NAMES  # noqa: E402
 from tcam.metrics import cluster_bootstrap, match_image, mean_ap, per_class_ap, precision_recall_at  # noqa: E402
 
-DATA = Path(os.environ.get("TCAM_DATA", "D:/sg-traffic-camera-data"))
+DATA = Path(os.environ.get("TCAM_DATA", ROOT / "data_local"))  # images, YOLO folders, MLflow store (not committed)
 CLASSES = list(range(len(NAMES)))
 IOUS = [round(x, 2) for x in np.arange(0.5, 0.96, 0.05)]
 

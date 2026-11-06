@@ -2,771 +2,2295 @@
  {
   "file": "detection_eval.json",
   "path": "models|ft-yolo11n_1280_e40_s1|mAP50",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "fine-tuned, seed 1 (champion)",
+   "col": "mAP50"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|ft-yolo11n_1280_e40_s1|AP50|car",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "fine-tuned, seed 1 (champion)",
+   "col": "car"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|ft-yolo11n_1280_e40_s1|AP50|bus",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "fine-tuned, seed 1 (champion)",
+   "col": "bus"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|ft-yolo11n_1280_e40_s1|AP50|truck",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "fine-tuned, seed 1 (champion)",
+   "col": "truck"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|ft-yolo11n_1280_e40_s1|AP50|motorcycle",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "fine-tuned, seed 1 (champion)",
+   "col": "motorcycle"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|ft-yolo11n_1280_e40_s1|AP50_class_agnostic",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "fine-tuned, seed 1 (champion)",
+   "col": "class-agnostic AP50"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|ft-yolo11n_1280_e40_s1|count_mae",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "fine-tuned, seed 1 (champion)",
+   "col": "count MAE / frame"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "bootstrap|ft-yolo11n_1280_e40_s1|mAP50_ci95|0",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "fine-tuned, seed 1 (champion)",
+   "col": "95% CI",
+   "text": "{}-"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "bootstrap|ft-yolo11n_1280_e40_s1|mAP50_ci95|1",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "fine-tuned, seed 1 (champion)",
+   "col": "95% CI",
+   "text": "-{}"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|coco-yolo11n@1280|mAP50",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "COCO YOLO11n (1280)",
+   "col": "mAP50"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|coco-yolo11n@1280|AP50|car",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "COCO YOLO11n (1280)",
+   "col": "car"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|coco-yolo11n@1280|AP50|bus",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "COCO YOLO11n (1280)",
+   "col": "bus"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|coco-yolo11n@1280|AP50|truck",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "COCO YOLO11n (1280)",
+   "col": "truck"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|coco-yolo11n@1280|AP50|motorcycle",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "COCO YOLO11n (1280)",
+   "col": "motorcycle"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|coco-yolo11n@1280|AP50_class_agnostic",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "COCO YOLO11n (1280)",
+   "col": "class-agnostic AP50"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|coco-yolo11n@1280|count_mae",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "COCO YOLO11n (1280)",
+   "col": "count MAE / frame"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "bootstrap|coco-yolo11n@1280|mAP50_ci95|0",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "COCO YOLO11n (1280)",
+   "col": "95% CI",
+   "text": "{}-"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "bootstrap|coco-yolo11n@1280|mAP50_ci95|1",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "COCO YOLO11n (1280)",
+   "col": "95% CI",
+   "text": "-{}"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|pre-annotation (YOLO11x tiled)|mAP50",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "pre-annotation (YOLO11x, 5 passes)",
+   "col": "mAP50"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|pre-annotation (YOLO11x tiled)|AP50|car",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "pre-annotation (YOLO11x, 5 passes)",
+   "col": "car"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|pre-annotation (YOLO11x tiled)|AP50|bus",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "pre-annotation (YOLO11x, 5 passes)",
+   "col": "bus"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|pre-annotation (YOLO11x tiled)|AP50|truck",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "pre-annotation (YOLO11x, 5 passes)",
+   "col": "truck"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|pre-annotation (YOLO11x tiled)|AP50|motorcycle",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "pre-annotation (YOLO11x, 5 passes)",
+   "col": "motorcycle"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|pre-annotation (YOLO11x tiled)|AP50_class_agnostic",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "pre-annotation (YOLO11x, 5 passes)",
+   "col": "class-agnostic AP50"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|pre-annotation (YOLO11x tiled)|count_mae",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "pre-annotation (YOLO11x, 5 passes)",
+   "col": "count MAE / frame"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "bootstrap|pre-annotation (YOLO11x tiled)|mAP50_ci95|0",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "pre-annotation (YOLO11x, 5 passes)",
+   "col": "95% CI",
+   "text": "{}-"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "bootstrap|pre-annotation (YOLO11x tiled)|mAP50_ci95|1",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "pre-annotation (YOLO11x, 5 passes)",
+   "col": "95% CI",
+   "text": "-{}"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|ft-yolo11n_1280_e40_s0|mAP50",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "fine-tuned, seed 0",
+   "col": "mAP50"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|ft-yolo11n_1280_e40_s0|AP50|car",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "fine-tuned, seed 0",
+   "col": "car"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|ft-yolo11n_1280_e40_s0|AP50|bus",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "fine-tuned, seed 0",
+   "col": "bus"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|ft-yolo11n_1280_e40_s0|AP50|truck",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "fine-tuned, seed 0",
+   "col": "truck"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|ft-yolo11n_1280_e40_s0|AP50|motorcycle",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "fine-tuned, seed 0",
+   "col": "motorcycle"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|ft-yolo11n_1280_e40_s0|AP50_class_agnostic",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "fine-tuned, seed 0",
+   "col": "class-agnostic AP50"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|ft-yolo11n_1280_e40_s0|count_mae",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "fine-tuned, seed 0",
+   "col": "count MAE / frame"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "bootstrap|ft-yolo11n_1280_e40_s0|mAP50_ci95|0",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "fine-tuned, seed 0",
+   "col": "95% CI",
+   "text": "{}-"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "bootstrap|ft-yolo11n_1280_e40_s0|mAP50_ci95|1",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "fine-tuned, seed 0",
+   "col": "95% CI",
+   "text": "-{}"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|ft-yolo11n_coco4_1280_e40_s0|mAP50",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "fine-tuned, COCO-initialised class head",
+   "col": "mAP50"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|ft-yolo11n_coco4_1280_e40_s0|AP50|car",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "fine-tuned, COCO-initialised class head",
+   "col": "car"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|ft-yolo11n_coco4_1280_e40_s0|AP50|bus",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "fine-tuned, COCO-initialised class head",
+   "col": "bus"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|ft-yolo11n_coco4_1280_e40_s0|AP50|truck",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "fine-tuned, COCO-initialised class head",
+   "col": "truck"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|ft-yolo11n_coco4_1280_e40_s0|AP50|motorcycle",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "fine-tuned, COCO-initialised class head",
+   "col": "motorcycle"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|ft-yolo11n_coco4_1280_e40_s0|AP50_class_agnostic",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "fine-tuned, COCO-initialised class head",
+   "col": "class-agnostic AP50"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|ft-yolo11n_coco4_1280_e40_s0|count_mae",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "fine-tuned, COCO-initialised class head",
+   "col": "count MAE / frame"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "bootstrap|ft-yolo11n_coco4_1280_e40_s0|mAP50_ci95|0",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "fine-tuned, COCO-initialised class head",
+   "col": "95% CI",
+   "text": "{}-"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "bootstrap|ft-yolo11n_coco4_1280_e40_s0|mAP50_ci95|1",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "fine-tuned, COCO-initialised class head",
+   "col": "95% CI",
+   "text": "-{}"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|coco-yolo11n@640|mAP50",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "COCO YOLO11n (640)",
+   "col": "mAP50"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|coco-yolo11n@640|AP50|car",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "COCO YOLO11n (640)",
+   "col": "car"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|coco-yolo11n@640|AP50|bus",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "COCO YOLO11n (640)",
+   "col": "bus"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|coco-yolo11n@640|AP50|truck",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "COCO YOLO11n (640)",
+   "col": "truck"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|coco-yolo11n@640|AP50|motorcycle",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "COCO YOLO11n (640)",
+   "col": "motorcycle"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|coco-yolo11n@640|AP50_class_agnostic",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "COCO YOLO11n (640)",
+   "col": "class-agnostic AP50"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|coco-yolo11n@640|count_mae",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "COCO YOLO11n (640)",
+   "col": "count MAE / frame"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "bootstrap|coco-yolo11n@640|mAP50_ci95|0",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "COCO YOLO11n (640)",
+   "col": "95% CI",
+   "text": "{}-"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "bootstrap|coco-yolo11n@640|mAP50_ci95|1",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "table": {
+   "header": "Model (imgsz)",
+   "row": "COCO YOLO11n (640)",
+   "col": "95% CI",
+   "text": "-{}"
+  }
  },
  {
   "file": "detection_eval.json",
   "path": "models|pre-annotation (YOLO11x tiled)|mAP50_95",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "context": "its mAP50-95 of {} is high"
  },
  {
   "file": "detection_eval.json",
   "path": "models|coco-yolo11n@1280|recall@0.25",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "context": "recall at confidence 0.25 is {} against"
  },
  {
   "file": "detection_eval.json",
   "path": "models|coco-yolo11n@1280|mAP50_day",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "context": "day {} ->"
  },
  {
   "file": "detection_eval.json",
   "path": "models|coco-yolo11n@1280|mAP50_night",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "context": "night mAP50 {} ->"
  },
  {
   "file": "detection_eval.json",
   "path": "models|ft-yolo11n_1280_e40_s1|recall@0.25",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "context": "against {} after fine-tuning"
  },
  {
   "file": "detection_eval.json",
   "path": "models|ft-yolo11n_1280_e40_s1|mAP50_day",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "context": "-> {})."
  },
  {
   "file": "detection_eval.json",
   "path": "models|ft-yolo11n_1280_e40_s1|mAP50_night",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "context": "-> {}, day"
  },
  {
   "file": "detection_eval.json",
   "path": "bootstrap|ft-yolo11n_1280_e40_s1|delta_vs_coco-yolo11n@1280|ci95|0",
-  "fmt": "+.3f"
+  "fmt": "+.3f",
+  "context": "paired interval is {} to"
  },
  {
   "file": "detection_eval.json",
   "path": "bootstrap|ft-yolo11n_1280_e40_s1|delta_vs_coco-yolo11n@1280|ci95|1",
-  "fmt": "+.3f"
+  "fmt": "+.3f",
+  "context": "to {}, but seed 0"
  },
  {
   "file": "detection_eval.json",
   "path": "bootstrap|ft-yolo11n_1280_e40_s1|AP50_class_agnostic_delta_vs_coco-yolo11n@1280|ci95|0",
-  "fmt": "+.3f"
+  "fmt": "+.3f",
+  "context": "camera-bootstrap difference {} to"
  },
  {
   "file": "detection_eval.json",
   "path": "bootstrap|ft-yolo11n_1280_e40_s1|AP50_class_agnostic_delta_vs_coco-yolo11n@1280|ci95|1",
-  "fmt": "+.3f"
+  "fmt": "+.3f",
+  "context": "to {}), and the per-frame"
  },
  {
   "file": "detection_eval.json",
   "path": "bootstrap|ft-yolo11n_1280_e40_s1|count_mae_delta_vs_coco-yolo11n@1280|ci95|0",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "context": "(difference {} to"
  },
  {
   "file": "detection_eval.json",
   "path": "bootstrap|ft-yolo11n_1280_e40_s1|count_mae_delta_vs_coco-yolo11n@1280|ci95|1",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "context": "to {}). The COCO"
  },
  {
   "file": "detection_eval.json",
   "path": "bootstrap|ft-yolo11n_1280_e40_s0|delta_vs_coco-yolo11n@1280|ci95|0",
-  "fmt": "+.3f"
+  "fmt": "+.3f",
+  "context": "its interval ({} to"
  },
  {
   "file": "detection_eval.json",
   "path": "bootstrap|ft-yolo11n_1280_e40_s0|delta_vs_coco-yolo11n@1280|ci95|1",
-  "fmt": "+.3f"
+  "fmt": "+.3f",
+  "context": "to {}) includes zero"
  },
  {
   "file": "detection_eval_val.json",
   "path": "models|ft-yolo11n_1280_e40_s0|mAP50",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "context": "seed 0 {}, seed 1"
  },
  {
   "file": "detection_eval_val.json",
   "path": "models|ft-yolo11n_1280_e40_s1|mAP50",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "context": "seed 1 {}, and a variant"
  },
  {
   "file": "detection_eval_val.json",
   "path": "models|ft-yolo11n_coco4_1280_e40_s0|mAP50",
-  "fmt": ".3f"
+  "fmt": ".3f",
+  "context": "motorcycle rows {}. Seed 1"
  },
  {
   "file": "stream_week_replay.json",
   "path": "throughput_fps",
-  "fmt": ".1f"
+  "fmt": ".1f",
+  "context": "| {} frames/s, "
+ },
+ {
+  "file": "stream_week_replay.json",
+  "path": "throughput_fps",
+  "fmt": ".1f",
+  "context": "**{} frames/s**"
  },
  {
   "file": "stream_week_replay.json",
   "path": "model_ms_per_frame_p50",
-  "fmt": ".0f"
+  "fmt": ".0f",
+  "context": "frames/s, {} ms model time"
+ },
+ {
+  "file": "stream_week_replay.json",
+  "path": "model_ms_per_frame_p50",
+  "fmt": ".0f",
+  "context": "median model time {} ms per 1280-px"
  },
  {
   "file": "stream_week_replay.json",
   "path": "wall_s",
-  "fmt": ".1f"
+  "fmt": ".1f",
+  "context": "through Redpanda in {} s"
  },
  {
   "file": "validation_week.json",
   "path": "pooled_flag_vs_slow|kappa",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "context": "flag/slow kappa {} |"
+ },
+ {
+  "file": "validation_week.json",
+  "path": "pooled_flag_vs_slow|kappa",
+  "fmt": ".2f",
+  "context": "(kappa {}, precision"
  },
  {
   "file": "validation_week.json",
   "path": "pooled_flag_vs_slow|precision",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "context": "kappa 0.11, precision {}, recall"
  },
  {
   "file": "validation_week.json",
   "path": "pooled_flag_vs_slow|recall",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "context": "precision 0.29, recall {})"
  },
  {
   "file": "validation_week.json",
   "path": "cameras|2701|spearman_count_vs_speedband_all",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "table": {
+   "header": "Spearman(count, speed band), all frames",
+   "row": "2701",
+   "col": "Spearman(count, speed band), all frames"
+  }
  },
  {
   "file": "validation_week.json",
   "path": "cameras|2701|frames_scored",
-  "fmt": "d"
+  "fmt": "d",
+  "table": {
+   "header": "Spearman(count, speed band), all frames",
+   "row": "2701",
+   "col": "frames scored"
+  }
  },
  {
   "file": "validation_week.json",
   "path": "cameras|2701|flag_rate",
-  "fmt": "pct0"
+  "fmt": "pct0",
+  "table": {
+   "header": "Spearman(count, speed band), all frames",
+   "row": "2701",
+   "col": "flag share"
+  }
  },
  {
   "file": "validation_week.json",
   "path": "cameras|2701|slow_rate",
-  "fmt": "pct0"
+  "fmt": "pct0",
+  "table": {
+   "header": "Spearman(count, speed band), all frames",
+   "row": "2701",
+   "col": "slow share"
+  }
  },
  {
   "file": "validation_week.json",
   "path": "cameras|2702|spearman_count_vs_speedband_all",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "table": {
+   "header": "Spearman(count, speed band), all frames",
+   "row": "2702",
+   "col": "Spearman(count, speed band), all frames"
+  }
  },
  {
   "file": "validation_week.json",
   "path": "cameras|2702|frames_scored",
-  "fmt": "d"
+  "fmt": "d",
+  "table": {
+   "header": "Spearman(count, speed band), all frames",
+   "row": "2702",
+   "col": "frames scored"
+  }
  },
  {
   "file": "validation_week.json",
   "path": "cameras|2702|flag_rate",
-  "fmt": "pct0"
+  "fmt": "pct0",
+  "table": {
+   "header": "Spearman(count, speed band), all frames",
+   "row": "2702",
+   "col": "flag share"
+  }
  },
  {
   "file": "validation_week.json",
   "path": "cameras|2702|slow_rate",
-  "fmt": "pct0"
+  "fmt": "pct0",
+  "table": {
+   "header": "Spearman(count, speed band), all frames",
+   "row": "2702",
+   "col": "slow share"
+  }
  },
  {
   "file": "validation_week.json",
   "path": "cameras|2704|spearman_count_vs_speedband_all",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "table": {
+   "header": "Spearman(count, speed band), all frames",
+   "row": "2704",
+   "col": "Spearman(count, speed band), all frames"
+  }
  },
  {
   "file": "validation_week.json",
   "path": "cameras|2704|frames_scored",
-  "fmt": "d"
+  "fmt": "d",
+  "table": {
+   "header": "Spearman(count, speed band), all frames",
+   "row": "2704",
+   "col": "frames scored"
+  }
  },
  {
   "file": "validation_week.json",
   "path": "cameras|2704|flag_rate",
-  "fmt": "pct0"
+  "fmt": "pct0",
+  "table": {
+   "header": "Spearman(count, speed band), all frames",
+   "row": "2704",
+   "col": "flag share"
+  }
  },
  {
   "file": "validation_week.json",
   "path": "cameras|2704|slow_rate",
-  "fmt": "pct0"
+  "fmt": "pct0",
+  "table": {
+   "header": "Spearman(count, speed band), all frames",
+   "row": "2704",
+   "col": "slow share"
+  }
  },
  {
   "file": "validation_week.json",
   "path": "cameras|4798|spearman_count_vs_speedband_all",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "table": {
+   "header": "Spearman(count, speed band), all frames",
+   "row": "4798",
+   "col": "Spearman(count, speed band), all frames"
+  }
  },
  {
   "file": "validation_week.json",
   "path": "cameras|4798|frames_scored",
-  "fmt": "d"
+  "fmt": "d",
+  "table": {
+   "header": "Spearman(count, speed band), all frames",
+   "row": "4798",
+   "col": "frames scored"
+  }
  },
  {
   "file": "validation_week.json",
   "path": "cameras|4798|flag_rate",
-  "fmt": "pct0"
+  "fmt": "pct0",
+  "table": {
+   "header": "Spearman(count, speed band), all frames",
+   "row": "4798",
+   "col": "flag share"
+  }
  },
  {
   "file": "validation_week.json",
   "path": "cameras|4798|slow_rate",
-  "fmt": "pct0"
+  "fmt": "pct0",
+  "table": {
+   "header": "Spearman(count, speed band), all frames",
+   "row": "4798",
+   "col": "slow share"
+  }
  },
  {
   "file": "validation_week.json",
   "path": "cameras|4799|spearman_count_vs_speedband_all",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "table": {
+   "header": "Spearman(count, speed band), all frames",
+   "row": "4799",
+   "col": "Spearman(count, speed band), all frames"
+  }
  },
  {
   "file": "validation_week.json",
   "path": "cameras|4799|frames_scored",
-  "fmt": "d"
+  "fmt": "d",
+  "table": {
+   "header": "Spearman(count, speed band), all frames",
+   "row": "4799",
+   "col": "frames scored"
+  }
  },
  {
   "file": "validation_week.json",
   "path": "cameras|4799|flag_rate",
-  "fmt": "pct0"
+  "fmt": "pct0",
+  "table": {
+   "header": "Spearman(count, speed band), all frames",
+   "row": "4799",
+   "col": "flag share"
+  }
  },
  {
   "file": "validation_week.json",
   "path": "cameras|4799|slow_rate",
-  "fmt": "pct0"
+  "fmt": "pct0",
+  "table": {
+   "header": "Spearman(count, speed band), all frames",
+   "row": "4799",
+   "col": "slow share"
+  }
  },
  {
   "file": "vlm_eval.json",
   "path": "fields|time_of_day|accuracy",
-  "fmt": "pct1"
+  "fmt": "pct1",
+  "table": {
+   "header": "majority-class baseline",
+   "row": "time of day",
+   "col": "accuracy"
+  }
  },
  {
   "file": "vlm_eval.json",
   "path": "fields|time_of_day|majority_baseline",
-  "fmt": "pct1"
+  "fmt": "pct1",
+  "table": {
+   "header": "majority-class baseline",
+   "row": "time of day",
+   "col": "majority-class baseline"
+  }
  },
  {
   "file": "vlm_eval.json",
   "path": "fields|rain|accuracy",
-  "fmt": "pct1"
+  "fmt": "pct1",
+  "table": {
+   "header": "majority-class baseline",
+   "row": "rain",
+   "col": "accuracy"
+  }
  },
  {
   "file": "vlm_eval.json",
   "path": "fields|rain|majority_baseline",
-  "fmt": "pct1"
+  "fmt": "pct1",
+  "table": {
+   "header": "majority-class baseline",
+   "row": "rain",
+   "col": "majority-class baseline"
+  }
  },
  {
   "file": "vlm_eval.json",
   "path": "fields|traffic|accuracy",
-  "fmt": "pct1"
+  "fmt": "pct1",
+  "table": {
+   "header": "majority-class baseline",
+   "row": "traffic level",
+   "col": "accuracy"
+  }
  },
  {
   "file": "vlm_eval.json",
   "path": "fields|traffic|majority_baseline",
-  "fmt": "pct1"
+  "fmt": "pct1",
+  "table": {
+   "header": "majority-class baseline",
+   "row": "traffic level",
+   "col": "majority-class baseline"
+  }
  },
  {
   "file": "label_stats.json",
   "path": "edits|removed",
-  "fmt": "d"
+  "fmt": "d",
+  "table": {
+   "header": "boxes",
+   "row": "removed (false positives, duplicates, tile-edge fragments, signs, road markings)",
+   "col": "boxes"
+  }
  },
  {
   "file": "label_stats.json",
   "path": "edits|relabelled",
-  "fmt": "d"
+  "fmt": "d",
+  "table": {
+   "header": "boxes",
+   "row": "class changed",
+   "col": "boxes"
+  }
  },
  {
   "file": "label_stats.json",
   "path": "edits|adjusted",
-  "fmt": "d"
+  "fmt": "d",
+  "table": {
+   "header": "boxes",
+   "row": "refitted",
+   "col": "boxes"
+  }
  },
  {
   "file": "label_stats.json",
   "path": "edits|added",
-  "fmt": "d"
+  "fmt": "d",
+  "table": {
+   "header": "boxes",
+   "row": "added (missed vehicles)",
+   "col": "boxes"
+  }
  },
  {
   "file": "label_stats.json",
   "path": "frames|train",
-  "fmt": "d"
+  "fmt": "d",
+  "context": "{} train frames"
  },
  {
   "file": "label_stats.json",
   "path": "frames|val",
-  "fmt": "d"
+  "fmt": "d",
+  "context": "{} validation frames"
  },
  {
   "file": "label_stats.json",
   "path": "frames|test",
-  "fmt": "d"
+  "fmt": "d",
+  "context": "{} test frames (14 cameras)"
+ },
+ {
+  "file": "label_stats.json",
+  "path": "frames|test",
+  "fmt": "d",
+  "context": "| Detection, {} frames from 14"
+ },
+ {
+  "file": "label_stats.json",
+  "path": "frames|test",
+  "fmt": "d",
+  "context": "test set\nis {} frames from"
+ },
+ {
+  "file": "label_stats.json",
+  "path": "frames|test",
+  "fmt": "d",
+  "context": "VLM as scene tagger ({} frames)"
  },
  {
   "file": "stream_live.json",
   "path": "frames",
-  "fmt": "d"
+  "fmt": "d",
+  "context": "| {} frames from 5 cameras"
+ },
+ {
+  "file": "stream_live.json",
+  "path": "frames",
+  "fmt": "d",
+  "context": "served the five cameras: {} frames"
  },
  {
   "file": "stream_live.json",
   "path": "e2e_ms_p50",
-  "fmt": ".0f"
+  "fmt": ".0f",
+  "context": "publish-to-state {} ms median"
+ },
+ {
+  "file": "stream_live.json",
+  "path": "e2e_ms_p50",
+  "fmt": ".0f",
+  "context": "latency was {} ms median"
  },
  {
   "file": "stream_live.json",
   "path": "e2e_ms_p95",
-  "fmt": ".0f"
+  "fmt": ".0f",
+  "context": "and {} ms at the 95th"
  },
  {
   "file": "stream_live.json",
   "path": "capture_to_state_s_p50",
-  "fmt": ".0f"
+  "fmt": ".0f",
+  "context": "capture to state {} s median"
+ },
+ {
+  "file": "stream_live.json",
+  "path": "capture_to_state_s_p50",
+  "fmt": ".0f",
+  "context": "took {} s median"
  },
  {
   "file": "stream_live.json",
   "path": "capture_to_state_s_p95",
-  "fmt": ".0f"
+  "fmt": ".0f",
+  "context": "and {} s at the 95th"
  },
  {
   "file": "stream_live.json",
   "path": "model_ms_per_frame_p50",
-  "fmt": ".0f"
+  "fmt": ".0f",
+  "context": "(model time {} ms per frame"
  },
  {
   "file": "stream_live.json",
   "path": "mean_batch",
-  "fmt": ".1f"
+  "fmt": ".1f",
+  "context": "batches averaged {} frames"
  },
  {
   "file": "stream_live_run1.json",
   "path": "frames",
-  "fmt": "d"
+  "fmt": "d",
+  "context": "last state at 05:50, {} frames"
  },
  {
   "file": "stream_live_run2.json",
   "path": "frames",
-  "fmt": "d"
+  "fmt": "d",
+  "context": "last state at 06:46, {} frames"
  },
  {
   "file": "validation_live.json",
   "path": "pooled_flag_vs_slow|kappa",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "context": "flagged; kappa {} |"
+ },
+ {
+  "file": "validation_live.json",
+  "path": "pooled_flag_vs_slow|kappa",
+  "fmt": ".2f",
+  "context": "flag-versus-slow kappa: {} ("
+ },
+ {
+  "file": "validation_live.json",
+  "path": "pooled_flag_vs_slow|kappa",
+  "fmt": ".2f",
+  "context": "no better than chance (kappa {})"
+ },
+ {
+  "file": "validation_live.json",
+  "path": "pooled_flag_vs_slow|kappa",
+  "fmt": ".2f",
+  "context": "(kappa {} against the speed-band rule)"
  },
  {
   "file": "validation_live.json",
   "path": "pooled_flag_vs_slow|n",
-  "fmt": "d"
+  "fmt": "d",
+  "context": "(live window, {} frames)"
+ },
+ {
+  "file": "validation_live.json",
+  "path": "pooled_flag_vs_slow|n",
+  "fmt": "d",
+  "context": "n = {})"
  },
  {
   "file": "validation_live.json",
   "path": "pooled_flag_vs_slow|precision",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "context": "(precision {}, recall 0.04"
  },
  {
   "file": "validation_live.json",
   "path": "pooled_flag_vs_slow|recall",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "context": "recall {}, n = 604"
  },
  {
   "file": "validation_live.json",
   "path": "cameras|2701|spearman_count_vs_speedband_all",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "2701",
+   "col": "Spearman(count, speed band)"
+  }
  },
  {
   "file": "validation_live.json",
   "path": "cameras|2701|frames_scored",
-  "fmt": "d"
+  "fmt": "d",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "2701",
+   "col": "frames"
+  }
  },
  {
   "file": "validation_live.json",
   "path": "cameras|2702|spearman_count_vs_speedband_all",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "2702",
+   "col": "Spearman(count, speed band)"
+  }
  },
  {
   "file": "validation_live.json",
   "path": "cameras|2702|frames_scored",
-  "fmt": "d"
+  "fmt": "d",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "2702",
+   "col": "frames"
+  }
  },
  {
   "file": "validation_live.json",
   "path": "cameras|2704|spearman_count_vs_speedband_all",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "2704",
+   "col": "Spearman(count, speed band)"
+  }
  },
  {
   "file": "validation_live.json",
   "path": "cameras|2704|frames_scored",
-  "fmt": "d"
+  "fmt": "d",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "2704",
+   "col": "frames"
+  }
  },
  {
   "file": "validation_live.json",
   "path": "cameras|4798|spearman_count_vs_speedband_all",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "4798",
+   "col": "Spearman(count, speed band)"
+  }
  },
  {
   "file": "validation_live.json",
   "path": "cameras|4798|frames_scored",
-  "fmt": "d"
+  "fmt": "d",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "4798",
+   "col": "frames"
+  }
  },
  {
   "file": "validation_live.json",
   "path": "cameras|4799|spearman_count_vs_speedband_all",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "4799",
+   "col": "Spearman(count, speed band)"
+  }
  },
  {
   "file": "validation_live.json",
   "path": "cameras|4799|frames_scored",
-  "fmt": "d"
+  "fmt": "d",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "4799",
+   "col": "frames"
+  }
  },
  {
   "file": "drift.json",
   "path": "matched_hours|2701|psi",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "table": {
+   "header": "archive-week mean count (shared hours)",
+   "row": "2701",
+   "col": "PSI (shared hours)"
+  }
  },
  {
   "file": "drift.json",
   "path": "matched_hours|2701|mean_ref",
-  "fmt": ".1f"
+  "fmt": ".1f",
+  "table": {
+   "header": "archive-week mean count (shared hours)",
+   "row": "2701",
+   "col": "archive-week mean count (shared hours)"
+  }
  },
  {
   "file": "drift.json",
   "path": "matched_hours|2701|mean_cur",
-  "fmt": ".1f"
+  "fmt": ".1f",
+  "table": {
+   "header": "archive-week mean count (shared hours)",
+   "row": "2701",
+   "col": "live mean count"
+  }
  },
  {
   "file": "drift.json",
   "path": "all_hours|2701|psi",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "table": {
+   "header": "archive-week mean count (shared hours)",
+   "row": "2701",
+   "col": "PSI (all hours)"
+  }
  },
  {
   "file": "drift.json",
   "path": "matched_hours|2702|psi",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "table": {
+   "header": "archive-week mean count (shared hours)",
+   "row": "2702",
+   "col": "PSI (shared hours)"
+  }
  },
  {
   "file": "drift.json",
   "path": "matched_hours|2702|mean_ref",
-  "fmt": ".1f"
+  "fmt": ".1f",
+  "table": {
+   "header": "archive-week mean count (shared hours)",
+   "row": "2702",
+   "col": "archive-week mean count (shared hours)"
+  }
  },
  {
   "file": "drift.json",
   "path": "matched_hours|2702|mean_cur",
-  "fmt": ".1f"
+  "fmt": ".1f",
+  "table": {
+   "header": "archive-week mean count (shared hours)",
+   "row": "2702",
+   "col": "live mean count"
+  }
  },
  {
   "file": "drift.json",
   "path": "all_hours|2702|psi",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "table": {
+   "header": "archive-week mean count (shared hours)",
+   "row": "2702",
+   "col": "PSI (all hours)"
+  }
  },
  {
   "file": "drift.json",
   "path": "matched_hours|2704|psi",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "table": {
+   "header": "archive-week mean count (shared hours)",
+   "row": "2704",
+   "col": "PSI (shared hours)"
+  }
  },
  {
   "file": "drift.json",
   "path": "matched_hours|2704|mean_ref",
-  "fmt": ".1f"
+  "fmt": ".1f",
+  "table": {
+   "header": "archive-week mean count (shared hours)",
+   "row": "2704",
+   "col": "archive-week mean count (shared hours)"
+  }
  },
  {
   "file": "drift.json",
   "path": "matched_hours|2704|mean_cur",
-  "fmt": ".1f"
+  "fmt": ".1f",
+  "table": {
+   "header": "archive-week mean count (shared hours)",
+   "row": "2704",
+   "col": "live mean count"
+  }
  },
  {
   "file": "drift.json",
   "path": "all_hours|2704|psi",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "table": {
+   "header": "archive-week mean count (shared hours)",
+   "row": "2704",
+   "col": "PSI (all hours)"
+  }
  },
  {
   "file": "drift.json",
   "path": "matched_hours|4798|psi",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "table": {
+   "header": "archive-week mean count (shared hours)",
+   "row": "4798",
+   "col": "PSI (shared hours)"
+  }
  },
  {
   "file": "drift.json",
   "path": "matched_hours|4798|mean_ref",
-  "fmt": ".1f"
+  "fmt": ".1f",
+  "table": {
+   "header": "archive-week mean count (shared hours)",
+   "row": "4798",
+   "col": "archive-week mean count (shared hours)"
+  }
  },
  {
   "file": "drift.json",
   "path": "matched_hours|4798|mean_cur",
-  "fmt": ".1f"
+  "fmt": ".1f",
+  "table": {
+   "header": "archive-week mean count (shared hours)",
+   "row": "4798",
+   "col": "live mean count"
+  }
  },
  {
   "file": "drift.json",
   "path": "all_hours|4798|psi",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "table": {
+   "header": "archive-week mean count (shared hours)",
+   "row": "4798",
+   "col": "PSI (all hours)"
+  }
  },
  {
   "file": "drift.json",
   "path": "matched_hours|4799|psi",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "table": {
+   "header": "archive-week mean count (shared hours)",
+   "row": "4799",
+   "col": "PSI (shared hours)"
+  }
  },
  {
   "file": "drift.json",
   "path": "matched_hours|4799|mean_ref",
-  "fmt": ".1f"
+  "fmt": ".1f",
+  "table": {
+   "header": "archive-week mean count (shared hours)",
+   "row": "4799",
+   "col": "archive-week mean count (shared hours)"
+  }
  },
  {
   "file": "drift.json",
   "path": "matched_hours|4799|mean_cur",
-  "fmt": ".1f"
+  "fmt": ".1f",
+  "table": {
+   "header": "archive-week mean count (shared hours)",
+   "row": "4799",
+   "col": "live mean count"
+  }
  },
  {
   "file": "drift.json",
   "path": "all_hours|4799|psi",
-  "fmt": ".2f"
+  "fmt": ".2f",
+  "table": {
+   "header": "archive-week mean count (shared hours)",
+   "row": "4799",
+   "col": "PSI (all hours)"
+  }
+ },
+ {
+  "file": "drift.json",
+  "path": "matched_hours|2701|ks",
+  "fmt": ".2f",
+  "table": {
+   "header": "archive-week mean count (shared hours)",
+   "row": "2701",
+   "col": "KS (shared hours)"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|2701|flag_vs_slow|tp",
+  "fmt": "d",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "2701",
+   "col": "flag vs slow",
+   "text": "{} TP"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|2701|flag_vs_slow|fp",
+  "fmt": "d",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "2701",
+   "col": "flag vs slow",
+   "text": "{} FP"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|2701|flag_vs_slow|fn",
+  "fmt": "d",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "2701",
+   "col": "flag vs slow",
+   "text": "{} FN"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|2701|flag_vs_slow|tn",
+  "fmt": "d",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "2701",
+   "col": "flag vs slow",
+   "text": "{} TN"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|2701|slow_rate",
+  "fmt": "pct0",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "2701",
+   "col": "slow share"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|2701|flag_rate",
+  "fmt": "pct0",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "2701",
+   "col": "flag share"
+  }
+ },
+ {
+  "file": "drift.json",
+  "path": "matched_hours|2702|ks",
+  "fmt": ".2f",
+  "table": {
+   "header": "archive-week mean count (shared hours)",
+   "row": "2702",
+   "col": "KS (shared hours)"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|2702|flag_vs_slow|tp",
+  "fmt": "d",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "2702",
+   "col": "flag vs slow",
+   "text": "{} TP"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|2702|flag_vs_slow|fp",
+  "fmt": "d",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "2702",
+   "col": "flag vs slow",
+   "text": "{} FP"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|2702|flag_vs_slow|fn",
+  "fmt": "d",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "2702",
+   "col": "flag vs slow",
+   "text": "{} FN"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|2702|flag_vs_slow|tn",
+  "fmt": "d",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "2702",
+   "col": "flag vs slow",
+   "text": "{} TN"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|2702|slow_rate",
+  "fmt": "pct0",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "2702",
+   "col": "slow share"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|2702|flag_rate",
+  "fmt": "pct0",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "2702",
+   "col": "flag share"
+  }
+ },
+ {
+  "file": "drift.json",
+  "path": "matched_hours|2704|ks",
+  "fmt": ".2f",
+  "table": {
+   "header": "archive-week mean count (shared hours)",
+   "row": "2704",
+   "col": "KS (shared hours)"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|2704|flag_vs_slow|tp",
+  "fmt": "d",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "2704",
+   "col": "flag vs slow",
+   "text": "{} TP"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|2704|flag_vs_slow|fp",
+  "fmt": "d",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "2704",
+   "col": "flag vs slow",
+   "text": "{} FP"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|2704|flag_vs_slow|fn",
+  "fmt": "d",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "2704",
+   "col": "flag vs slow",
+   "text": "{} FN"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|2704|flag_vs_slow|tn",
+  "fmt": "d",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "2704",
+   "col": "flag vs slow",
+   "text": "{} TN"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|2704|slow_rate",
+  "fmt": "pct0",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "2704",
+   "col": "slow share"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|2704|flag_rate",
+  "fmt": "pct0",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "2704",
+   "col": "flag share"
+  }
+ },
+ {
+  "file": "drift.json",
+  "path": "matched_hours|4798|ks",
+  "fmt": ".2f",
+  "table": {
+   "header": "archive-week mean count (shared hours)",
+   "row": "4798",
+   "col": "KS (shared hours)"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|4798|flag_vs_slow|tp",
+  "fmt": "d",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "4798",
+   "col": "flag vs slow",
+   "text": "{} TP"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|4798|flag_vs_slow|fp",
+  "fmt": "d",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "4798",
+   "col": "flag vs slow",
+   "text": "{} FP"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|4798|flag_vs_slow|fn",
+  "fmt": "d",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "4798",
+   "col": "flag vs slow",
+   "text": "{} FN"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|4798|flag_vs_slow|tn",
+  "fmt": "d",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "4798",
+   "col": "flag vs slow",
+   "text": "{} TN"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|4798|slow_rate",
+  "fmt": "pct0",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "4798",
+   "col": "slow share"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|4798|flag_rate",
+  "fmt": "pct0",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "4798",
+   "col": "flag share"
+  }
+ },
+ {
+  "file": "drift.json",
+  "path": "matched_hours|4799|ks",
+  "fmt": ".2f",
+  "table": {
+   "header": "archive-week mean count (shared hours)",
+   "row": "4799",
+   "col": "KS (shared hours)"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|4799|flag_vs_slow|tp",
+  "fmt": "d",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "4799",
+   "col": "flag vs slow",
+   "text": "{} TP"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|4799|flag_vs_slow|fp",
+  "fmt": "d",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "4799",
+   "col": "flag vs slow",
+   "text": "{} FP"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|4799|flag_vs_slow|fn",
+  "fmt": "d",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "4799",
+   "col": "flag vs slow",
+   "text": "{} FN"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|4799|flag_vs_slow|tn",
+  "fmt": "d",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "4799",
+   "col": "flag vs slow",
+   "text": "{} TN"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|4799|slow_rate",
+  "fmt": "pct0",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "4799",
+   "col": "slow share"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|4799|flag_rate",
+  "fmt": "pct0",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "4799",
+   "col": "flag share"
+  }
+ },
+ {
+  "file": "validation_week.json",
+  "path": "cameras|2701|flag_vs_slow|tp",
+  "fmt": "d",
+  "table": {
+   "header": "Spearman(count, speed band), all frames",
+   "row": "2701",
+   "col": "flag vs slow",
+   "text": "{} TP"
+  }
+ },
+ {
+  "file": "validation_week.json",
+  "path": "cameras|2701|flag_vs_slow|fp",
+  "fmt": "d",
+  "table": {
+   "header": "Spearman(count, speed band), all frames",
+   "row": "2701",
+   "col": "flag vs slow",
+   "text": "{} FP"
+  }
+ },
+ {
+  "file": "validation_week.json",
+  "path": "cameras|2701|flag_vs_slow|fn",
+  "fmt": "d",
+  "table": {
+   "header": "Spearman(count, speed band), all frames",
+   "row": "2701",
+   "col": "flag vs slow",
+   "text": "{} FN"
+  }
+ },
+ {
+  "file": "validation_week.json",
+  "path": "cameras|2701|flag_vs_slow|tn",
+  "fmt": "d",
+  "table": {
+   "header": "Spearman(count, speed band), all frames",
+   "row": "2701",
+   "col": "flag vs slow",
+   "text": "{} TN"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|2701|frames_with_incident_within_1km|Heavy Traffic",
+  "fmt": "d",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "2701",
+   "col": "frames with a Heavy Traffic incident within 1 km"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|2701|flag_rate_when_incident|Heavy Traffic",
+  "fmt": "pct0",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "2701",
+   "col": "flag share on those frames"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|2702|frames_with_incident_within_1km|Heavy Traffic",
+  "fmt": "d",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "2702",
+   "col": "frames with a Heavy Traffic incident within 1 km"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|2702|flag_rate_when_incident|Heavy Traffic",
+  "fmt": "pct0",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "2702",
+   "col": "flag share on those frames"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|2704|frames_with_incident_within_1km|Heavy Traffic",
+  "fmt": "d",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "2704",
+   "col": "frames with a Heavy Traffic incident within 1 km"
+  }
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|2704|flag_rate_when_incident|Heavy Traffic",
+  "fmt": "pct0",
+  "table": {
+   "header": "frames with a Heavy Traffic incident within 1 km",
+   "row": "2704",
+   "col": "flag share on those frames"
+  }
+ },
+ {
+  "file": "vlm_eval.json",
+  "path": "fields|time_of_day|accuracy",
+  "fmt": "pct1",
+  "context": "day/night {} (majority"
+ },
+ {
+  "file": "vlm_eval.json",
+  "path": "fields|time_of_day|majority_baseline",
+  "fmt": "pct1",
+  "context": "(majority {}); rain"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|coco-yolo11n@1280|mAP50",
+  "fmt": ".3f",
+  "context": "| COCO YOLO11n {} -> fine-tuned"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_1280_e40_s1|mAP50",
+  "fmt": ".3f",
+  "context": "-> fine-tuned {} (95% CI"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "bootstrap|ft-yolo11n_1280_e40_s1|mAP50_ci95|0",
+  "fmt": ".3f",
+  "context": "(95% CI {}-"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "bootstrap|ft-yolo11n_1280_e40_s1|mAP50_ci95|1",
+  "fmt": ".3f",
+  "context": "-{}) | `results/detection_eval.json`"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|coco-yolo11n@1280|AP50_class_agnostic",
+  "fmt": ".3f",
+  "context": "(is there a vehicle?) | {} ->"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_1280_e40_s1|AP50_class_agnostic",
+  "fmt": ".3f",
+  "context": "(is there a vehicle?) | 0.707 -> {} | same |"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|coco-yolo11n@1280|count_mae",
+  "fmt": ".2f",
+  "context": "(MAE) | {} ->"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_1280_e40_s1|count_mae",
+  "fmt": ".2f",
+  "context": "(MAE) | 5.78 -> {} | same |"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|coco-yolo11n@1280|mAP50",
+  "fmt": ".3f",
+  "context": "held-out mAP50 from {} to"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_1280_e40_s1|mAP50",
+  "fmt": ".3f",
+  "context": "from 0.413 to {} and cut"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|coco-yolo11n@1280|count_mae",
+  "fmt": ".2f",
+  "context": "count error\nfrom {} to"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_1280_e40_s1|count_mae",
+  "fmt": ".2f",
+  "context": "from 5.78 to {} vehicles, but"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_1280_e40_s0|mAP50",
+  "fmt": ".3f",
+  "context": "second seed reached {} and"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_1280_e40_s0|mAP50",
+  "fmt": ".3f",
+  "context": "sits at {} and its interval"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|coco-yolo11n@1280|AP50_class_agnostic",
+  "fmt": ".3f",
+  "context": "AP50 rose from {} to"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_1280_e40_s1|AP50_class_agnostic",
+  "fmt": ".3f",
+  "context": "to {} for the champion"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|coco-yolo11n@1280|count_mae",
+  "fmt": ".2f",
+  "context": "error fell from {} to"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_1280_e40_s1|count_mae",
+  "fmt": ".2f",
+  "context": "to {} vehicles (difference"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_coco4_1280_e40_s0|AP50|bus",
+  "fmt": ".3f",
+  "context": "did not fix this ({})"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|ft-yolo11n_1280_e40_s1|AP50_class_agnostic",
+  "fmt": ".3f",
+  "context": "({} vs 0.825 class-agnostic)"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "models|pre-annotation (YOLO11x tiled)|AP50_class_agnostic",
+  "fmt": ".3f",
+  "context": "(0.824 vs {} class-agnostic)"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "frames",
+  "fmt": "d",
+  "context": "- {} test frames from 14 cameras is a small"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "cameras",
+  "fmt": "d",
+  "context": "65 frames from {} held-out cameras"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "labels|car",
+  "fmt": "d",
+  "context": "Test labels: {} car,"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "labels|bus",
+  "fmt": "d",
+  "context": "car, {} bus,"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "labels|truck",
+  "fmt": "d",
+  "context": "bus, {} truck,"
+ },
+ {
+  "file": "detection_eval.json",
+  "path": "labels|motorcycle",
+  "fmt": "d",
+  "context": "truck, {} motorcycle."
+ },
+ {
+  "file": "label_stats.json",
+  "path": "boxes|train|bus",
+  "fmt": "d",
+  "context": "only {} bus boxes in training"
+ },
+ {
+  "file": "label_stats.json",
+  "path": "boxes|test|bus",
+  "fmt": "d",
+  "context": "bus boxes in training and {} in test"
+ },
+ {
+  "file": "label_stats.json",
+  "path": "cameras|train",
+  "fmt": "d",
+  "context": "235 train frames ({} cameras)"
+ },
+ {
+  "file": "label_stats.json",
+  "path": "cameras|val",
+  "fmt": "d",
+  "context": "30 validation frames ({} cameras)"
+ },
+ {
+  "file": "label_stats.json",
+  "path": "cameras|test",
+  "fmt": "d",
+  "context": "65 test frames ({} cameras)"
+ },
+ {
+  "file": "label_stats.json",
+  "path": "frames|*",
+  "agg": "sum",
+  "fmt": "d",
+  "context": "over the {} frames kept"
+ },
+ {
+  "file": "label_stats.json",
+  "path": "frames|*",
+  "agg": "sum",
+  "fmt": "d",
+  "context": "a labelled\nset of {} camera frames"
+ },
+ {
+  "file": "label_stats.json",
+  "path": "edits|pre_boxes",
+  "fmt": ",",
+  "table": {
+   "header": "boxes",
+   "row": "model pre-annotations",
+   "col": "boxes"
+  }
+ },
+ {
+  "file": "label_stats.json",
+  "path": "boxes|*|*",
+  "agg": "sum",
+  "fmt": ",",
+  "table": {
+   "header": "boxes",
+   "row": "final labels",
+   "col": "boxes"
+  }
+ },
+ {
+  "file": "stream_week_replay.json",
+  "path": "frames",
+  "fmt": ",",
+  "context": "Streaming replay, {} frames through Redpanda"
+ },
+ {
+  "file": "stream_week_replay.json",
+  "path": "frames",
+  "fmt": ",",
+  "context": "{} archive frames through Redpanda in"
+ },
+ {
+  "file": "stream_week_replay.json",
+  "path": "mean_batch",
+  "fmt": ".0f",
+  "context": "per 1280-px frame at batch {}."
+ },
+ {
+  "file": "stream_live.json",
+  "path": "cameras",
+  "agg": "len",
+  "fmt": "d",
+  "context": "199 frames from {} cameras"
+ },
+ {
+  "file": "stream_live.json",
+  "path": "skipped_unreadable",
+  "fmt": "d",
+  "context": "199 frames, {} unreadable frames skipped"
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|*|frames_with_incident_within_1km|Heavy Traffic",
+  "agg": "sum",
+  "fmt": "d",
+  "context": "| 0 of {} frames under a reported Heavy Traffic incident flagged"
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|*|frames_with_incident_within_1km|Heavy Traffic",
+  "agg": "sum",
+  "fmt": "d",
+  "context": "failed: 0 of {} live frames"
+ },
+ {
+  "file": "validation_live.json",
+  "path": "cameras|*|frames_with_incident_within_1km|Heavy Traffic",
+  "agg": "sum",
+  "fmt": "d",
+  "context": "during {} of the scored frames"
+ },
+ {
+  "file": "validation_week.json",
+  "path": "cameras|*|frames",
+  "agg": "sum",
+  "fmt": ",",
+  "context": "**Archive week** ({} frames, 2026-09-26"
+ },
+ {
+  "file": "drift.json",
+  "path": "matched_hours|*|drift",
+  "agg": "count_true",
+  "fmt": "d",
+  "context": "| alert on {} of 5 cameras"
+ },
+ {
+  "file": "drift.json",
+  "path": "matched_hours",
+  "agg": "len",
+  "fmt": "d",
+  "context": "alert on 4 of {} cameras"
+ },
+ {
+  "file": "drift.json",
+  "path": "live_hours",
+  "agg": "len",
+  "fmt": "d",
+  "context": "the live window covers {} clock hours"
+ },
+ {
+  "source": "pytest",
+  "fmt": "d",
+  "context": "| {} tests; "
+ },
+ {
+  "source": "pytest",
+  "fmt": "d",
+  "context": "`tests/`: {} tests."
+ },
+ {
+  "source": "mutations",
+  "fmt": "d",
+  "context": "tests; {}/{} mutations caught"
+ },
+ {
+  "source": "mutations",
+  "fmt": "d",
+  "context": "plants {} known bugs"
+ },
+ {
+  "source": "mutations",
+  "fmt": "d",
+  "context": "All {} are caught"
+ },
+ {
+  "file": "stream_week_replay.json",
+  "path": "frames",
+  "fmt": ",",
+  "context": "# {} archive-week frames from data/week_frames_manifest.csv"
  }
 ]

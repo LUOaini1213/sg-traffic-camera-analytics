@@ -1,6 +1,6 @@
 """Download the frames listed in data/frames_manifest.csv from the public data.gov.sg archive.
 
-Images are written outside the repo (default D:/sg-traffic-camera-data/archive/images,
+Images are written outside git (default ./data_local/archive/images, which is ignored;
 override with TCAM_DATA) and checked against the MD5 published with each frame.
 """
 from __future__ import annotations
@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 from tcam.archive import fetch_image  # noqa: E402
 
-DATA = Path(os.environ.get("TCAM_DATA", "D:/sg-traffic-camera-data"))
+DATA = Path(os.environ.get("TCAM_DATA", ROOT / "data_local"))  # images, YOLO folders, MLflow store (not committed)
 
 
 def main() -> None:

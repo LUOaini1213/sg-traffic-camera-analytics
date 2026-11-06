@@ -6,6 +6,13 @@ saw, a streaming service (Redpanda/Kafka API -> detector -> per-camera state -> 
 MLflow tracking with a model registry and a drift check, and a comparison of the camera flags
 with LTA speed bands and incident reports.
 
+**Found:** fine-tuning lifted held-out mAP50 from 0.413 to 0.539 and cut the per-frame count error
+from 5.78 to 2.37 vehicles, but an identically trained second seed reached 0.477 and its gain's
+interval includes zero. As an incident detector the congestion flag failed: 0 of 20 live frames
+under a reported Heavy Traffic incident were flagged (kappa -0.07 against the speed-band rule).
+**Limits:** the labels are model boxes corrected by an AI reviewer, not by a person; the test set
+is 65 frames from 14 cameras; only 5 cameras are still published; all timings are from one laptop.
+
 Built on a laptop (GTX 1650 4 GB, Windows 11, WSL2 + Docker) between 2026-10-13 and
 2026-10-14. Everything below is measured on that machine; the numbers come from the files in
 `results/`, and CI fails if a number quoted here stops matching them
@@ -24,7 +31,7 @@ Built on a laptop (GTX 1650 4 GB, Windows 11, WSL2 + Docker) between 2026-10-13 
 | Flags vs LTA incidents and speed bands (live window, 604 frames) | 0 of 20 frames under a reported Heavy Traffic incident flagged; kappa -0.07 | `results/validation_live.json` |
 | Drift check, live window vs archive week | alert on 4 of 5 cameras (PSI > 0.25 at the same clock hours) | `results/drift.json` |
 | Small local VLM as scene tagger (65 frames) | day/night 93.8% (majority 56.9%); rain and traffic level no better than guessing | `results/vlm_eval.json` |
-| Tests / planted bugs caught | 51 tests; 26/26 mutations caught | CI |
+| Tests / planted bugs caught | 65 tests; 26/26 mutations caught | CI |
 
 ## Data and licence
 
@@ -39,7 +46,7 @@ Built on a laptop (GTX 1650 4 GB, Windows 11, WSL2 + Docker) between 2026-10-13 
 
 **Scope.** Cameras west of 103.66 E are left out everywhere (`src/tcam/cameras.py`). That leaves 86 of the 90 archive cameras and 5 of the 8 live ones (2701, 2702, 2704, 4798, 4799). Eleven archive cameras publish only 320x240 frames; those frames are not labelled.
 
-**Licence and what is committed.** The datasets are under the Singapore Open Data Licence. LTA's API terms grant no rights over personal data or third-party content that may appear in what the APIs return, and camera frames can show number plates and people, so **no camera image is committed**. The repository holds derived data only: frame manifests (camera, time, public archive URL, MD5), model pre-annotations, review corrections, final YOLO labels, per-frame counts and metrics. `scripts/fetch_frames.py` and `scripts/fetch_week_frames.py` re-download the exact archive frames and check each MD5. Live frames cannot be re-fetched (DataMall serves only the current image), so for those only counts and timings are committed. Contains information from LTA DataMall and data.gov.sg accessed under the Singapore Open Data Licence.
+**Licence and what is committed.** The datasets are under the Singapore Open Data Licence. LTA's API terms grant no rights over personal data or third-party content that may appear in what the APIs return, and camera frames can show number plates and people, so **no camera image is committed**. The repository holds derived data only: frame manifests (camera, time, public archive URL, MD5), model pre-annotations, review corrections, final YOLO labels, per-frame counts and metrics. `scripts/fetch_frames.py` and `scripts/fetch_week_frames.py` re-download the exact archive frames listed in the committed manifests and check each MD5. The archive-week frame list was derived once from the times of the author's own speed-band log (`scripts/derive_week_manifest.py`); that log is not published, so the speed-band side of the week validation is committed only as the per-frame series in `results/validation_week.series.json`. Live frames cannot be re-fetched (DataMall serves only the current image), so for those only counts and timings are committed. Contains information from LTA DataMall and data.gov.sg accessed under the Singapore Open Data Licence. The code is under the MIT licence (`LICENSE`), which does not extend to the data; the data terms are summarised in `data/LICENSE-DATA.md`.
 
 The DataMall AccountKey is read from the `LTA_KEY` environment variable at run time; it is never written to disk or logged.
 
@@ -174,26 +181,49 @@ Only day/night is useful. The rain answer is worse than always saying "no rain" 
 
 ## Engineering checks
 
-- `tests/`: 39 unit tests on counting (ROI, thresholds, size floor), the congestion flag (median window, hysteresis, calibration), AP and matching (hand-computed cases), the camera bootstrap, speed-band and incident matching, PSI/KS, label application and the camera split.
+- `tests/`: 65 tests. Unit tests cover counting (ROI, thresholds, size floor), the congestion flag (median window, hysteresis, calibration), AP and matching (hand-computed cases), the camera bootstrap, speed-band and incident matching, PSI/KS, label application and the camera split. `tests/test_results_reproduce.py` rebuilds committed results from committed inputs only (no images, no GPU): every final label file and `results/label_stats.json` from `data/pre` + `data/review`, the camera split, both validation files and `data/thresholds.json` from the `.series.json` files, `results/drift.json`, and the pre-annotation row of the detection table (mAP50, its camera-bootstrap interval, per-class AP, class-agnostic AP50, count MAE) from `data/pre` + `data/labels`. The other detection rows need the model weights and the images, so they are pinned only to `results/detection_eval.json`.
 - `scripts/mutation_check.py`: plants 26 known bugs (exclusive thresholds, mean instead of median, no hysteresis, no precision envelope, labels matched twice, wrong kappa, flipped PSI, ignored review edits, a streaming API that crashes on a malformed state message or drops its nosniff header, and more) one at a time and requires the test suite to fail on each. All 26 are caught. The first run let 3 through: two exposed weak tests, which were strengthened, and one was a mutation that cannot change behaviour (flipping the ray-casting direction in point-in-polygon), which was replaced.
-- `scripts/check_readme.py`: every number listed in `results/readme_claims.json` must appear in this README exactly as the result file gives it.
-- GitHub Actions runs all three on every push. No training or GPU step runs in CI.
+- `scripts/check_readme.py`: every number listed in `results/readme_claims.json` must appear in this README exactly as the result file gives it, in the table cell or sentence the claim names (not just anywhere in the file). The test and mutation counts above are counted from the code by the same check.
+- GitHub Actions runs all three on Ubuntu and Windows on every push, plus a check that no local machine path (a user home folder, a drive-letter data folder, a WSL distro name) is committed. No training or GPU step runs in CI.
 
 ## Reproduce
 
+Tested with Python 3.11 on Windows 11 (CI: Python 3.11 on Ubuntu and Windows).
+
+**Offline checks** (no GPU, no images, no keys; this is what CI runs):
+
 ```bash
-pip install -r requirements.txt                    # torch with CUDA installed separately
-python scripts/fetch_frames.py                     # 380 archive frames, MD5-checked (TCAM_DATA sets the folder)
-python scripts/build_dataset.py                    # labels + split + YOLO folders
-python scripts/train.py --model yolo11n.pt --imgsz 1280 --epochs 40 --batch 1 --seed 1
-python scripts/evaluate.py --ft "ft-yolo11n_1280_e40_s1=<runs>/yolo11n_1280_e40_s1/weights/best.pt:1280"
-TCAM_BIND=0.0.0.0 TCAM_ADVERTISE_HOST=<host ip> docker compose up -d   # the broker has no auth: trusted network only
-TCAM_BOOTSTRAP=<host ip>:39092 bash scripts/run_stream.sh replay data/week_frames_manifest.csv <data>/week/images out.jsonl best.pt
-LTA_KEY=... python -m tcam.collect <data>/live --until YYYYmmddHHMM
+pip install -r requirements-ci.txt
 python -m pytest -q && python scripts/mutation_check.py && python scripts/check_readme.py
 ```
 
-Re-labelling from scratch is `scripts/preannotate.py` followed by a new review; the committed `data/review/*.json` files reproduce the current labels exactly.
+**Full pipeline.** Environment variables: `TCAM_DATA` (images, YOLO folders, MLflow store; default `./data_local`, ignored by git), `TCAM_BOOTSTRAP` (Kafka address, default `127.0.0.1:39092`), `RPK` (command that reaches the broker's `rpk`, default `docker exec tcam-redpanda rpk`), `LTA_KEY` (DataMall key, live collection only).
+
+```bash
+pip install -r requirements.txt                    # torch with CUDA installed separately
+python scripts/fetch_frames.py                     # 380 archive frames, MD5-checked
+python scripts/fetch_week_frames.py                # 1,024 archive-week frames from data/week_frames_manifest.csv, MD5-checked
+python scripts/build_dataset.py                    # labels + split + YOLO folders
+python scripts/train.py --model yolo11n.pt --imgsz 1280 --epochs 40 --batch 1 --seed 1
+python scripts/evaluate.py --ft "ft-yolo11n_1280_e40_s1=<runs>/yolo11n_1280_e40_s1/weights/best.pt:1280"
+docker compose up -d                               # the broker has no auth; see docker-compose.yml before exposing it
+bash scripts/run_stream.sh replay data/week_frames_manifest.csv "${TCAM_DATA:-data_local}/week/images" out.jsonl best.pt
+PYTHONPATH=src LTA_KEY=... python -m tcam.collect "${TCAM_DATA:-data_local}/live" --until YYYYmmddHHMM
+```
+
+To score the published champion instead of retraining, download it from the
+[v0.1 release](https://github.com/LUOaini1213/sg-traffic-camera-analytics/releases/tag/v0.1) and check its SHA-256
+against the one in the release notes before use:
+
+```bash
+gh release download v0.1 -p "*.pt"
+sha256sum sg-traffic-yolo11n-champion.pt           # 49dd9a027134a93d523affb1e9a0e9948c863d702c440b2b342683140e9d7d9b
+python scripts/evaluate.py --ft "ft-yolo11n_1280_e40_s1=sg-traffic-yolo11n-champion.pt:1280" --out results/detection_eval_check.json
+```
+
+Re-labelling from scratch is `scripts/preannotate.py` followed by a new review; the committed `data/review/*.json` files reproduce the current labels exactly (checked in CI).
+
+**What cannot be rerun from this repository.** `scripts/validate_flags.py` needs the speed-band snapshots (`--speed-dir`), the road-link geometry (`--links`) and, for the live window, the incident snapshots; these came from the author's own DataMall sampler and are not published. The flag, agreement and drift numbers are rebuilt in CI from the committed per-frame series instead. The live frames cannot be re-fetched (DataMall serves only the current image), and the two non-champion fine-tuned runs' weights are not published.
 
 ## Limitations
 

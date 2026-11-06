@@ -20,7 +20,7 @@ sys.path.insert(0, str(ROOT / "src"))
 from tcam.boxes import nms, size_ok  # noqa: E402
 from tcam.classes import COCO_TO_OURS, MIN_SIDE_FRAC  # noqa: E402
 
-DATA = Path(os.environ.get("TCAM_DATA", "D:/sg-traffic-camera-data"))
+DATA = Path(os.environ.get("TCAM_DATA", ROOT / "data_local"))  # images, YOLO folders, MLflow store (not committed)
 CONF, NMS_IOU = 0.20, 0.55
 
 
