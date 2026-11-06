@@ -17,21 +17,24 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from tcam.drift import drift_report  # noqa: E402
 
 
+def build(ref: dict, cur: dict) -> dict:
+    """Drift report from two .series.json dicts (camera -> list of {time, total, ...})."""
+    cur_hours = {int(x["time"][11:13]) for s in cur.values() for x in s}
+    all_ref = {c: [x["total"] for x in s] for c, s in ref.items()}
+    all_cur = {c: [x["total"] for x in s] for c, s in cur.items()}
+    hm_ref = {c: [x["total"] for x in s if int(x["time"][11:13]) in cur_hours] for c, s in ref.items()}
+    return {"live_hours": sorted(cur_hours),
+            "all_hours": drift_report(all_ref, all_cur),
+            "matched_hours": drift_report(hm_ref, all_cur)}
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--ref", type=Path, default=ROOT / "results" / "validation_week.series.json")
     ap.add_argument("--cur", type=Path, default=ROOT / "results" / "validation_live.series.json")
     ap.add_argument("--no-mlflow", action="store_true")
     a = ap.parse_args()
-    ref = json.loads(a.ref.read_text())
-    cur = json.loads(a.cur.read_text())
-    cur_hours = {int(x["time"][11:13]) for s in cur.values() for x in s}
-    all_ref = {c: [x["total"] for x in s] for c, s in ref.items()}
-    all_cur = {c: [x["total"] for x in s] for c, s in cur.items()}
-    hm_ref = {c: [x["total"] for x in s if int(x["time"][11:13]) in cur_hours] for c, s in ref.items()}
-    out = {"live_hours": sorted(cur_hours),
-           "all_hours": drift_report(all_ref, all_cur),
-           "matched_hours": drift_report(hm_ref, all_cur)}
+    out = build(json.loads(a.ref.read_text()), json.loads(a.cur.read_text()))
     (ROOT / "results" / "drift.json").write_text(json.dumps(out, indent=1))
     for k in ("all_hours", "matched_hours"):
         for cam, r in out[k].items():

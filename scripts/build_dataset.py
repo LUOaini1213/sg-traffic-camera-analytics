@@ -23,7 +23,7 @@ from tcam.classes import NAMES  # noqa: E402
 from tcam.labels import apply_review, edit_stats  # noqa: E402
 from tcam.split import camera_groups, split_cameras  # noqa: E402
 
-DATA = Path(os.environ.get("TCAM_DATA", "D:/sg-traffic-camera-data"))
+DATA = Path(os.environ.get("TCAM_DATA", ROOT / "data_local"))  # images, YOLO folders, MLflow store (not committed)
 TRAIN_WIDTH = 1280
 LIVE_CAMERAS = {"2701", "2702", "2704", "4798", "4799"}  # deployed cameras stay in train
 

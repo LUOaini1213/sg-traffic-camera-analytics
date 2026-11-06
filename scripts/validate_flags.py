@@ -29,6 +29,9 @@ from tcam.validate import (SLOW_BAND, agreement, camera_speed, incidents_near, l
                            spearman)
 
 
+WEEK_SPLIT_AT = "2026-09-30T00:00"  # week mode: calibrate thresholds before this time, score after it
+
+
 def nearest(times: list[datetime], t: datetime, max_s: float):
     i = bisect_left(times, t)
     best = None
@@ -49,6 +52,47 @@ def load_log(path: Path) -> dict[str, dict]:
     return out
 
 
+def summarise(series: dict[str, list[dict]], thresholds: dict[str, float], mode: str, split_at: str,
+              links: dict[str, int], incidents: bool) -> dict:
+    """Flags, agreement and incident tallies from the per-camera series (the .series.json file).
+
+    Kept separate from main() so tests/test_results_reproduce.py can rebuild the committed
+    results/validation_*.json from the committed series without the speed-band log.
+    """
+    result = {"mode": mode, "slow_rule": f"mean SpeedBand of category 1-4 links within 200 m <= {SLOW_BAND}",
+              "cameras": {}}
+    pooled_pred, pooled_true = [], []
+    for cam, s in sorted(series.items()):
+        ev = [x for x in s if mode == "live" or x["time"] >= split_at]
+        tot = [x["total"] for x in s]
+        flags = flag_series(tot, thresholds[cam])
+        flags_ev = [f for x, f in zip(s, flags) if mode == "live" or x["time"] >= split_at]
+        slow = [x["speed"] <= SLOW_BAND for x in ev]
+        valid = [not np.isnan(x["speed"]) for x in ev]
+        pred = [f for f, v in zip(flags_ev, valid) if v]
+        truth = [t for t, v in zip(slow, valid) if v]
+        pooled_pred += pred; pooled_true += truth
+        c = {"frames": len(s), "frames_scored": len(pred), "links": links[cam], "threshold": thresholds[cam],
+             "spearman_count_vs_speedband_all": spearman(tot, [x["speed"] for x in s]),
+             "mean_count": float(np.mean(tot)), "flag_rate": float(np.mean(pred)) if pred else float("nan"),
+             "slow_rate": float(np.mean(truth)) if truth else float("nan"),
+             "flag_vs_slow": agreement(pred, truth) if pred else None}
+        if incidents:
+            types = defaultdict(int)
+            for x in ev:
+                for ty in x.get("incident_types", []):
+                    types[ty] += 1
+            c["frames_with_incident_within_1km"] = dict(types)
+            for ty in types:
+                hit = [f for x, f in zip(ev, flags_ev) if ty in x.get("incident_types", [])]
+                c.setdefault("flag_rate_when_incident", {})[ty] = float(np.mean(hit)) if hit else None
+        result["cameras"][cam] = c
+    result["pooled_flag_vs_slow"] = agreement(pooled_pred, pooled_true) if pooled_pred else None
+    times = [x["time"] for s in series.values() for x in s]
+    result["first"], result["last"] = min(times), max(times)
+    return result
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("mode", choices=["week", "live"])
@@ -57,7 +101,7 @@ def main() -> None:
     ap.add_argument("--speed-dir", type=Path, required=True)
     ap.add_argument("--links", type=Path, required=True)
     ap.add_argument("--incident-dir", type=Path)
-    ap.add_argument("--split-at", default="2026-09-30T00:00")
+    ap.add_argument("--split-at", default=WEEK_SPLIT_AT)
     ap.add_argument("--out", type=Path, required=True)
     a = ap.parse_args()
 
@@ -103,37 +147,8 @@ def main() -> None:
     else:
         thresholds = json.loads(th_path.read_text())
 
-    result = {"mode": a.mode, "slow_rule": f"mean SpeedBand of category 1-4 links within 200 m <= {SLOW_BAND}",
-              "cameras": {}}
-    pooled_pred, pooled_true = [], []
-    for cam, s in sorted(series.items()):
-        ev = [x for x in s if a.mode == "live" or x["time"] >= a.split_at]
-        tot = [x["total"] for x in s]
-        flags = flag_series(tot, thresholds[cam])
-        flags_ev = [f for x, f in zip(s, flags) if a.mode == "live" or x["time"] >= a.split_at]
-        slow = [x["speed"] <= SLOW_BAND for x in ev]
-        valid = [not np.isnan(x["speed"]) for x in ev]
-        pred = [f for f, v in zip(flags_ev, valid) if v]
-        truth = [t for t, v in zip(slow, valid) if v]
-        pooled_pred += pred; pooled_true += truth
-        c = {"frames": len(s), "frames_scored": len(pred), "links": len(link_sets[cam]), "threshold": thresholds[cam],
-             "spearman_count_vs_speedband_all": spearman(tot, [x["speed"] for x in s]),
-             "mean_count": float(np.mean(tot)), "flag_rate": float(np.mean(pred)) if pred else float("nan"),
-             "slow_rate": float(np.mean(truth)) if truth else float("nan"),
-             "flag_vs_slow": agreement(pred, truth) if pred else None}
-        if inc_files:
-            types = defaultdict(int)
-            for x in ev:
-                for ty in x.get("incident_types", []):
-                    types[ty] += 1
-            c["frames_with_incident_within_1km"] = dict(types)
-            for ty in types:
-                hit = [f for x, f in zip(ev, flags_ev) if ty in x.get("incident_types", [])]
-                c.setdefault("flag_rate_when_incident", {})[ty] = float(np.mean(hit)) if hit else None
-        result["cameras"][cam] = c
-    result["pooled_flag_vs_slow"] = agreement(pooled_pred, pooled_true) if pooled_pred else None
-    times = [x["time"] for s in series.values() for x in s]
-    result["first"], result["last"] = min(times), max(times)
+    result = summarise(series, thresholds, a.mode, a.split_at, {c: len(v) for c, v in link_sets.items()},
+                       incidents=bool(inc_files))
     a.out.write_text(json.dumps(result, indent=1, default=float))
     (a.out.with_suffix(".series.json")).write_text(json.dumps(series))
     print(json.dumps({k: v for k, v in result.items() if k != "cameras"}, indent=1, default=float))

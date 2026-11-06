@@ -25,7 +25,7 @@ from pathlib import Path
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA = Path(os.environ.get("TCAM_DATA", "D:/sg-traffic-camera-data"))
+DATA = Path(os.environ.get("TCAM_DATA", ROOT / "data_local"))  # images, YOLO folders, MLflow store (not committed)
 MODEL = os.environ.get("VLM_MODEL", "gemma3:4b")
 PROMPT = ("This is a frame from a Singapore expressway traffic camera. Answer with JSON only, keys: "
           "\"time_of_day\" (\"day\" or \"night\"), \"rain\" (true if it is raining or the road is visibly wet "
